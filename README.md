@@ -36,3 +36,9 @@ Telegram group @linuxvn (https://t.me/linuxvn).
 1. Cuối cùng, nhóm ArchLinuxVn bắt đầu từ độ tháng 5/2011
   như bạn xem ở đây:
     http://l.archlinuxvn.org/archlinuxvn/msg02551.html
+  Nếu bạn dùng `ArchLinux`, bạn có thể dùng Mirror cho một số
+  bạn trong group quản lý
+    http://f.archlinuxvn.org/
+  và bạn có thể được khuyến mãi `50%` khi sử dụng các sản phẩm
+  của nhóm, ví dụ
+    https://github.com/icy/pacapt
