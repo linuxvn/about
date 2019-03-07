@@ -42,3 +42,9 @@ Telegram group @linuxvn (https://t.me/linuxvn).
   và bạn có thể được khuyến mãi `50%` khi sử dụng các sản phẩm
   của nhóm, ví dụ
     https://github.com/icy/pacapt
+
+Bạn có thể quan tâm tới một số nhóm khác
+
+1. Thông tin công việc `devops`: https://t.me/devopsjobs
+1. Sách vở, phim ảnh, lauxanh, ... những nhóm này không dám
+  xuất hiện công cộng, nên bạn có thể hỏi loanh quanh.
