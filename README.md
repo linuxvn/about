@@ -24,7 +24,7 @@ Telegram group @linuxvn (https://t.me/linuxvn).
   Ngoài việc này ra, @linuxvn không liên quan gì tới
   công ty [Lauxanh](https://lauxanh.us) mà bạn đã và đang biết.
 1. Các thành viên trong group khá đa dạng, có người sử dụng
-  Linux mới 20 năm, và có người mới... 1 năm. Và cũng có
+  Linux mới 20 năm, và có người mới... 1 giây. Và cũng có
   các bạn chẳng xài Linux cho việc cá nhân, rồi có các bạn
   nữ xinh đẹp, hay cả học sinh cấp 3, rồi có những bạn quá khích
   hoặc có bạn rất hiền lành khiêm tốn nhưng đẹp trai, v.v...
