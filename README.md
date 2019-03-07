@@ -31,7 +31,7 @@ Telegram group @linuxvn (https://t.me/linuxvn).
   hoặc có cả an ninh chìm hay các cô nhân sự vào để tìm kiếm
   bạn trăm năm, vân vân.
   Vì thế, mong bạn giữ chừng mực cố định khi trao đổi trên kênh,
-  vì nội dung của kênh là **ai cũng có thể đọc được**,
+  vì nội dung của kênh **ai cũng có thể đọc được**,
   ngay cả mẹ của bạn với một trình duyệt có kết nối internet.
 1. Cuối cùng, nhóm ArchLinuxVn bắt đầu từ độ tháng 5/2011
   như bạn xem ở đây:
