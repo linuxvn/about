@@ -46,5 +46,8 @@ Telegram group @linuxvn (https://t.me/linuxvn).
 Bạn có thể quan tâm tới một số nhóm khác
 
 1. Thông tin công việc `devops`: https://t.me/devopsjobs
-1. Sách vở, phim ảnh, lauxanh, ... những nhóm này không dám
-  xuất hiện công cộng, nên bạn có thể hỏi loanh quanh.
+1. Kênh các tin công nghệ đáng https://t.me/archlinuxvn_news một số
+  bạn đọc thấy hay lưu lại ở đây.
+1. Sách vở, Lập trình, phim ảnh, lauxanh, ... những nhóm này không dám
+  xuất hiện công cộng hoặc không có liên kết công cộng,
+  nên bạn có thể hỏi loanh quanh.
