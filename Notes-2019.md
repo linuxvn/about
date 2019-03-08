@@ -13,7 +13,7 @@
   bạn có thể bắt đầu xem ở đây https://jsonnet.org/learning/tutorial.html .
   Là ngôn ngữ nên `jsonnet` cũng có các `implementation` khác nhau,
   một của [Google](https://github.com/google/jsonnet) viết bằng `C++`,
-  một của [xxx](https://github.com/databricks/sjsonnet) viết với `Java/Scala`
+  một của [databricks](https://github.com/databricks/sjsonnet) viết với `Java/Scala`
   chạy nhanh hơn nhưng cài đặt mệt hơn ;)
 
 * [`gitlabform`](https://github.com/egnyte/gitlabform):
