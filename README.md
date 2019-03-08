@@ -1,5 +1,5 @@
 Tài liệu này tóm tắt vài ý liên quan tới nhóm
-Telegram group @linuxvn (https://t.me/linuxvn).
+Telegram @linuxvn (https://t.me/linuxvn).
 
 1. Group bắt đầu từ kênh Telegram của nhóm
   [người dùng ArchLinux](https://archlinuxvn.org/).
