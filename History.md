@@ -2,6 +2,8 @@
 
 Purupose: Connecting people.
 
+### Forums and communities
+
 | Sites | First post [1] | Last post [1] |
 | ----- | -------------- | ------------- |
 | `vnlinux.org`     | [02/2001](http://web.archive.org/web/20010302124025/http://www.vnlinux.org/)            | [04/2009](http://web.archive.org/web/20090416151407/http://www.vnlinux.org/sitemoi/) |
@@ -13,5 +15,13 @@ Purupose: Connecting people.
 | `archlinuxvn.org` | [05/2011](http://web.archive.org/web/20180627163129/http://l.archlinuxvn.org/archlinuxvn/msg02551.html) | [active on Telegram](https://t.me/linuxvn) |
 | linuxvietnam [2]  | 08/2018 | [active on Telegram](https://t.me/linuxvietnam) |
 
-[1]: As captured on web.archive.org
+### Distributions
+
+| Distro        | First post [1] | last post [1] |
+| ------------- | -------------- | ------------- |
+| Vietkey Linux | [2002](http://web.archive.org/web/20021124084016/http://linux.vietkey.net/) | 2003 (FIXME) |
+| Hacao Linux   | 2006 | 2012 |
+| vnlinux       | ???  | ???  |
+
+[1]: On web.archive.org
 [2]: On Telegram
