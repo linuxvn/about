@@ -10,7 +10,9 @@ Là ngôn ngữ mẫu phát sinh (`template language`), kiểu như `Ruby erb`
 hay là `k8s yaml sh****`,... Ý tuởng cơ bản là ngôn ngữ mẫu phát sinh
 hợp nhất vai trò của các ngôn ngữ mẫu trước đây, theo quy trình
 
-    jsonnet -- [phát sinh] --> .json, .ini, .yaml, .sh
+```
+jsonnet -- [phát sinh] --> .json, .ini, .yaml, .sh
+```
 
 và như thế có thể thống nhất được cách làm việc bất kể ứng dụng cuối
 cùng là gì. Rất hữu ích cho `devops`,
@@ -39,9 +41,12 @@ Hai điểm lưu ý là `gitlabform` viết bằng `Python 3`, và token dùng
 Bạn có thể thoát cách này, chẳng hạn khi sử dụng chính `Gitlab` để
 chạy `gitlabform` tự cập nhật cấu hình
 
-    Biến môi trường TOKEN      |
-                               +-- [envsubst] --> config.yml
-    Tập tin mẫu config.yml.in  |
+
+```
+Biến môi trường TOKEN      |
+                           +-- [envsubst] --> config.yml
+Tập tin mẫu config.yml.in  |
+```
 
 ### [`tsocks`](https://aur.archlinux.org/packages/?K=tsocks)
 
@@ -50,10 +55,12 @@ những thứ cổ xưa, tạo ra cách đây mười mấy năm, vẫn chạy t
 `tsocks` là thư viện được nạp đè bằng `LD_PRELOAD`, ép các kết nối
 từ ứng dụng của bạn đi qua một `SOCKS` proxy đã có. Ví dụ,
 
-    # echo "server 1.2.3.4"    >  /etc/tsocks.conf
-    # echo "server_port 20000" >> /etc/tsocks.conf
-    $ ssh secret_server -D 20000 -fN
-    $ tsocks firefox
+```
+# echo "server 1.2.3.4"    >  /etc/tsocks.conf
+# echo "server_port 20000" >> /etc/tsocks.conf
+$ ssh secret_server -D 20000 -fN
+$ tsocks firefox
+```
 
 Trong ví dụ này, bạn mới tạo một máy bí mật `secret_server` mua ở
 `Digital Ocean` chẳng hạn, rồi dùng `ssh` tạo một `SOCKS` proxy ở
