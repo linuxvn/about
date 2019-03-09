@@ -1,5 +1,7 @@
 ## A brief history of Linux stories in Vietnam
 
+Purupose: Connecting people.
+
 | Sites | First post (*) | Last post (*) |
 | ----- | -------------- | ------------- |
 | `vnlinux.org`     | [02/2001](http://web.archive.org/web/20010302124025/http://www.vnlinux.org/)            | [04/2009](http://web.archive.org/web/20090416151407/http://www.vnlinux.org/sitemoi/) |
