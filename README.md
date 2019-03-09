@@ -46,8 +46,10 @@ Telegram @linuxvn (https://t.me/linuxvn).
 Bạn có thể quan tâm tới một số nhóm khác
 
 1. Thông tin công việc `devops`: https://t.me/devopsjobs
+1. Kênh tin tức https://t.me/linuxvn_notes, ghi chú những lượm lặt có
+  ích từ HackerNews hay từ công việc hàng ngày của các bạn;
 1. Kênh các tin công nghệ  https://t.me/archlinuxvn_news một số
-  bạn đọc thấy hay lưu lại ở đây.
+  bạn đọc thấy hay lưu lại ở đây. Kênh này chủ yếu dẫn liên kết.
 1. Sách vở, Lập trình, phim ảnh, lauxanh, ... những nhóm này không dám
   xuất hiện công cộng hoặc không có liên kết công cộng,
   nên bạn có thể hỏi loanh quanh.

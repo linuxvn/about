@@ -2,6 +2,7 @@
 
 Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News` hay từ
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
+Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
 ### [`jsonnet`](https://jsonnet.org/learning/tutorial.html)
 
