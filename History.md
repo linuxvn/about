@@ -23,5 +23,5 @@ Purupose: Connecting people.
 | Hacao Linux   | 2006 | 2012 |
 | vnlinux       | ???  | ???  |
 
-[1]: On web.archive.org
-[2]: On Telegram
+- [1]: On web.archive.org
+- [2]: On Telegram
