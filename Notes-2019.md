@@ -1,6 +1,9 @@
 ## 2019-03
 
-* [`jsonnet`](https://jsonnet.org/learning/tutorial.html):
+Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News` hay từ
+công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
+
+1. [`jsonnet`](https://jsonnet.org/learning/tutorial.html):
   Là ngôn ngữ mẫu phát sinh (`template language`), kiểu như `Ruby erb`
   (dùng với `Puppet` chẳng hạn), `jinja2` (dùng với `Saltstack`, `Ansible`),
   hay là `k8s yaml sh****`,... Ý tuởng cơ bản là ngôn ngữ mẫu phát sinh
@@ -16,7 +19,7 @@
   một của [databricks](https://github.com/databricks/sjsonnet) viết với `Java/Scala`
   chạy nhanh hơn nhưng cài đặt mệt hơn ;)
 
-* [`gitlabform`](https://github.com/egnyte/gitlabform):
+2. [`gitlabform`](https://github.com/egnyte/gitlabform):
   Cài đặt một số `hook` cho các dự án khác nhau trên `Gitlab` không đơn
   giản là click chuột bấm bấm nhấn nhấn. Nếu có cách gì đó quản lý tập
   trung và theo dõi được vẫn tốt hơn. Và còn rất nhiều cài đặt khác nhau
@@ -37,3 +40,28 @@
       Biến môi trường TOKEN      |
                                  +-- [envsubst] --> config.yml
       Tập tin mẫu config.yml.in  |
+
+3. [`tsocks`](https://aur.archlinux.org/packages/?K=tsocks):
+  Mỗi ngày đều có thêm công cụ mới viết ... bằng `Go`, nhưng vẫn còn đó
+  những thứ cổ xưa, tạo ra cách đây mười mấy năm, vẫn chạy tốt:)
+  `tsocks` là thư viện được nạp đè bằng `LD_PRELOAD`, ép các kết nối
+  từ ứng dụng của bạn đi qua một `SOCKS` proxy đã có. Ví dụ,
+
+      # echo "server 1.2.3.4"    >  /etc/tsocks.conf
+      # echo "server_port 20000" >> /etc/tsocks.conf
+      $ ssh secret_server -D 20000 -fN
+      $ tsocks firefox
+
+  Trong ví dụ này, bạn mới tạo một máy bí mật `secret_server` mua ở
+  `Digital Ocean` chẳng hạn, rồi dùng `ssh` tạo một `SOCKS` proxy ở
+  laptop của bạn, sau đó dùng lệnh `tsocks` mở `firefox`: khi đó, mọi
+  kết nối từ `firefox` sẽ chạy qua máy bí mật ở `Digital Ocean`:)
+  Cách này nhanh gọn hơn dùng `VPN` nhỉ :)
+
+  Bạn cũng có thể cấu hình `tsocks` để các kết nối cho các ứng dụng
+  trên một máy dịch vụ, chẳng hạn, chảy ngược về laptop của bạn.
+
+  Trang web dự án đây http://tsocks.sourceforge.net/faq.php, và ở
+  https://aur.archlinux.org/packages/?K=tsocks bạn thấy có nhiều link
+  liên quan. Lưu ý quan trọng là `tsocks` không mở được các ứng dụng
+  có `setuid`, trừ khi bạn dùng mẹo.
