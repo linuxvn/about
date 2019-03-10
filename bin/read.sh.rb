@@ -77,7 +77,6 @@ lines.each do |line|
   notes[current_section] << line.rstrip + " "
 end
 
-require 'telegram/bot'
 F_STATE = "#{__FILE__}.state.txt"
 CHAT_ID = ENV["TELEGRAM_NEWS_CHANNEL_ID"]
 
@@ -126,6 +125,7 @@ if ARGV.include?("--test")
   exit(0)
 end
 
+require 'telegram/bot'
 Telegram::Bot::Client.run(ENV["TELEGRAM_BOT_TOKEN"]) do |bot|
   write_notes(notes, bot)
 end
