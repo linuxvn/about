@@ -2,5 +2,6 @@ sudo: required
 language:
 - ruby
 script:
+- gem install bundler --version=2.0.1
 - bundle install
 - ./bin/read.sh.rb --test
