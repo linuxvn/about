@@ -1,0 +1,6 @@
+sudo: required
+language:
+- ruby
+script:
+- bundle install
+- ./bin/read.sh.rb --test

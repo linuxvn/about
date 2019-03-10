@@ -82,14 +82,14 @@ F_STATE = "#{__FILE__}.state.txt"
 CHAT_ID = ENV["TELEGRAM_NEWS_CHANNEL_ID"]
 
 begin
-  states = File.open(F_STATE, "r").readlines
+  $states = File.open(F_STATE, "r").readlines
 rescue Errno::ENOENT
-  states = []
+  $states = []
 rescue
   raise
 end
 
-bot = Telegram::Bot::Client.run(ENV["TELEGRAM_BOT_TOKEN"]) do |bot|
+def write_notes(notes, bot = nil)
   notes.each do |k,v|
     gs = k.match(%r{^\[([^\]]+)\]\((.+)\)})
     if not gs
@@ -100,7 +100,7 @@ bot = Telegram::Bot::Client.run(ENV["TELEGRAM_BOT_TOKEN"]) do |bot|
     key.gsub!('`', '')
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
 
-    if states.detect{|line| line.include?(state_id)}
+    if $states.detect{|line| line.include?(state_id)}
       STDERR.puts ":: Note (#{state_id}) sent as recorded in state file '#{F_STATE}'"
       next
     end
@@ -108,14 +108,24 @@ bot = Telegram::Bot::Client.run(ENV["TELEGRAM_BOT_TOKEN"]) do |bot|
     github_link = "https://github.com/linuxvn/about/blob/master/#{NOTES_ID}.md##{key}"
     contents = "`#{key}` #{link}\n\n#{github_link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
     contents.gsub!(%r{```[\n]{2,}}, "```\n\n")
-    begin
-      STDERR.puts ":: Sending #{state_id}"
+    STDERR.puts ":: Sending #{state_id}"
+    if bot.nil?
+      STDOUT.puts "=" * 64
+      STDOUT.puts contents
+    else
       bot.api.send_message(chat_id: CHAT_ID,
         text: contents, parse_mode: 'Markdown', disable_web_page_preview: true)
       STDERR.puts ":: Saving #{state_id} to state file #{F_STATE}"
       File.open(F_STATE, "a") {|f| f.puts state_id}
-    rescue
-      raise
     end
   end
+end
+
+if ARGV.include?("--test")
+  write_notes(notes, nil)
+  exit(0)
+end
+
+Telegram::Bot::Client.run(ENV["TELEGRAM_BOT_TOKEN"]) do |bot|
+  write_notes(notes, bot)
 end
