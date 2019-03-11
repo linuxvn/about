@@ -13,7 +13,7 @@ Purupose: Connecting people.
 | `saigonlug.org` 2 | [03/2007](http://web.archive.org/web/20070323002625/http://saigonlug.org/)              | [05/2016](http://web.archive.org/web/20190309201845/http://l.archlinuxvn.org/saigonlug/msg02723.html) |
 | `ubuntu-vn.org`   | [01/2009](http://web.archive.org/web/20090116142939/http://ubuntu-vn.org/)              | [05/2012](http://web.archive.org/web/20181114114854/http://ubuntu-vn.org/) |
 | `archlinuxvn.org` | [05/2011](http://web.archive.org/web/20180627163129/http://l.archlinuxvn.org/archlinuxvn/msg02551.html) | [active on Telegram](https://t.me/linuxvn) |
-| linuxvietnam [2]  | 08/2018 | [active on Telegram](https://t.me/linuxvietnam) |
+| linuxvietnam [2]  | 18/10/2017 | [active on Telegram](https://t.me/linuxvietnam) |
 
 ### Distributions
 
