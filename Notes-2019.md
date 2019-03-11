@@ -34,8 +34,8 @@ cách dùng một bộ cài đặt có sẵn nhiều thứ. Ví dụ, công cụ
 
 https://opendistro.github.io/for-elasticsearch/features/analyzer.html
 
-_(Ở trên, nói `aws` phá lệ vì `aws` nổi tiếng đóng cửa bảo nhau, ít khi cở mởi
-các dự án của họ, như cách làm của `microsoft`, `google`, `linkedin`, ...;)_
+_(Ở trên, nói `aws` phá lệ vì `aws` nổi tiếng đóng cửa bảo nhau, ít khi cởi mở
+về các dự án của họ, như cách làm của `microsoft`, `google`, `linkedin`, ...;)_
 
 ### [`jsonnet`](https://jsonnet.org/learning/tutorial.html)
 
