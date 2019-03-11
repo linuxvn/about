@@ -16,7 +16,8 @@ những chú start-up cỏn con thì có quyền bị xóa nhầm sao :@@
 để cạnh tranh với `elasticsearch`, nhưng chắc còn lâu lắm mới được tiếp
 nhận phổ biến. Trong khi chờ đợi thì `aws` coi như  phá lệ, khởi động
 bản phân phối theo giấy phép `apache 2.0` cho `elasticsearch` cùng nhiều
-đồ chơi gói sẵn. Động cơ của việc này như sau
+đồ chơi gói sẵn (và tất nhiên, dựa trên `elasticsearch`, bản `6.5.4`).
+Động cơ của việc này như sau
 
 1. `elasticsearch` được dùng phổ biến (và do đó trở nên quan trọng)
   trong việc xử lý dữ liệu phát sinh;
