@@ -4,6 +4,38 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### [`elasticsearch-opendistro`](https://opendistro.github.io/for-elasticsearch/faq.html)
+
+Xài `elasticsearch` bực nhất là nhiều thứ rất cơ bản chỉ được bật lên sau
+khi trả mớ tiền. Ví dụ, phân quyền không cho ai xóa nhầm.
+Gần đây, `x-pack` mới được mở ra tí xíu, cho bà con xài ké vài thứ
+`miễn phí`. Chẳng nhẽ các công ty to có tiền thì có quyền an toàn,
+những chú start-up cỏn con thì có quyền bị xóa nhầm sao :@@
+
+[Toshi](https://github.com/toshi-search/Toshi) nghe đâu viết bằng `Rust`
+để cạnh tranh với `elasticsearch`, nhưng chắc còn lâu lắm mới được tiếp
+nhận phổ biến. Trong khi chờ đợi thì `aws` coi như  phá lệ, khởi động
+bản phân phối theo giấy phép `apache 2.0` cho `elasticsearch` cùng nhiều
+đồ chơi gói sẵn. Động cơ của việc này như sau
+
+1. `elasticsearch` được dùng phổ biến (và do đó trở nên quan trọng)
+  trong việc xử lý dữ liệu phát sinh;
+
+2. Nhiều `plugin` cho `elasticsearch` được phát triển mới nhưng với
+  giấy phép đóng, ngăn cản sự tiếp cận của đại chúng (à, chính xác
+  là của những người thích xài đồ chùa ;)
+
+Việc này tất nhiên sẽ có lợi cho cộng đồng, và làm công ty đứng sau
+`elasticsearch` chột dạ. Về kỹ thuật, tính năng thì ban đầu sẽ chưa có
+gì khác biệt mới, nhưng bạn sẽ tiết kiệm được rất nhiều thời gian bằng
+cách dùng một bộ cài đặt có sẵn nhiều thứ. Ví dụ, công cụ phân tích
+`performance` của bộ cài đặt
+
+https://opendistro.github.io/for-elasticsearch/features/analyzer.html
+
+_(Ở trên, nói `aws` phá lệ vì `aws` nổi tiếng đóng cửa bảo nhau, ít khi cở mởi
+các dự án của họ, như cách làm của `microsoft`, `google`, `linkedin`, ...;)_
+
 ### [`jsonnet`](https://jsonnet.org/learning/tutorial.html)
 
 Là ngôn ngữ mẫu phát sinh (`template language`), kiểu như `Ruby erb`
