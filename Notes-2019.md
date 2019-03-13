@@ -4,6 +4,48 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### [`send.firefox.com`](https://send.firefox.com/)
+
+Dịch vụ gửi / nhận file có đầy, có quá nhiều. Nếu chỉ quan tâm gửi nhận
+và quên luôn thì chắc bạn không cần đọc tiếp.
+
+Khi file gửi lên server, trước khi tới người nhận, chuyện gì xảy ra?
+Sau khi người nhận file chọn xóa trên server, file đó đi đâu?
+Và các công ty đứng sau dịch vụ gửi / nhận file kiếm tiền bằng cách nào?
+Ôi có rất nhiều câu hỏi. Nếu bạn chỉ có thắc mắc chút xíu thôi và đọc
+đến đây rồi, thì https://send.firefox.com/ có ích cho bạn đấy.
+
+Khi không có tài khoản riêng, bạn có thể gửi file tối đa `1GB`,
+có thể đặt kèm `password`, và giới hạn số lần tải xuống.
+Sau đó, file sẽ bị xóa khỏi server của `Mozilla` -- vâng,
+`Mozilla` hứa như vậy.
+
+Dùng trình duyệt theo địa chỉ đã ghi ở trên, thậm chí có thể dùng
+`Chome` nhé. Giao diện đơn giản mẹ của bạn cũng có thể
+sử dụng, hay cài `cli`: https://github.com/timvisee/ffsend#install
+
+```
+$ wget https://github.com/timvisee/ffsend/releases/download/v0.2.29/ffsend-v0.2.29-linux-x64 -O ffsend
+$ chmod 755 ffsend
+
+$ ./ffsend upload ./Notes-2019.md
+Upload complete                                                                                                                                                          Share link:
+ https://send.firefox.com/download/fd9ad60bd4/#OpGSkeYY21geHgRgGPF08A
+
+$ ../fsend download "https://send.firefox.com/download/fd9ad60bd4/#OpGSkeYY21geHgRgGPF08A"
+error: failed to download the requested file
+caused by: the file has expired or did never exist
+```
+
+Nếu bạn muốn làm cái trang tương tự như send.firefox.com,
+xem mã nguồn ở đây: https://github.com/mozilla/send.
+Các metrics liên quan
+https://github.com/mozilla/send/blob/master/docs/metrics.md
+(tức cách `Mozilla` kiếm tiền.)
+
+Nếu muốn làm tới bến luôn, bạn có thể thử ví dụ
+https://github.com/micahflee/onionshare
+
 ### [`elasticsearch-opendistro`](https://opendistro.github.io/for-elasticsearch/faq.html)
 
 Xài `elasticsearch` bực nhất là nhiều thứ rất cơ bản chỉ được bật lên sau
