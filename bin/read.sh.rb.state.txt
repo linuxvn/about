@@ -9,3 +9,4 @@
 -1001418970632#Notes-2019#jsonnet
 -1001418970632#Notes-2019#gitlabform
 -1001418970632#Notes-2019#tsocks
+@linuxvn_notes#Notes-2019#about
