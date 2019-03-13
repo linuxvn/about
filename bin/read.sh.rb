@@ -77,7 +77,7 @@ lines.each do |line|
   notes[current_section] << line.rstrip + " "
 end
 
-F_STATE = "#{__FILE__}.state.txt"
+F_STATE = ENV["STATE_FILE"] || "#{__FILE__}.state.txt"
 CHAT_ID = ENV["TELEGRAM_NEWS_CHANNEL_ID"]
 
 begin
@@ -96,7 +96,7 @@ def write_notes(notes, bot = nil)
       next
     end
     key, link = gs[1], gs[2]
-    key = key.gsub!(%r{[`.]}, '')
+    key = key.gsub(%r{[`.]}, '')
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
 
     if $states.detect{|line| line.include?(state_id)}
@@ -105,7 +105,7 @@ def write_notes(notes, bot = nil)
     end
 
     github_link = "https://github.com/linuxvn/about/blob/master/#{NOTES_ID}.md##{key}"
-    contents = "`#{key}` #{link}\n\n#{github_link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
+    contents = "`#{key}` #{link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
     contents.gsub!(%r{```[\n]{2,}}, "```\n\n")
     contents += "\n" + "🐞" * 18
     STDERR.puts ":: Sending #{state_id}"
