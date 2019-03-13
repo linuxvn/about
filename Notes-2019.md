@@ -6,6 +6,8 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### [`send.firefox.com`](https://send.firefox.com/)
 
+tags: #browser #cli #file #tools
+
 Dịch vụ gửi / nhận file có đầy, có quá nhiều. Nếu chỉ quan tâm gửi nhận
 và quên luôn thì chắc bạn không cần đọc tiếp.
 
@@ -48,6 +50,8 @@ https://github.com/micahflee/onionshare
 
 ### [`elasticsearch-opendistro`](https://opendistro.github.io/for-elasticsearch/faq.html)
 
+tags: #license #opensource #aws #elasticsearch
+
 Xài `elasticsearch` bực nhất là nhiều thứ rất cơ bản chỉ được bật lên sau
 khi trả mớ tiền. Ví dụ, phân quyền không cho ai xóa nhầm.
 Gần đây, `x-pack` mới được mở ra tí xíu, cho bà con xài ké vài thứ
@@ -81,6 +85,8 @@ về các dự án của họ, như cách làm của `microsoft`, `google`, `lin
 
 ### [`jsonnet`](https://jsonnet.org/learning/tutorial.html)
 
+tags: #tools #devops #json #yaml
+
 Là ngôn ngữ mẫu phát sinh (`template language`), kiểu như `Ruby erb`
 (dùng với `Puppet` chẳng hạn), `jinja2` (dùng với `Saltstack`, `Ansible`),
 hay là `k8s yaml sh****`,... Ý tuởng cơ bản là ngôn ngữ mẫu phát sinh
@@ -99,6 +105,8 @@ một của [databricks](https://github.com/databricks/sjsonnet) viết với `J
 chạy nhanh hơn nhưng cài đặt mệt hơn ;)
 
 ### [`gitlabform`](https://github.com/egnyte/gitlabform)
+
+tags: #cicd #gitlab #configmanagement
 
 Cài đặt một số `hook` cho các dự án khác nhau trên `Gitlab` không đơn
 giản là click chuột bấm bấm nhấn nhấn. Nếu có cách gì đó quản lý tập
@@ -125,6 +133,8 @@ Tập tin mẫu config.yml.in  |
 ```
 
 ### [`tsocks`](https://aur.archlinux.org/packages/?K=tsocks)
+
+tags: #proxy #ssh #tools #devops
 
 Mỗi ngày đều có thêm công cụ mới viết ... bằng `Go`, nhưng vẫn còn đó
 những thứ cổ xưa, tạo ra cách đây mười mấy năm, vẫn chạy tốt:)
