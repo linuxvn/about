@@ -21,7 +21,7 @@ Sau đó, file sẽ bị xóa khỏi server của `Mozilla` -- vâng,
 `Mozilla` hứa như vậy.
 
 Dùng trình duyệt theo địa chỉ đã ghi ở trên, thậm chí có thể dùng
-`Chome` nhé. Giao diện đơn giản mẹ của bạn cũng có thể
+`Chrome` nhé. Giao diện đơn giản mẹ của bạn cũng có thể
 sử dụng, hay cài `cli`: https://github.com/timvisee/ffsend#install
 
 ```
