@@ -161,3 +161,32 @@ Trang web dự án đây http://tsocks.sourceforge.net/faq.php, và ở
 https://aur.archlinux.org/packages/?K=tsocks bạn thấy có nhiều link
 liên quan. Lưu ý quan trọng là `tsocks` không mở được các ứng dụng
 có `setuid`, trừ khi bạn dùng mẹo.
+
+### [`about`](https://github.com/linuxvn/about/blob/master/Notes-2019.md#about)
+
+tags: #about #linuxvn #help
+
+Giới thiệu về kênh tin này `@linuxvn_notes`.
+
+Cảm ơn các bạn đã theo dõi kênh tin tức này. Sau khoản một tuần thử
+nghiệm mình thấy khá ổn, viết bài trên Github và gửi ngay vào Telegram.
+Một cronjob chạy mỗi giờ một lần để đồng bộ. Blog cá nhân mình sẽ dành
+cho mấy thứ rất vụn vặt.
+
+Hiện tại mình là người viết chính, tranh thủ thời gian rỗi đọc tin tức,
+ngồi soi rồi tóm tắt lại. Vừa khỏi quên tiếng Việt vừa tiết kiệm thời
+gian sau này coi lại hoặc thời gian của bạn. Cuối tuần mình dự tính
+có một bài review, tổng hợp.
+
+Nếu bạn có ý tưởng gì, hoặc có vấn đề gì cần biết/viết về nó,
+hãy tạo ticket https://github.com/linuxvn/about/issues.
+
+Mình cũng mong có bạn nào dành chút thời gian cùng viết với mình cho vui.
+Do hạn chế của định dạng `Markdown` mà Telegram hỗ trợ, nên việc viết bài
+sẽ hơi phiền chút. Khi bạn gửi `pull request`, mình sẽ giúp `review`
+về định dạng nếu cần. Bài viết sẽ gửi vào một group riêng để kiểm tra
+trước _(liên hệ mình để lấy thông tin về group này)_
+
+Các bài viết được xuất bản với giấy phép
+  [`CC BY-ND 4.0`](https://creativecommons.org/licenses/by-nd/4.0/)
+trừ khi bạn có yêu cầu riêng.

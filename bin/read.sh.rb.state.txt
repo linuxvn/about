@@ -1,6 +1,11 @@
-
 @linuxvn_notes#Notes-2019#jsonnet
 @linuxvn_notes#Notes-2019#gitlabform
 @linuxvn_notes#Notes-2019#tsocks
 @linuxvn_notes#Notes-2019#elasticsearch-opendistro
 @linuxvn_notes#Notes-2019#send.firefox.com
+@linuxvn_notes#Notes-2019#sendfirefoxcom
+-1001418970632#Notes-2019#sendfirefoxcom
+-1001418970632#Notes-2019#elasticsearch-opendistro
+-1001418970632#Notes-2019#jsonnet
+-1001418970632#Notes-2019#gitlabform
+-1001418970632#Notes-2019#tsocks
