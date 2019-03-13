@@ -96,7 +96,7 @@ def write_notes(notes, bot = nil)
       next
     end
     key, link = gs[1], gs[2]
-    key.gsub!('`', '')
+    key = key.gsub!(%r{[`.]}, '')
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
 
     if $states.detect{|line| line.include?(state_id)}
@@ -107,6 +107,7 @@ def write_notes(notes, bot = nil)
     github_link = "https://github.com/linuxvn/about/blob/master/#{NOTES_ID}.md##{key}"
     contents = "`#{key}` #{link}\n\n#{github_link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
     contents.gsub!(%r{```[\n]{2,}}, "```\n\n")
+    contents += "\n" + "🐞" * 18
     STDERR.puts ":: Sending #{state_id}"
     if bot.nil?
       STDOUT.puts "=" * 64
