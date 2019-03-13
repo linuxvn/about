@@ -10,7 +10,7 @@ Dịch vụ gửi / nhận file có đầy, có quá nhiều. Nếu chỉ quan t
 và quên luôn thì chắc bạn không cần đọc tiếp.
 
 Khi file gửi lên server, trước khi tới người nhận, chuyện gì xảy ra?
-Sau khi người nhận file, chọn xóa trên server, file đó đi đâu?
+Sau khi người nhận file chọn xóa trên server, file đó đi đâu?
 Và các công ty đứng sau dịch vụ gửi / nhận file kiếm tiền bằng cách nào?
 Ôi có rất nhiều câu hỏi. Nếu bạn chỉ có thắc mắc chút xíu thôi và đọc
 đến đây rồi, thì https://send.firefox.com/ có ích cho bạn đấy.
