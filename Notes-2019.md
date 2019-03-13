@@ -32,7 +32,7 @@ $ ./ffsend upload ./Notes-2019.md
 Upload complete                                                                                                                                                          Share link:
  https://send.firefox.com/download/fd9ad60bd4/#OpGSkeYY21geHgRgGPF08A
 
-$ ../fsend download "https://send.firefox.com/download/fd9ad60bd4/#OpGSkeYY21geHgRgGPF08A"
+$ ./fsend download "https://send.firefox.com/download/fd9ad60bd4/#OpGSkeYY21geHgRgGPF08A"
 error: failed to download the requested file
 caused by: the file has expired or did never exist
 ```
