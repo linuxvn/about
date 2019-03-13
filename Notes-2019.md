@@ -184,8 +184,8 @@ hãy tạo ticket https://github.com/linuxvn/about/issues.
 Mình cũng mong có bạn nào dành chút thời gian cùng viết với mình cho vui.
 Do hạn chế của định dạng `Markdown` mà Telegram hỗ trợ, nên việc viết bài
 sẽ hơi phiền chút. Khi bạn gửi `pull request`, mình sẽ giúp `review`
-về định dạng nếu cần. Bài viết sẽ gửi vào một group riêng để kiểm tra
-trước _(liên hệ mình để lấy thông tin về group này)_
+về định dạng nếu cần. Bài viết sẽ được gửi tự động vào một group riêng để
+kiểm tra trước _(liên hệ mình để lấy thông tin)_, nhờ `TravisCI`.
 
 Các bài viết được xuất bản với giấy phép
   [`CC BY-ND 4.0`](https://creativecommons.org/licenses/by-nd/4.0/)
