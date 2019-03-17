@@ -29,6 +29,8 @@ Các đặc điểm kỹ thuật của server làm mirror
   chuyển về từ Đà Nẵng (lúc đó nginx log trong `/home/ww/`) đã được cấu hình
   lại để lưu log vào `/var/log/nginx` tuy nhiên `backup script` không
   được điều chỉnh tương ứng. **FIXED**
+1. `History` của shell chỉ lưu bình thường không có timpestamp nên coi lại
+  và audit khá mệt. **FIXED**
 
 ### Chỉ dẫn. Liên hệ
 
