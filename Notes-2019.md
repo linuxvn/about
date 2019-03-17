@@ -12,8 +12,10 @@ Có thể dùng `rsync` để chuyển bộ cài đặt Linux qua một đĩa c�
 (cùng máy) hoặc qua một máy hoàn toàn khác. Tóm tắt bước cơ bản
 
 1. _(tùy chọn)_ tắt hết các dịch vụ đang ghi vào ổ cứng nguồn (A)
-1. Chạy `rsync` với  (`option`) phù hợp để chép qua đĩa đích (B)
-1. Fix `/etc/fstab` và `bootloader`
+
+2. Chạy `rsync` với  (`option`) phù hợp để chép qua đĩa đích (B)
+
+3. Fix `/etc/fstab` và `bootloader`
 
 Bước cuối cùng thì dễ, giống như khi bạn cài máy mới. Lưu ý là
 phải đảm bảo `/etc/mtab` là một symlink
