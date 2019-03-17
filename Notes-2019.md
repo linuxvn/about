@@ -33,9 +33,9 @@ với quyền **root**:
   --progress                \
   /                         \
   /mnt/new_disk_B/          \
-  --exclude=\"/dev/*\"      \
-  --exclude=\"/proc/*\"     \
-  --exclude=\"/sys/*\"
+  --exclude="/dev/*"        \
+  --exclude="/proc/*"       \
+  --exclude="/sys/*"
 ```
 
 Ý nghĩa vài tham số quan trọng: `-a` để chép ở chế độ `archive`, tham số
