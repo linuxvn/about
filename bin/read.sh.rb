@@ -91,11 +91,13 @@ end
 def write_notes(notes, bot = nil)
   notes.each do |k,v|
     gs = k.match(%r{^\[([^\]]+)\]\((.+)\)})
-    if not gs
-      STDERR.puts ":: Invalid section key: #{k}"
-      next
+    if gs
+      key, link = gs[1], gs[2]
+    else
+      STDERR.puts ":: Possibly found an invalid section key: #{k}"
+      key = k
+      link = nil
     end
-    key, link = gs[1], gs[2]
     key = key.gsub(%r{[`.]}, '')
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
 
@@ -105,7 +107,7 @@ def write_notes(notes, bot = nil)
     end
 
     github_link = "https://github.com/linuxvn/about/blob/master/#{NOTES_ID}.md##{key}"
-    contents = "`#{key}` #{link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
+    contents = "`#{key}` #{link ? "#{link}\n": ""}#{v.join()}\n\n-- #{author(k)} at #{github_link}"
     contents.gsub!(%r{```[\n]{2,}}, "```\n\n")
     travis_url = ENV["TRAVIS_BUILD_WEB_URL"].to_s
     if not travis_url.empty?

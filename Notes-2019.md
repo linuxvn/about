@@ -4,6 +4,99 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### `rsync-with-sparse-file`
+
+tags: #rsync #devops #linux #migration
+
+Có thể dùng `rsync` để chuyển bộ cài đặt Linux qua một đĩa cứng mới
+(cùng máy) hoặc qua một máy hoàn toàn khác. Tóm tắt bước cơ bản
+
+1. _(tùy chọn)_ tắt hết các dịch vụ đang ghi vào ổ cứng nguồn (A)
+1. Chạy `rsync` với  (`option`) phù hợp để chép qua đĩa đích (B)
+1. Fix `/etc/fstab` và `bootloader`
+
+Bước cuối cùng thì dễ, giống như khi bạn cài máy mới. Lưu ý là
+phải đảm bảo `/etc/mtab` là một symlink
+
+```
+$ ls -ld /etc/mtab
+... /etc/mtab -> ../proc/self/mounts
+```
+
+Chạy `rsync` trong phần lớn trường hợp có thể dùng như sau,
+với quyền **root**:
+
+```
+# mount /dev/new_device /mnt/new_disk_B/
+
+# rsync -avx                \
+  --progress                \
+  /                         \
+  /mnt/new_disk_B/          \
+  --exclude=\"/dev/*\"      \
+  --exclude=\"/proc/*\"     \
+  --exclude=\"/sys/*\"
+```
+
+Ý nghĩa vài tham số quan trọng: `-a` để chép ở chế độ `archive`, tham số
+này là viết tắt cho tổ hợp `-rlptgoD`, trong đó
+
+1. `-r`: chép mọi thư mục, thư mục con và tập tin của chúng
+
+2. `-l`: chép các `symlink`
+
+3. `-p`, `-o`, `-g`, `-t`:
+  bảo toàn các quyền cơ bản (cấp bởi `chmod`, `chown`), các mốc thời gian
+  liên quan đến tập tin hay thư mục,
+  không bao gồm các quyền mở rộng (extended attributes (`-X`) hay
+  thông tin phân quyền ACL (`-A`), cũng không bảo toàn các `hardlink` (`-H`)),
+
+4. `-x`: chỉ chép các nội dung được kết nối (`mount`) vào các thư mục con
+  của thư mục `/`.
+
+5. Các tham số `--exclude` để bỏ qua mấy thứ không cần thiết (thực ra
+  thì nếu không có chúng bạn sẽ phải chờ rụng râu.)
+
+Nếu hệ thống cũ (A) của bạn có nhiều phân vùng, ví dụ `/boot`, `/home`, `/usr/`
+thì sau lệnh ở trên nội dung của chúng không được chép qua ổ mới do tham
+số `-x` ngăn cản việc này. Bạn có thể lặp lại, ví dụ
+
+```
+rsync -avx --progress /boot/ /mnt/new_disk_B/boot/
+```
+
+Xong, đơn giản quá nhen. Ồ không, còn tập hai là điều bạn phải lưu ý:
+
+1. Nếu bạn xài docker với `overlayfs`, bạn có thể  bỏ nó ra khỏi lệnh `rsync`
+  đầu tiên (`--exlude=/var/lib/docker/*`),
+  lý do là các `hardlink` hay `sparse` file bên trong `/var/lib/docker/`
+  (hoặc thư mục khác tùy do bạn cấu hình trong `/etc/docker/daemon.json`)
+  sẽ khiến bạn chờ rất lâu.
+
+  Sau đó, dùng `rsync` riêng cho thư mục `/var/lib/docker` với tham số
+  tương tự trên, bổ sung thêm `-HSX`.
+  Ở đây, `-S` (hay `--sparse`) là tùy chọn để chép các tập tin `sparse`.
+  Nếu không có gì quan trọng bạn cứ xóa luôn `/var/lib/docker/` cho khỏe.
+
+2. (Tùy chọn)
+  Nếu có các tập tia đĩa ảo dùng với `Virtualbox`, `qemu` gì đó, bạn
+  cũng gặp các tập tin `sparse` như trên. Khi đó bạn dùng tùy chọn `-S`
+  trước, rồi tiếp theo, bỏ đi tùy chọn này, chạy lại cùng lệnh `rsync`
+  nhưng với tùy chọn `--inplace`. Tùy chọn `-S` chạy lần đầu tiên sẽ
+  tạo ra các `block` cần thiết trên ổ đĩa mới `B`, còn lần sau sẽ chỉ
+  chép các `block` có thay đổi nội dung.
+
+Nếu dữ liệu ít bạn có thể ngồi chờ. Nếu nhiều bạn cứ việc dùng máy
+thoải mái, sau khi chạy `rsync` lần đầu thì bạn thực hiện bước 1
+tắt mạng, tắt tất cả các chương trình đang ghi vào ổ đĩa `A` rồi chạy
+lại các lệnh `rsync` cần thiết. Khi đó với các tập tin `sparse`
+thì việc dùng `--inplace` rất mau lẹ, nếu không bạn phải chờ
+chép 20G hay cả 100G gồm toàn những block không có dữ liệu =))
+
+Về các tập tin Sparse bạn có thể tham khảo
+  [ArchLinux wiki](https://wiki.archlinux.org/index.php/Sparse_file)
+hay https://gergap.wordpress.com/2013/08/10/rsync-and-sparse-files/
+
 ### [`send.firefox.com`](https://send.firefox.com/)
 
 tags: #browser #cli #file #tools
