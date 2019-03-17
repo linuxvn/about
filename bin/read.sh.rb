@@ -91,11 +91,13 @@ end
 def write_notes(notes, bot = nil)
   notes.each do |k,v|
     gs = k.match(%r{^\[([^\]]+)\]\((.+)\)})
-    if not gs
-      STDERR.puts ":: Invalid section key: #{k}"
-      next
+    if gs
+      key, link = gs[1], gs[2]
+    else
+      STDERR.puts ":: Possibly found an invalid section key: #{k}"
+      key = k
+      link = nil
     end
-    key, link = gs[1], gs[2]
     key = key.gsub(%r{[`.]}, '')
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
 
