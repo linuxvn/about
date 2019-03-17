@@ -92,9 +92,8 @@ thì việc dùng `--inplace` rất mau lẹ, nếu không bạn phải chờ
 chép 20G hay cả 100G gồm toàn những block không có dữ liệu =))
 
 Về các tập tin Sparse bạn có thể tham khảo
-
-1. https://wiki.archlinux.org/index.php/Sparse_file
-2. https://gergap.wordpress.com/2013/08/10/rsync-and-sparse-files/
+  [ArchLinux wiki](https://wiki.archlinux.org/index.php/Sparse_file)
+hay https://gergap.wordpress.com/2013/08/10/rsync-and-sparse-files/
 
 ### [`send.firefox.com`](https://send.firefox.com/)
 
