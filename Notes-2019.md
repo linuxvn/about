@@ -25,7 +25,7 @@ sách to nhất nhì ở quận 1. Muốn tìm cuốn sách ở một trong hai 
 theo bạn nơi nào sẽ ra kết quả nhanh hơn? Nhớ rằng ở thư viện thường
 chỉ có một vài thủ thư khá thờ ơ, thậm chí còn không quan tâm bạn là ai nhé.
 
-ở thư viện có một hệ thống rất hay là chỉ mục, `index`, để phân loại sách
+Trong thư viện có một hệ thống rất hay là chỉ mục, `index`, để phân loại sách
 theo các tiêu chí và và cuối cùng là theo tên ABC. Nó cũng giống như
 `Mục lục` sách, ở mục đích giúp bạn tìm ra điều cần tìm nhanh nhất
 có thể. Các sách khoa học kỹ thuật nước ngoài nếu bạn có dịp mua về thì
@@ -49,12 +49,12 @@ tạo ra phần chỉ mục (`index`), lưu trữ tài liệu, lưu trữ chỉ 
 và các nguyên tắc để tìm kiếm lại các phần nhỏ bất kỳ trong tài liệu ban đầu
 nhanh và chính xác nhất có thể.
 
-`Lucene` là trái tim, **phần khó nhất**, của một cỗ máy tìm kiếm (`search engine`).
+`Lucene` là *trái tim*, *phần khó nhất*, của một cỗ máy tìm kiếm (`search engine`).
 
 `Apache Lucene` chỉ cung cấp những `API` ở dạng thô nhất,
 và hơn nữa nó cũng chỉ có ích cho các ứng dụng `Java` thôi.
 Vẫn có [PyLucene](https://lucene.apache.org/pylucene/index.html)
-nhưng  phát triển chậm hơn tí, là giao diện Lucene cho Python.
+nhưng phát triển chậm hơn tí, là giao diện Lucene cho Python.
 
 Và bạn biết rồi, để đi một chiếc xe đạp thì hầu hết chúng ta không quan tâm
 và cũng không thể bắt đầu bằng việc xây dựng một nhà máy luyện thép.
