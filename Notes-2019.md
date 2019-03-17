@@ -6,6 +6,8 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### `rsync-with-sparse-file`
 
+tags: #rsync #devops #linux #migration
+
 Có thể dùng `rsync` để chuyển bộ cài đặt Linux qua một đĩa cứng mới
 (cùng máy) hoặc qua một máy hoàn toàn khác. Tóm tắt bước cơ bản
 
