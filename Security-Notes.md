@@ -43,7 +43,7 @@ TODO:
 
 ### `pacman.log`
 
-(Chỉ gồm các thay đổi liên quan `ssh` hay `nginx`)
+(Trích, chỉ dẫn các thay đổi liên quan `ssh` hay `nginx`)
 
 ```
 [2017-09-23 15:39] [PACMAN] Running 'pacman -S certbot certbot-nginx nginx'
