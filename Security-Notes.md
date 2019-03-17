@@ -1,4 +1,4 @@
-### 2019-03-15
+## 2019-03-15
 
 ### Timeline
 
@@ -30,7 +30,18 @@ Các đặc điểm kỹ thuật của server làm mirror
   lại để lưu log vào `/var/log/nginx` tuy nhiên `backup script` không
   được điều chỉnh tương ứng. **FIXED**
 
-#### `pacman.log`
+### Chỉ dẫn
+
+Khi tải tập tin `.iso` về từ  http://f.archlinuxvn.org/archlinux/iso/
+hãy chắc bạn dùng `gpg` để kiểm tra chữ ký. Dùng `checksum -c` là chưa đủ.
+
+Liên hệ trên kênh https://t.me/linuxvn để được hướng dẫn thêm.
+
+TODO:
+
+- Kiểm tra / Audit laptop / máy đang chạy
+
+### `pacman.log`
 
 ```
 [2017-09-23 15:39] [PACMAN] Running 'pacman -S certbot certbot-nginx nginx'
@@ -90,13 +101,13 @@ Các đặc điểm kỹ thuật của server làm mirror
 
 ### Credits
 
-- @NgoHuy (security audit)
-- @sokomo (audit, server relocation, misc)
-- @redlotus (server relocation, misc)
+- [@NgoHuy](https://github.com/NgoHuy) (security audit)
+- [@sokomo](https://github.com/sokomo) (audit, server relocation, misc)
+- [@redlotus](https://github.com/redlotus) (server relocation, misc)
 - florian@archlinuxvn.org (misc)
-- @icy (server configuration)
+- [@icy](https://github.com/icy) (server configuration)
 
-### Resource and links
+### Liên kết
 
 - Package files checksum: [paccheck](https://www.archlinux.org/packages/community/x86_64/pacutils/)
 - How pacman verifies package: https://www.reddit.com/r/archlinux/comments/69n2ty/eli5_does_pacman_s_automatically_verify_package/
