@@ -37,7 +37,12 @@ hãy chắc bạn dùng `gpg` để kiểm tra chữ ký. Dùng `checksum -c` l�
 
 Liên hệ trên kênh https://t.me/linuxvn để được hướng dẫn thêm.
 
-TODO:
+Liên kết:
+
+- Package files checksum: [paccheck](https://www.archlinux.org/packages/community/x86_64/pacutils/)
+- How pacman verifies package: https://www.reddit.com/r/archlinux/comments/69n2ty/eli5_does_pacman_s_automatically_verify_package/
+
+### TODO
 
 - Kiểm tra / Audit laptop / máy đang chạy
 
@@ -108,8 +113,3 @@ TODO:
 - [@redlotus](https://github.com/redlotus) (server relocation, misc)
 - florian@archlinuxvn.org (misc)
 - [@icy](https://github.com/icy) (server configuration)
-
-### Liên kết
-
-- Package files checksum: [paccheck](https://www.archlinux.org/packages/community/x86_64/pacutils/)
-- How pacman verifies package: https://www.reddit.com/r/archlinux/comments/69n2ty/eli5_does_pacman_s_automatically_verify_package/
