@@ -3,15 +3,15 @@
 ### Timeline
 
 1. `Ngày 17`:
-  - 12:46: Thông báo trên group `@linuxvn`
-  - 6:10: Server chạy trở lại
+    - 12:46: Thông báo trên group `@linuxvn`
+    - 6:10: Server chạy trở lại
 1. `Ngày 16`:
-  - Lập group để audit. Khẳng định từ `.bash_history` là không có xóa nhầm.
-  - 5:35: Tắt server và thông báo trên group `@linuxvn`
-  - Cài lại server, chuyển qua địa điểm khác (`relocation`)
+    - Lập group để audit. Khẳng định từ `.bash_history` là không có xóa nhầm.
+    - 5:35: Tắt server và thông báo trên group `@linuxvn`
+    - Cài lại server, chuyển qua địa điểm khác (`relocation`)
 1. `Ngày 15`:
-  - Phát hiện mất log của nginx lưu trữ từ `26 / 11 / 2018` đến `11 / 03 / 2019`
-  - Viết email thông báo cho nhóm quản lý mirror và Florian ở `ArchLinux`
+    - Phát hiện mất log của nginx lưu trữ từ `26 / 11 / 2018` đến `11 / 03 / 2019`
+    - Viết email thông báo cho nhóm quản lý mirror và Florian ở `ArchLinux`
 1. `Ngày 11`: Login vào server để kiểm tra bot gửi tin lên `@linuxvn_notes`
 1. `Ngày 09`: Cài kiểm tra xem nginx có bản mới không (1.14.2-1). Nginx reload.
 
