@@ -10,7 +10,7 @@ Có thể dùng `rsync` để chuyển bộ cài đặt Linux qua một đĩa c�
 (cùng máy) hoặc qua một máy hoàn toàn khác. Tóm tắt bước cơ bản
 
 1. _(tùy chọn)_ tắt hết các dịch vụ đang ghi vào ổ cứng nguồn (A)
-1. Chạy `rsync` với tham số (`option`) phù hợp để chép qua đĩa đích (B)
+1. Chạy `rsync` với  (`option`) phù hợp để chép qua đĩa đích (B)
 1. Fix `/etc/fstab` và `bootloader`
 
 Bước cuối cùng thì dễ, giống như khi bạn cài máy mới. Lưu ý là
@@ -66,17 +66,15 @@ rsync -avx --progress /boot/ /mnt/new_disk_B/boot/
 Xong, đơn giản quá nhen. Ồ không, còn tập hai là điều bạn phải lưu ý:
 
 1. Nếu bạn xài docker với `overlayfs`, bạn có thể  bỏ nó ra khỏi lệnh `rsync`
-  đầu tiên, lý do là các `hardlink` hay `sparse` file bên trong `/var/lib/docker/`
-  (hoặc thư mục khác tùy do bạn cấu hình trong `/etc/docker/daemon.json`).
+  đầu tiên (`--exlude=/var/lib/docker/*`),
+  lý do là các `hardlink` hay `sparse` file bên trong `/var/lib/docker/`
+  (hoặc thư mục khác tùy do bạn cấu hình trong `/etc/docker/daemon.json`)
   sẽ khiến bạn chờ rất lâu.
+
   Sau đó, dùng `rsync` riêng cho thư mục `/var/lib/docker` với tham số
-  tương tự trên, bổ sung thêm `-HSX`. Ở đây, `-S` (`--sparse`) là tùy chọn
-  để chép các `sparse` file. Bạn đọc thêm về nó ở đây
-    https://wiki.archlinux.org/index.php/Sparse_file
-  hay ở đây
-    https://gergap.wordpress.com/2013/08/10/rsync-and-sparse-files/
-  Hoặc nếu không có gì quan trọng thì bạn xóa luôn `/var/lib/docker`
-  cho rảnh nợ :)
+  tương tự trên, bổ sung thêm `-HSX`.
+  Ở đây, `-S` (hay `--sparse`) là tùy chọn để chép các tập tin `sparse`.
+  Nếu không có gì quan trọng bạn cứ xóa luôn `/var/lib/docker/` cho khỏe.
 
 2. (Tùy chọn)
   Nếu có các tập tia đĩa ảo dùng với `Virtualbox`, `qemu` gì đó, bạn
@@ -92,6 +90,11 @@ tắt mạng, tắt tất cả các chương trình đang ghi vào ổ đĩa `A`
 lại các lệnh `rsync` cần thiết. Khi đó với các tập tin `sparse`
 thì việc dùng `--inplace` rất mau lẹ, nếu không bạn phải chờ
 chép 20G hay cả 100G gồm toàn những block không có dữ liệu =))
+
+Về các tập tin Sparse bạn có thể tham khảo
+
+1. https://wiki.archlinux.org/index.php/Sparse_file
+2. https://gergap.wordpress.com/2013/08/10/rsync-and-sparse-files/
 
 ### [`send.firefox.com`](https://send.firefox.com/)
 
