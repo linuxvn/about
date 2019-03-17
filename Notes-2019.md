@@ -87,7 +87,7 @@ và `Logstash` (thiếu nguồn) để phát triển nên bộ `ELK`.
 Thôi tạm dừng ở đây, quay trở lại một vấn đề thực tế hơn, là nếu có 2000
 cuốn sách như Pê xê định, thì xài `Solr`, `ElasticSearch` kiểu gì đây.
 Mua sách về, đọc, cất vô tủ, khi cần tìm đoạn văn nào thì làm sao cho lẹ.
-Thế kỷ 21 rồi, nhiều người sách điện tử  là vậy, có lẽ là ngay cả `ElasticSearch`
+Thế kỷ 21 rồi, nhiều người dùng sách điện tử  là vậy, có lẽ là ngay cả `ElasticSearch`
 cũng không thể nào `index` nổi đống sách đó của Pê xê định.
 Old habits die hard. Haha.
 
