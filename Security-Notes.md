@@ -30,12 +30,13 @@ Các đặc điểm kỹ thuật của server làm mirror
   lại để lưu log vào `/var/log/nginx` tuy nhiên `backup script` không
   được điều chỉnh tương ứng. **FIXED**
 
-### Chỉ dẫn
+### Chỉ dẫn. Liên hệ
+
+Liên hệ trên kênh https://t.me/linuxvn để được hướng dẫn thêm và/hoặc
+trao đổi về các vấn đề liên quan.
 
 Khi tải tập tin `.iso` về từ  http://f.archlinuxvn.org/archlinux/iso/
 hãy chắc bạn dùng `gpg` để kiểm tra chữ ký. Dùng `checksum -c` là chưa đủ.
-
-Liên hệ trên kênh https://t.me/linuxvn để được hướng dẫn thêm.
 
 Liên kết:
 
