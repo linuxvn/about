@@ -4,6 +4,93 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### `lucene-war-part-1`
+
+tags: #lucene #apache #elasticsearch #apache #solr
+
+Nhân dịp có tranh cãi về `opendistro` vs `elasticsearch`, thử tìm hiểu
+về `Lucene` là thư viện cốt lõi dựng lên `elasticsearch` và `apache solr`.
+Đây là phần 1, viết sơ lược. Các phần sau cũng sơ lược nốt vì tác giả
+cũng không rành lắm đâu nhé:)
+
+Nếu bạn thấy bối rối khi có nhiều tên vậy, thì đây là so sánh
+quen thuộc với người dùng Linux: `Lucene` như là phần nhân (`kernel`),
+`Apache Solr` là `Debian linux` còn `ElasticSearch` là `Ubuntu`,
+trong khi `Opendistro` có thể là phiên bản `Linux Mint`.
+Tất nhiên, chẳng có cái nào trong số chúng là `Mac` cả.
+
+Để hiểu bài toán `Lucene` giải quyết, bạn có thể tưởng tượng đang bước
+chân vào thư viện của trường đại học, và cùng lúc phân thân ở một nhà
+sách to nhất nhì ở quận 1. Muốn tìm cuốn sách ở một trong hai nơi này,
+theo bạn nơi nào sẽ ra kết quả nhanh hơn? Nhớ rằng ở thư viện thường
+chỉ có một vài thủ thư khá thờ ơ, thậm chí còn không quan tâm bạn là ai nhé.
+
+ở thư viện có một hệ thống rất hay là chỉ mục, `index`, để phân loại sách
+theo các tiêu chí và và cuối cùng là theo tên ABC. Nó cũng giống như
+`Mục lục` sách, ở mục đích giúp bạn tìm ra điều cần tìm nhanh nhất
+có thể. Các sách khoa học kỹ thuật nước ngoài nếu bạn có dịp mua về thì
+nhớ mở ngay những trang cuối cùng, rất hay có một phần `Index` dài lê thê
+gồm các từ khóa. Chỉ cần nhớ từ khóa thì có ngay liệt kê vài trang liên quan.
+
+Quay lại `Lucene`: bài toán gốc đơn giản là làm sao tìm kiếm cho nhanh
+và chính xác một phần bất kỳ trong kho lưu trữ dữ liệu.
+Có rất nhiều cách tiếp cận khác nhau, và `Lucene` là một trong số đó thôi.
+
+```
+Tài liệu -- [index]
+     --> Lưu vào kho
+          --> Tìm lại cho nhanh/chính xác
+
+    <--- Lucene ---->
+```
+
+`Lucene` đặt ra các nguyên tắc cho quá trình thu nhận, phân loại (phân rã),
+tạo ra phần chỉ mục (`index`), lưu trữ tài liệu, lưu trữ chỉ mục,
+và các nguyên tắc để tìm kiếm lại các phần nhỏ bất kỳ trong tài liệu ban đầu
+nhanh và chính xác nhất có thể.
+
+`Lucene` là trái tim, **phần khó nhất**, của một cỗ máy tìm kiếm (`search engine`).
+
+`Apache Lucene` chỉ cung cấp những `API` ở dạng thô nhất,
+và hơn nữa nó cũng chỉ có ích cho các ứng dụng `Java` thôi.
+Vẫn có [PyLucene](https://lucene.apache.org/pylucene/index.html)
+nhưng  phát triển chậm hơn tí, là giao diện Lucene cho Python.
+
+Và bạn biết rồi, để đi một chiếc xe đạp thì hầu hết chúng ta không quan tâm
+và cũng không thể bắt đầu bằng việc xây dựng một nhà máy luyện thép.
+Cứ việc đến cửa hàng xe và mua xe thôi. `Apache Solr` cung cấp giao diện
+đơn giản hơn, dễ dàng hơn cho người viết ứng dụng. Để né tránh chuyện
+`Java`, `Solr` chạy dịch vụ cung cấp `REST~` API cho ứng dụng cuối.
+Như vậy dùng bạn viết bằng `Python`, `Golang` hay gì thì vẫn xài được
+thư viện cuối là `Lucene`:
+
+```
+Ứng dụng Ruby -- [Người thông dịch Solr] --> [Lucene/Java]
+```
+
+Đại khái `Apache Solr` như anh chàng `Debian Linux` với nhân `Linux`.
+Ngạo nghễ, oai phong cho tới khi trai đẹp `ElasticSearch` xuất hiện
+thì gái làng cả xóm nhao nhao. `ElasticSearch` giới thiệu giao diện
+`tìm kiếm` (`Search`), `Kibana`, `Logstash`, giống như là anh ta có sẵn nhà,
+sẵn xe hơi, sẵn mọi thứ đều cho đám cưới; cô nào chả mê nhỉ.
+Chính nhờ sự tiện lợi này mà nhiều người tiếp cận với `ElasticSearch`
+nhanh chóng, hiệu quả.
+
+Và thế là nhiều người quên luôn `Apache Solr`:) `ElasticSearch`
+gần như đồng nghĩa với `ELK`, nhưng từ sâu thẳm thì `Solr` và `ElasticSearch`
+cũng không khác lắm nhau đâu nhỉ ^.^ Không có `Lucene` thì lấy đâu ra
+cả hai chứ.
+
+Điều thú vị là `Elastic` mua lại [`Kibana`](https://github.com/rashidkpc/kibana2)
+và `Logstash` (thiếu nguồn) để phát triển nên bộ `ELK`.
+
+Thôi tạm dừng ở đây, quay trở lại một vấn đề thực tế hơn, là nếu có 2000
+cuốn sách như Pê xê định, thì xài `Solr`, `ElasticSearch` kiểu gì đây.
+Mua sách về, đọc, cất vô tủ, khi cần tìm đoạn văn nào thì làm sao cho lẹ.
+Thế kỷ 21 rồi, nhiều người sách điện tử  là vậy, có lẽ là ngay cả `ElasticSearch`
+cũng không thể nào `index` nổi đống sách đó của Pê xê định.
+Old habits die hard. Haha.
+
 ### `rsync-with-sparse-file`
 
 tags: #rsync #devops #linux #migration
