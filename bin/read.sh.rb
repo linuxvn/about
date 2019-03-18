@@ -107,7 +107,7 @@ def write_notes(notes, bot = nil)
     end
 
     github_link = "https://github.com/linuxvn/about/blob/master/#{NOTES_ID}.md##{key}"
-    contents = "`#{key}` #{link ? "#{link}\n": ""}#{v.join()}\n\n-- #{author(k)} at #{github_link}"
+    contents = "`#{key}` #{link ? "#{link}\n": ""}\n\n#{github_link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
     contents.gsub!(%r{```[\n]{2,}}, "```\n\n")
     travis_url = ENV["TRAVIS_BUILD_WEB_URL"].to_s
     if not travis_url.empty?
