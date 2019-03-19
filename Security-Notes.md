@@ -1,5 +1,7 @@
 ## 2019-03-15
 
+Phát hiện mất log bất thường trên server mirror http://f.archlinuxvn.org/.
+
 ### Timeline
 
 1. `Ngày 17`:
@@ -15,7 +17,7 @@
 1. `Ngày 11`: Login vào server để kiểm tra bot gửi tin lên `@linuxvn_notes`
 1. `Ngày 09`: Cài kiểm tra xem nginx có bản mới không (1.14.2-1). Nginx reload.
 
-Các đặc điểm kỹ thuật của server làm mirror
+### Đặc điểm kỹ thuật của server làm mirror
 
 1. Chỉ chạy hai dịch vụ công cộng là `ssh` và `nginx`, trong đó `ssh` trực
   tiếp không thông qua `bastion`, nginx dùng phiên bản `1.14.2-1` từ

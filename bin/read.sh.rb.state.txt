@@ -14,4 +14,3 @@
 -1001418970632#Notes-2019#rsync
 @linuxvn_notes#Notes-2019#rsync-with-sparse-file
 -1001418970632#Notes-2019#rsync-with-sparse-file
-@linuxvn_notes#Notes-2019#lucene-war-part-1
