@@ -2,6 +2,9 @@
 
 Phát hiện mất log bất thường trên server mirror http://f.archlinuxvn.org/.
 
+Nguyyên nhân: https://github.com/logrotate/logrotate/issues/246 .
+Thiệt là mất công cả đội ngồi hì hục `audit` và cài lại máy =))
+
 ### Timeline
 
 1. `Ngày 17`:
