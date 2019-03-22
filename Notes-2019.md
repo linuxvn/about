@@ -10,23 +10,21 @@ tags: #k8s #helm #panic
 
 Định luật Murphy, tóm tắt `Anything that can go wrong will go wrong`.
 Định luật này được chứng minh bởi những công ty lớn, như VNG dạo
-tháng 9 / 2018. Một công ty nhỏ xíu có chứng minh được không.
-Thử nhé =)
+tháng 9 / 2018. Một công ty nhỏ xíu vẫn chứng minh được nhé.
 
-Liên kết đầu bài dẫn tới tóm tắt phần 1 nhưng bạn không cần coi vì
-có dưới đây. Chỗ mình dùng `Helm` để triển khai ứng dụng,
+Chỗ mình dùng `Helm` để triển khai ứng dụng,
 và `Helm` có điều tuyệt vời, là nếu có gì sai sót chỉ việc quay lại
 cấu hình cũ, cái vèo :)
 
-Mới thứ ba, một tính năng nhỏ xíu của đội `ops` được thêm vào ứng dụng.
+Mới thứ ba, tính năng nhỏ xíu của đội `ops` được thêm vào ứng dụng.
 Có khoảng chục dự án, cái nào cũng ngon hết, chỉ một cái có tí sai
-là dùng `2GB` thay vì `2Gi`. Lỗi này bé quá, cỏn con quá, `Helm lint`
+là dùng `2GB` thay vì `2Gi`. Lỗi này bé quá, `Helm lint`
 không thèm bắt cho qua, nên lúc triển khai bản mới
-hệ thống bị lỗi. Mình đổi lại, rồi `merge`, xong vào ngồi soi `pod`.
+hệ thống bị lỗi. Mình đổi lại, `merge`, xong vào ngồi soi `pod`.
 Chạy ngon lành, mọi thứ đúng mong đợi. Về nhà :)
 
 Sáng thứ tư, đội `dev` la ối ối, deploy (triển khai?) mãi không xong,
-lỗi tùm lum. Vào xem, trời đất, hôm qua giờ chỗ `ngon lành` lại
+lỗi tùm lum. Vào xem, trời đất, chỗ `ngon lành` lại
 có lỗi: Liên tục ba `build` cuối cùng đều lỗi trên Gitlab (lạ cái là
 chẳng ai biết; mình đã nói là mình ngồi soi `pod` rồi đấy nhé:D)
 
@@ -53,18 +51,18 @@ thực hiện được. Sao lại có chuyện này? Một bạn trong đội tr
 nghỉ phép đã đặt biến `TILLER_MAX_HISTORY` thành 3, với mục đích giảm
 tải trên các máy chạy `etcd`. Và giờ hệ quả là `helm` bó tay toàn tập,
 không thể cài mới, cũng không thể `rollback`, không thể `upgrade`.
-Sau khi biết được điều này mình gần như bị shock:
+Mình gần như bị shock:
 Ứng dụng đang chạy `live`, có database (stateful, có dùng `pvc`,
 hay `persistent volume claim` để lưu dữ liệu), không thể nào
 cho bay luôn cài lại từ đầu. Mình bỏ 200 Euro gọi đường dây nóng của
 đại lý `k8s` ở Sài Gòn, `@mrtux`, để được hỗ trợ khẩn cấp. Nhưng đại
-lý cũng bó tay, bày những chiêu gì siêu quá, và không giải quyết được
+lý cũng bó tay, bày những chiêu gì siêu quá, không giải quyết được
 chuyện `pvc` ngay/rõ ràng. Mất toi 200 Euro;) Mình cho vào TODO list.
 
 Qua ngày thứ 4, mấy bạn trong đội quá sốt, không biết làm sao nên
 chỉ còn mỗi mình bám theo. Ai hỏi gì, cũng bảo tao đang backup;
 thật sự là thế, xài `pg/stolon` backup được mà không biết `restore`
-lại làm sao cả đâu ^.^ Sau có một bạn trong bảo là hồi xưa tao làm
+lại làm sao cả đâu ^.^ Sau có một bạn bảo là hồi xưa tao làm
 thế này thế này. Mình làm theo thấy không khả thi lắm. Một số bạn đề
 nghị ép
 
@@ -94,11 +92,11 @@ còn 3 dòng lỗi :)
 
 Cảm ơn `@mrtux`, `konrad***` đã hỗ trợ trong lúc dầu sôi lửa bỏng;)
 Trong lúc lên kế hoạch khắc phục sự cố, mình còn phải đọc tí mã
-nguồn của `helm` hy vọng có dịp chia sẻ với bạn sớm.
+nguồn của `helm` có dịp sẽ chia sẻ với bạn.
 
-Nếu bạn đang dùng `helm-2.11`, hãy nâng cấp ngay lên bản `2.12` hoặc
+Nếu đang dùng `helm-2.11`, hãy nâng cấp ngay lên bản `2.12` hoặc
 cao hơn: Xem thêm https://github.com/helm/helm/pull/4978.
-Và hãy dùng ngay `helm rollback` khi gặp lỗi trong hệ thống `CI`.
+Hãy dùng ngay `helm rollback` khi gặp lỗi trong hệ thống `CI`.
 
 Bài này được soạn bằng editor [`ne`](https://github.com/vigna/ne).
 
