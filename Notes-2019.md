@@ -4,6 +4,106 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### [`helm-nightmare-p1`](https://t.me/linuxvn/38063)
+
+tags: #k8s #helm #panic
+
+Định luật Murphy, tóm tắt `Anything that can go wrong will go wrong`.
+Định luật này được chứng minh bởi những công ty lớn, như VNG dạo
+tháng 9 / 2018. Một công ty nhỏ xíu vẫn chứng minh được nhé.
+
+Chỗ mình dùng `Helm` để triển khai ứng dụng,
+và `Helm` có điều tuyệt vời, là nếu có gì sai sót chỉ việc quay lại
+cấu hình cũ, cái vèo :)
+
+Mới thứ ba, tính năng nhỏ xíu của đội `ops` được thêm vào ứng dụng.
+Có khoảng chục dự án, cái nào cũng ngon hết, chỉ một cái có tí sai
+là dùng `2GB` thay vì `2Gi`. Lỗi này bé quá, `Helm lint`
+không thèm bắt cho qua, nên lúc triển khai bản mới
+hệ thống bị lỗi. Mình đổi lại, `merge`, xong vào ngồi soi `pod`.
+Chạy ngon lành, mọi thứ đúng mong đợi. Về nhà :)
+
+Sáng thứ tư, đội `dev` la ối ối, deploy (triển khai?) mãi không xong,
+lỗi tùm lum. Vào xem, trời đất, chỗ `ngon lành` lại
+có lỗi: Liên tục ba `build` cuối cùng đều lỗi trên Gitlab (lạ cái là
+chẳng ai biết; mình đã nói là mình ngồi soi `pod` rồi đấy nhé:D)
+
+Ôi dào, dễ, vào chạy `helm rollback` là xong:
+
+```
+$ helm ugprade foo     # ... failed?
+$ helm rollback foo 0  # quay về bản còn tốt cuối cùng
+```
+
+Bạn biết không, lệnh `helm history foo` chỉ còn  mỗi ba dòng,
+và dòng nào cũng cho biết trạng thái lỗi.
+
+```
+$ helm history foo
+UPDATED  STATUS ...
+...      FAILED
+...      FAILED
+...      FAILED
+```
+
+Nghĩa là trong trường hợp của mình, `helm rollback foo 0` không thể
+thực hiện được. Sao lại có chuyện này? Một bạn trong đội trước khi
+nghỉ phép đã đặt biến `TILLER_MAX_HISTORY` thành 3, với mục đích giảm
+tải trên các máy chạy `etcd`. Và giờ hệ quả là `helm` bó tay toàn tập,
+không thể cài mới, cũng không thể `rollback`, không thể `upgrade`.
+Mình gần như bị shock:
+Ứng dụng đang chạy `live`, có database (stateful, có dùng `pvc`,
+hay `persistent volume claim` để lưu dữ liệu), không thể nào
+cho bay luôn cài lại từ đầu. Mình bỏ 200 Euro gọi đường dây nóng của
+đại lý `k8s` ở Sài Gòn, `@mrtux`, để được hỗ trợ khẩn cấp. Nhưng đại
+lý cũng bó tay, bày những chiêu gì siêu quá, không giải quyết được
+chuyện `pvc` ngay/rõ ràng. Mất toi 200 Euro;) Mình cho vào TODO list.
+
+### `helm-nightmare-p2`
+
+tags: #k8s #helm #panic
+
+Qua ngày thứ 4, mấy bạn trong đội quá sốt, không biết làm sao nên
+chỉ còn mỗi mình bám theo. Ai hỏi gì, cũng bảo tao đang backup;
+thật sự là thế, xài `pg/stolon` backup được mà không biết `restore`
+lại làm sao cả đâu ^.^ Sau có một bạn bảo là hồi xưa tao làm
+thế này thế này. Mình làm theo thấy không khả thi lắm. Một số bạn đề
+nghị ép
+
+```
+helm upgrade foo --force
+```
+
+mình chạy với `--dry-run` không ăn thua. Cuối cùng, 20 phút trước khi
+bắt đầu kế hoạch tệ nhất (xóa cài lại), mình quyết định
+quay lại mã nguồn `helm chart` cũ trước khi gặp lỗi, bỏ đi cấu hình
+cho các `pod` mới,... và `merge` vào, thì phát hiện ra là `build`
+thành công. Trời đất, mất hai ngày lên kế hoạch, kể cả cuối cùng
+là xóa sạch, chuẩn bị `downtime` 20 phút cài lại và khôi phục
+dữ liệu từ bộ sao lưu, rồi nói qua nói lại giữa các đội phát mệt.
+Nhưng công toi, vì mọi việc sao quá đơn giản vậy luôn.
+
+Bạn biết tại sao không? Bất kể là lệnh `helm history` thể hiện kết
+quả thế nào. Bạn vào `dashboard` của cluster vào không gian của k8s
+`kube-system`, chọn phần `ConfigMap`, chọn tới phiên bản cuối cùng
+của `foo`, mở lên và chọn Edit, sau đó chỗ nào có chữ `FAILED` bạn
+sửa lại thành `DEPLOYED`. Rồi chọn lưu. Rồi `helm upgrade` sẽ chạy
+ngon lành.
+
+Haha, xin lỗi đã làm bạn thất vọng. Cách giải quyết đơn giản vậy
+đã làm mình shock không kém lúc phát hiện ra `helm history` chỉ
+còn 3 dòng lỗi :)
+
+Cảm ơn `@mrtux`, `konrad***` đã hỗ trợ trong lúc dầu sôi lửa bỏng;)
+Trong lúc lên kế hoạch khắc phục sự cố, mình còn phải đọc tí mã
+nguồn của `helm` có dịp sẽ chia sẻ với bạn.
+
+Nếu đang dùng `helm-2.11`, hãy nâng cấp ngay lên bản `2.12` hoặc
+cao hơn: Xem thêm https://github.com/helm/helm/pull/4978.
+Hãy dùng ngay `helm rollback` khi gặp lỗi trong hệ thống `CI`.
+
+Bài này được soạn bằng editor [`ne`](https://github.com/vigna/ne).
+
 ### `lucene-war-part-1`
 
 tags: #lucene #apache #elasticsearch #apache #solr
