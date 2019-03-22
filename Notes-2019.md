@@ -4,7 +4,7 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
-### [`helm-nightmare`](https://t.me/linuxvn/38063)
+### [`helm-nightmare-p1`](https://t.me/linuxvn/38063)
 
 tags: #k8s #helm #panic
 
@@ -58,6 +58,8 @@ cho bay luôn cài lại từ đầu. Mình bỏ 200 Euro gọi đường dây n
 đại lý `k8s` ở Sài Gòn, `@mrtux`, để được hỗ trợ khẩn cấp. Nhưng đại
 lý cũng bó tay, bày những chiêu gì siêu quá, không giải quyết được
 chuyện `pvc` ngay/rõ ràng. Mất toi 200 Euro;) Mình cho vào TODO list.
+
+### `helm-nightmare-p2`
 
 Qua ngày thứ 4, mấy bạn trong đội quá sốt, không biết làm sao nên
 chỉ còn mỗi mình bám theo. Ai hỏi gì, cũng bảo tao đang backup;
