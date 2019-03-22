@@ -61,6 +61,8 @@ chuyện `pvc` ngay/rõ ràng. Mất toi 200 Euro;) Mình cho vào TODO list.
 
 ### `helm-nightmare-p2`
 
+tags: #k8s #helm #panic
+
 Qua ngày thứ 4, mấy bạn trong đội quá sốt, không biết làm sao nên
 chỉ còn mỗi mình bám theo. Ai hỏi gì, cũng bảo tao đang backup;
 thật sự là thế, xài `pg/stolon` backup được mà không biết `restore`
