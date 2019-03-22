@@ -10,18 +10,18 @@ tags: #k8s #helm #panic
 
 Định luật Murphy, tóm tắt `Anything that can go wrong will go wrong`.
 Định luật này được chứng minh bởi những công ty lớn, như VNG dạo
-tháng 9 / 2018. Một công ty nhỏ xíu thì có chứng minh được không.
+tháng 9 / 2018. Một công ty nhỏ xíu có chứng minh được không.
 Thử nhé =)
 
 Liên kết đầu bài dẫn tới tóm tắt phần 1 nhưng bạn không cần coi vì
-có dưới đây. Chỗ mình triển dùng `Helm` để triển khai ứng dụng,
+có dưới đây. Chỗ mình dùng `Helm` để triển khai ứng dụng,
 và `Helm` có điều tuyệt vời, là nếu có gì sai sót chỉ việc quay lại
 cấu hình cũ, cái vèo :)
 
 Mới thứ ba, một tính năng nhỏ xíu của đội `ops` được thêm vào ứng dụng.
 Có khoảng chục dự án, cái nào cũng ngon hết, chỉ một cái có tí sai
 là dùng `2GB` thay vì `2Gi`. Lỗi này bé quá, cỏn con quá, `Helm lint`
-không thèm bắt cho qua, nên lúc triển khai bản mới của
+không thèm bắt cho qua, nên lúc triển khai bản mới
 hệ thống bị lỗi. Mình đổi lại, rồi `merge`, xong vào ngồi soi `pod`.
 Chạy ngon lành, mọi thứ đúng mong đợi. Về nhà :)
 
@@ -41,7 +41,7 @@ Bạn biết không, lệnh `helm history foo` chỉ còn  mỗi ba dòng,
 và dòng nào cũng cho biết trạng thái lỗi.
 
 ```
-helm history foo
+$ helm history foo
 UPDATED  STATUS ...
 ...      FAILED
 ...      FAILED
@@ -98,6 +98,7 @@ nguồn của `helm` hy vọng có dịp chia sẻ với bạn sớm.
 
 Nếu bạn đang dùng `helm-2.11`, hãy nâng cấp ngay lên bản `2.12` hoặc
 cao hơn: Xem thêm https://github.com/helm/helm/pull/4978.
+Và hãy dùng ngay `helm rollback` khi gặp lỗi trong hệ thống `CI`.
 
 Bài này được soạn bằng editor [`ne`](https://github.com/vigna/ne).
 
