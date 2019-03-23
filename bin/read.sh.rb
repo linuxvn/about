@@ -100,8 +100,12 @@ def write_notes(notes, bot = nil)
     end
     key = key.gsub(%r{[`.]}, '')
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
+    # FIXME: hard-coded string here.
+    state_id_prod = "@linuxvn_notes##{NOTES_ID}##{key}"
 
-    if $states.detect{|line| line.include?(state_id)}
+    if $states.detect {|line|
+      line.include?(state_id) or line.include?(state_id_prod)
+    }
       STDERR.puts ":: Note (#{state_id}) sent as recorded in state file '#{F_STATE}'"
       next
     end
