@@ -27,4 +27,4 @@ Purupose: Connecting people.
 
 | Group           | First post     | last post     |
 | --------------- | -------------- | ------------- |
-| ElasticSearchVn | 08/2018        | (active on Telegram)[https://t.me/elasticsearchvn/1] |
+| ElasticSearchVn | 08/2018        | [active on Telegram](https://t.me/elasticsearchvn/1) |
