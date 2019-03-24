@@ -17,8 +17,8 @@ Purupose: Connecting people.
 
 ### Linux Distributions
 
-| Distro        | First post     | last post     |
-| ------------- | -------------- | ------------- |
+| Distro        | First post     | last post     | Notes |
+| ------------- | -------------- | ------------- | ----- |
 | Vietkey Linux | [2002](http://web.archive.org/web/20021124084016/http://linux.vietkey.net/) | 2003 (FIXME) |
 | Hacao Linux   | 2006 | 2012 | |
 | vnsecure      | ???  | ???  | part of `vnlinux.org` |
