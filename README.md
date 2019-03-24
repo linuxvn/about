@@ -11,29 +11,23 @@ Phần tiếp theo tóm tắt về nhóm Telegram @linuxvn (https://t.me/linuxvn
   và sử dụng dịch vụ của
     [Lauxanh](https://github.com/lauxanh/I-A)
   để xóa đi các dòng chat **tăng nhiệt**.
-  Phiên bản mới nhất của `@avnbot` lưu trữ lại các dòng đã
-  xóa ở kênh riêng để tham khảo khi cần thiết
-    https://t.me/linuxvn_logs
-  Ngoài việc này ra, @linuxvn không liên quan gì tới
-  công ty [Lauxanh](https://lauxanh.us) mà bạn đã và đang biết.
+  Dòng đã xóa được lưu lại ở kênh riêng: https://t.me/linuxvn_logs
 1. Các thành viên trong group khá đa dạng [2]
   Vì thế, mong bạn giữ chừng mực khi trao đổi trên kênh.
 
-Bạn có thể quan tâm tới một số nhóm khác
+Bạn có thể quan tâm tới một số nhóm liên quan
 
 1. Thông tin công việc `devops`: https://t.me/devopsjobs
 1. Kênh tin tức https://t.me/linuxvn_notes, ghi chú những lượm lặt có
   ích từ HackerNews hay từ công việc hàng ngày của các bạn;
 1. Lập trình: https://t.me/joinchat/EfluHD6PaUZG_wvGI88GGQ
-1. ElasticSearch VN: https://t.me/elasticsearchvn
-1. Một nhóm khác bàn về Linux và kỹ thuật: https://t.me/linuxvietnam
 1. Kênh các tin công nghệ  https://t.me/archlinuxvn_news một số
   bạn đọc thấy hay lưu lại ở đây. Kênh này chủ yếu dẫn liên kết.
 1. Sách vở, phim ảnh, lauxanh, ... những nhóm này không dám
   xuất hiện công cộng hoặc không có liên kết công cộng,
   nên bạn có thể hỏi loanh quanh.
 
-Lược sử một số [nhóm liên quan ở Việt Nam](History.md)
+[Một số nhóm khác ở Việt Nam](History.md)
 
 ---
 

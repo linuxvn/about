@@ -1,4 +1,4 @@
-## A brief history of Linux stories in Vietnam
+## A brief history of Linux/OSS stories in Vietnam
 
 Purupose: Connecting people.
 
@@ -15,13 +15,19 @@ Purupose: Connecting people.
 | `archlinuxvn.org` | [05/2011](http://web.archive.org/web/20180627163129/http://l.archlinuxvn.org/archlinuxvn/msg02551.html) | [active on Telegram](https://t.me/linuxvn) | aka `linuxvn` |
 | `linuxvietnam` [2]  | 18/10/2017 | [active on Telegram](https://t.me/linuxvietnam) |
 
-### Distributions
+### Linux Distributions
 
 | Distro        | First post [1] | last post [1] |
 | ------------- | -------------- | ------------- |
 | Vietkey Linux | [2002](http://web.archive.org/web/20021124084016/http://linux.vietkey.net/) | 2003 (FIXME) |
-| Hacao Linux   | 2006 | 2012 |
-| vnlinux       | ???  | ???  |
+| Hacao Linux   | 2006 | 2012 | |
+| vnsecure      | ???  | ???  | part of `vnlinux.org` |
+
+### Others
+
+| Group           | First post [1] | last post [1] |
+| --------------- | -------------- | ------------- |
+| ElasticSearchVn | 2018 (FIXME)   | (active on Telegram)[https://t.me/elasticsearchvn] |
 
 - [1]: On web.archive.org
 - [2]: On Telegram
