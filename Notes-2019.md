@@ -19,9 +19,53 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 * Dịch vụ có ích
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
-* [Giới thiệu về trang này](#about)
+* Linh tinh
+  * [Giới thiệu về trang này](#about)
+  * [Phỏng vấn Boss](#boss-interview)
+
+### `boss-interview`
+
+tags: #devops #jobs
+
+Bài này dành cho `[dev]ops`... tàng tàng:)
+
+Mình đã làm việc với nhiều công ty. Số long đong lận đận. May trong
+cái rủi, mình gặp nhiều người, làm việc với họ, hiểu họ một chút:)
+Rốt cuộc, đó chẳng phải là điều rất có giá trị sao? Mỗi người
+một vẻ, một kiểu, không thể nói ai hơn ai được.
+
+Thế có vẻ trớt quớt, huề vốn nhỉ? Thì đó là chuyện đã qua mà.
+Còn trước mắt, nếu bạn đang boăn khoăn không biết chọn công ty nào,
+trên tay có hai, ba cái `offer`, thì dưới đây là vài mẹo rất hay
+để bạn loại khỏi vòng chiến những `boss / leader` tào lao hehe:)
+
+Cuối buổi phỏng vấn, hay vòng cuối, thường bạn sẽ được đề nghị có
+câu hỏi gì cho công ty. Có một số câu hỏi có thể khiến người đi hỏi
+bể đầu, ví dụ, `tại sao công ty lại tuyển thêm vị trí này?`,
+hay `hệ thống của anh (chị) bị sập bao nhiêu lần rồi?`. Với câu hỏi cuối,
+hầu hết các trường hợp là trả lời cho qua chuyện, chẳng ai muốn vạch
+áo cho người ta xem lưng, nhỉ:) Nhưng câu hỏi này thật sự giúp bạn
+biết được bạn đã `101%` vượt qua tất cả các vòng gửi xe chưa đấy.
+
+Một câu hỏi khác nghe đơn giản nhưng phản ánh gần như toàn bộ cách làm
+việc của đội `ops`. Đó là,
+`anh (chị) có dùng tài khoản **root** để quản lý các máy không`.
+Một nơi toàn `root` không phải để chỗ cho lính lơ tơ mơ nghịch,
+hoặc có thể là một hệ thống hoàn toàn mất kiểm soát.
+
+Bạn thử hỏi một câu nhẹ nhàng hơn, liên quan tới luật `Murphy`.
+Ví dụ, `anh (chị) có cho rằng bộ sao lưu dữ liệu của anh (chị)
+đã bị hỏng hết không`? Câu này sẽ cho bạn biết mức độ quan tâm tới chi
+tiết trong hệ thống, và một người kỹ tính như bạn sẽ rất phù hợp.
+
+Vài câu hỏi vậy, nhưng đó là chuyện kỹ thuật. Quan trọng là bạn
+chọn được `job` để bạn thỏa sức bay cao, bay xa.
+
+_(Viết tự an ủi, tự nhiên nhớ Toàn Miami ^.^)_
 
 ### `Telegram`
+
+tags: #telegram
 
 `Telegram` vừa ra phiên bản với các tính năng rất đáng chú ý,
 chưa từng có trong các dịch vụ nhắn tin phổ biến hiện nay.
