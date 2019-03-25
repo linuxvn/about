@@ -6,9 +6,11 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### TOC
 
-* Ác mộng với Helm:
-    [Phần 1](#helm-nightmare-p1),
-    [Phần 2](#helm-nightmare-p2)
+* k8s
+  * Ác mộng với Helm:
+      [Phần 1](#helm-nightmare-p1),
+      [Phần 2](#helm-nightmare-p2)
+  * [Bắt đầu với k8s như thế nào](#k8s-the-hard-way-p1)
 * Lucense, ElasticSearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
 * Công cụ linh tinh
@@ -22,6 +24,48 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 * Linh tinh
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
+
+### `k8s-the-hard-way-p1`
+
+tags: #k8s #hardway #helm #learning #devops
+
+Nếu bạn đang bắt đầu tìm hiểu về `k8s` thì mình có luôn lời khuyên là
+đừng lặp lại sai lầm như mình=) Mình đã bắt đầu với mấy cái khóa
+học linh tinh trên `edX`, `coursera` và cả `safaribooksonline`.
+Mình coi rất nhiều rồi không hiểu gì hết luôn. Haha. Từ đâu 2016
+mình bắt đầu thử với `kops`, rồi mãi tới cuối 2018, vẫn còn loay hoay
+với `minikube` tùm lum. Rốt cuộc, có quá nhiều thứ, tốn rất nhiều
+thời gian.
+
+Thế bắt đầu từ đâu? Hãy thử luôn với `k8s the hard way`
+  https://github.com/kelseyhightower/kubernetes-the-hard-way
+do một kỹ sư của `Google` nấu ra. Tài liệu này chỉ có thể thực hành theo
+khi bạn có thẻ `credit/debit`, có tài khoản `Google`.
+Bạn `nhắm mắt` làm theo là được.
+
+Nếu dùng `aws`, bạn có thể theo dõi
+  https://github.com/slawekzachcial/kubernetes-the-hard-way-aws.
+Với `Virtualbox` trên máy Linux 64 bạn có thể theo dõi triển khai
+do mình viết: https://github.com/icy/k8s-vbox-the-hard-way.
+
+Ối, lại linh tinh lang tang. `Bạn phải theo dõi tài liệu gốc`,
+viết ra các kịch bản, rồi thêm thắt vào phần tự động hóa cho phù hợp
+hệ thống của bạn (`terraform`, `script`, `ansible`, ...)
+Có cần thiết như vậy không? Cần chứ, tại `k8s` có hai phần
+
+1. Phần cốt lõi, `k8s`: Ví dụ, nó trả lời câu hỏi như,
+  `k8s` có liên quan gì tới `Docker (container)`?
+  Mà tại sao người ta không dùng `Docker Swarm` cho rồi?
+  Rồi `k8s` so sánh với ảo hóa ra sao (sống lâu rồi cũng có
+  người hỏi bạn như vậy.)
+
+2. Phần tảng băng nổi bên trên, nơi bạn triển khai ứng dụng.
+  Phần này khá là dễ, bạn chỉ việc làm theo mấy tài liệu bập bập
+  là xong ngay luôn. Yêu cầu cơ bản là biết `copy` và `paste` thôi:)
+
+Tại vì phần 2 dễ, nên trước đây mình đã học nó trước tiên.
+Hóa ra là chỉ theo bóng, mất thời gian mà không hiểu bản chất vấn đề.
+Nay viết ra hy vọng giúp bạn có thể tiết kiệm được 3 năm kinh nghiệm =))
 
 ### `boss-interview`
 
