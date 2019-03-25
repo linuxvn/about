@@ -4,6 +4,20 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### TOC
+
+* Ác mộng với Helm
+  * [Phần 1](#helm-nightmare-p1)
+  * [Phần 2](#helm-nightmare-p2)
+* Lucense, ElasticSearch
+  * [Phần 1: Về Lucene](#lucene-war-part-1)
+* Công cụ linh tinh
+  * [Rsync với Sparse](#rsync-with-sparse-file)
+  * [jsonet](#jsonet)
+  * [gitlabform](#gitlabform)
+  * [tsocks](#tsocks)
+  * [send.firefox.com](#sendfirefoxcom)
+
 ### [`helm-nightmare-p1`](https://t.me/linuxvn/38063)
 
 tags: #k8s #helm #panic
