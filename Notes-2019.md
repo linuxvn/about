@@ -19,6 +19,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 * Dịch vụ có ích
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
+* [Giới thiệu về trang này](#about)
 
 ### `Telegram`
 
