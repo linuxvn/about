@@ -6,7 +6,9 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### TOC
 
-* Ác mộng với Helm: [Phần 1](#helm-nightmare-p1), [Phần 2](#helm-nightmare-p2)
+* Ác mộng với Helm:
+    [Phần 1](#helm-nightmare-p1),
+    [Phần 2](#helm-nightmare-p2)
 * Lucense, ElasticSearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
 * Công cụ linh tinh
@@ -14,7 +16,45 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [jsonmet](#jsonmet)
   * [gitlabform](#gitlabform)
   * [tsocks](#tsocks)
+* Dịch vụ có ích
   * [send.firefox.com](#sendfirefoxcom)
+  * [Telegram](#telegram)
+
+### `Telegram`
+
+`Telegram` vừa ra phiên bản với các tính năng rất đáng chú ý,
+chưa từng có trong các dịch vụ nhắn tin phổ biến hiện nay.
+Bài viết này tóm tắt vài ý có thể bạn chưa biết khi xài `Telegram`.
+Các tính năng mới yêu cầu bạn phải cài phiên bản `Telegram` mới nhất.
+
+1. Khi người khác chọn `Forward` (chuyển hướng) tin nhắn của bạn
+  vào nhóm / người khác, Tên của bạn xuất hiện như là tác
+  giả của nội dung đó. Để bên thứ ba không truy ra được _thủ phạm_,
+  bạn vào phần `Privacy + Security`, chọn `Forwarded Messages`,
+  rồi chọn lại `Nobody` hoặc `My contacts`,...
+  thêm các ngoại lệ nếu cần.
+
+2. Các dịch vụ như `Facebook`, `Viber`, `Whatsapp`,... đều yêu cầu
+  truy cập vào danh bạ của bạn. Như `whatsapp` sẽ không chạy nếu quyền
+  đó bị từ chối (sic). Còn `Viber`, `Skype`, ... ngay cả khi bạn chặn,
+  thì hóa ra trên `server` của các dịch vụ này đã có một phần Danh bạ
+  của bạn (đố bạn tại sao đấy!) Và bạn không có cách nào xóa được nội
+  dung đó, trừ khi bạn xóa hẳn tài khoản của bạn (?!)
+
+  Với `Telegram`, bạn chỉ việc vào `Privacy + Security`, chọn phần
+  `Contacts` và chọn `Delete Synced Contacts` để xóa đi phần danh bạ
+  bạn đã lỡ tay đồng bộ lên máy của `Telegram` vì bất kỳ lý do gì.
+
+3. Bạn có thể xóa bài bạn đã gửi, bất kể bài đó đã được gửi bao lâu.
+  Trước đây, bạn không thể xóa các bài đã viết quá 48 giờ.
+  Tính năng mới giúp bạn an toàn hơn, nhưng với các nhóm, có lẽ là một
+  điều bất tiện, nhỉ?
+
+Câu hỏi to nhất khi dùng `Telegram`, là mô hình kinh doanh của `Telegram`
+là gì, sao lại có một tỉ phú bỏ nhiều tiền ra làm dịch vụ khơi khơi vậy:)
+Chịu, bạn có thể tin tưởng, hay không, vào `Telegram`. Dù sao thì các
+tính năng mới nhất của `Telegram` khiến cho nhiều ứng dụng luôn hô hào
+đảm bảo an ninh người dùng phải chạy theo bốc khói.
 
 ### [`helm-nightmare-p1`](https://t.me/linuxvn/38063)
 
