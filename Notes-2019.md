@@ -53,15 +53,15 @@ viết ra các kịch bản, rồi thêm thắt vào phần tự động hóa ch
 hệ thống của bạn (`terraform`, `script`, `ansible`, ...)
 Có cần thiết như vậy không? Cần chứ, tại `k8s` có hai phần
 
-1. Phần cốt lõi, `k8s`: Ví dụ, nó trả lời câu hỏi như,
+1. Phần cốt lõi, `k8s`: Nó giúp trả lời các câu hỏi như,
   `k8s` có liên quan gì tới `Docker (container)`?
   Mà tại sao người ta không dùng `Docker Swarm` cho rồi?
   Rồi `k8s` so sánh với ảo hóa ra sao (sống lâu rồi cũng có
-  người hỏi bạn như vậy.)
+  người hỏi bạn như vậy).
 
 2. Phần tảng băng nổi bên trên, nơi bạn triển khai ứng dụng.
   Phần này khá là dễ, bạn chỉ việc làm theo mấy tài liệu bập bập
-  là xong ngay luôn. Yêu cầu cơ bản là biết `copy` và `paste` thôi:)
+  là xong ngay luôn. Yêu cầu cơ bản là biết `copy` và `paste` thôi :)
 
 Tại vì phần 2 dễ, nên trước đây mình đã học nó trước tiên.
 Hóa ra là chỉ theo bóng, mất thời gian mà không hiểu bản chất vấn đề.
@@ -71,24 +71,24 @@ Nay viết ra hy vọng giúp bạn có thể tiết kiệm được 3 năm kinh
 
 tags: #devops #jobs
 
-Bài này dành cho `[dev]ops`... tàng tàng:)
+Bài này dành cho `[dev]ops`... tàng tàng :)
 
 Mình đã làm việc với nhiều công ty. Số long đong lận đận. May trong
-cái rủi, mình gặp nhiều người, làm việc với họ, hiểu họ một chút:)
+cái rủi, mình gặp nhiều người, làm việc với họ, hiểu họ một chút :)
 Rốt cuộc, đó chẳng phải là điều rất có giá trị sao? Mỗi người
 một vẻ, một kiểu, không thể nói ai hơn ai được.
 
 Thế có vẻ trớt quớt, huề vốn nhỉ? Thì đó là chuyện đã qua mà.
 Còn trước mắt, nếu bạn đang boăn khoăn không biết chọn công ty nào,
 trên tay có hai, ba cái `offer`, thì dưới đây là vài mẹo rất hay
-để bạn loại khỏi vòng chiến những `boss / leader` tào lao hehe:)
+để bạn loại khỏi vòng chiến những `boss / leader` tào lao hehe :)
 
 Cuối buổi phỏng vấn, hay vòng cuối, thường bạn sẽ được đề nghị có
 câu hỏi gì cho công ty. Có một số câu hỏi có thể khiến người đi hỏi
 bể đầu, ví dụ, `tại sao công ty lại tuyển thêm vị trí này?`,
 hay `hệ thống của anh (chị) bị sập bao nhiêu lần rồi?`. Với câu hỏi cuối,
 hầu hết các trường hợp là trả lời cho qua chuyện, chẳng ai muốn vạch
-áo cho người ta xem lưng, nhỉ:) Nhưng câu hỏi này thật sự giúp bạn
+áo cho người ta xem lưng, nhỉ  Nhưng câu hỏi này thật sự giúp bạn
 biết được bạn đã `101%` vượt qua tất cả các vòng gửi xe chưa đấy.
 
 Một câu hỏi khác nghe đơn giản nhưng phản ánh gần như toàn bộ cách làm
@@ -140,7 +140,7 @@ Các tính năng mới yêu cầu bạn phải cài phiên bản `Telegram` mớ
   điều bất tiện, nhỉ?
 
 Câu hỏi to nhất khi dùng `Telegram`, là mô hình kinh doanh của `Telegram`
-là gì, sao lại có một tỉ phú bỏ nhiều tiền ra làm dịch vụ khơi khơi vậy:)
+là gì, sao lại có một tỉ phú bỏ nhiều tiền ra làm dịch vụ khơi khơi vậy :)
 Chịu, bạn có thể tin tưởng, hay không, vào `Telegram`. Dù sao thì các
 tính năng mới nhất của `Telegram` khiến cho nhiều ứng dụng luôn hô hào
 đảm bảo an ninh người dùng phải chạy theo bốc khói.
