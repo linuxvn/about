@@ -6,9 +6,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### TOC
 
-* Ác mộng với Helm
-  * [Phần 1](#helm-nightmare-p1)
-  * [Phần 2](#helm-nightmare-p2)
+* Ác mộng với Helm: [Phần 1](#helm-nightmare-p1), [Phần 2](#helm-nightmare-p2)
 * Lucense, ElasticSearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
 * Công cụ linh tinh
