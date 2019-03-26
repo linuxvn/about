@@ -98,7 +98,7 @@ def write_notes(notes, bot = nil)
       key = k
       link = nil
     end
-    key = key.gsub(%r{[`.]}, '')
+    key = key.gsub(%r{[`.]}, '').downcase
     state_id = "#{CHAT_ID}##{NOTES_ID}##{key}"
     # FIXME: hard-coded string here.
     state_id_prod = "@linuxvn_notes##{NOTES_ID}##{key}"

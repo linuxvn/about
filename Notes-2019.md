@@ -4,6 +4,147 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
+### TOC
+
+* k8s
+  * Ác mộng với Helm:
+      [Phần 1](#helm-nightmare-p1),
+      [Phần 2](#helm-nightmare-p2)
+  * [Bắt đầu với k8s như thế nào](#k8s-the-hard-way-p1)
+* Lucense, ElasticSearch
+  * [Phần 1: Về Lucene](#lucene-war-part-1)
+* Công cụ linh tinh
+  * [Rsync với Sparse](#rsync-with-sparse-file)
+  * [jsonmet](#jsonmet)
+  * [gitlabform](#gitlabform)
+  * [tsocks](#tsocks)
+* Dịch vụ có ích
+  * [send.firefox.com](#sendfirefoxcom)
+  * [Telegram](#telegram)
+* Linh tinh
+  * [Giới thiệu về trang này](#about)
+  * [Phỏng vấn Boss](#boss-interview)
+
+### `k8s-the-hard-way-p1`
+
+tags: #k8s #hardway #helm #learning #devops
+
+Nếu bạn đang bắt đầu tìm hiểu về `k8s` thì mình có luôn lời khuyên là
+đừng lặp lại sai lầm như mình=) Mình đã bắt đầu với mấy cái khóa
+học linh tinh trên `edX`, `coursera` và cả `safaribooksonline`.
+Mình coi rất nhiều rồi không hiểu gì hết luôn. Haha. Từ đâu 2016
+mình bắt đầu thử với `kops`, rồi mãi tới cuối 2018, vẫn còn loay hoay
+với `minikube` tùm lum. Rốt cuộc, có quá nhiều thứ, tốn rất nhiều
+thời gian.
+
+Thế bắt đầu từ đâu? Hãy thử luôn với `k8s the hard way`
+  https://github.com/kelseyhightower/kubernetes-the-hard-way
+do một kỹ sư của `Google` nấu ra. Tài liệu này chỉ có thể thực hành theo
+khi bạn có thẻ `credit/debit`, có tài khoản `Google`.
+Bạn `nhắm mắt` làm theo là được.
+
+Nếu dùng `aws`, bạn có thể theo dõi
+  https://github.com/slawekzachcial/kubernetes-the-hard-way-aws.
+Với `Virtualbox` trên máy Linux 64 bạn có thể theo dõi triển khai
+do mình viết: https://github.com/icy/k8s-vbox-the-hard-way.
+
+Ối, lại linh tinh lang tang. `Bạn phải theo dõi tài liệu gốc`,
+viết ra các kịch bản, rồi thêm thắt vào phần tự động hóa cho phù hợp
+hệ thống của bạn (`terraform`, `script`, `ansible`, ...)
+Có cần thiết như vậy không? Cần chứ, tại `k8s` có hai phần
+
+1. Phần cốt lõi, `k8s`: Nó giúp trả lời các câu hỏi như,
+  `k8s` có liên quan gì tới `Docker (container)`?
+  Mà tại sao người ta không dùng `Docker Swarm` cho rồi?
+  Rồi `k8s` so sánh với ảo hóa ra sao (sống lâu rồi cũng có
+  người hỏi bạn như vậy).
+
+2. Phần tảng băng nổi bên trên, nơi bạn triển khai ứng dụng.
+  Phần này khá là dễ, bạn chỉ việc làm theo mấy tài liệu bập bập
+  là xong ngay luôn. Yêu cầu cơ bản là biết `copy` và `paste` thôi :)
+
+Tại vì phần 2 dễ, nên trước đây mình đã học nó trước tiên.
+Hóa ra là chỉ theo bóng, mất thời gian mà không hiểu bản chất vấn đề.
+Nay viết ra hy vọng giúp bạn có thể tiết kiệm được 3 năm kinh nghiệm =))
+
+### `boss-interview`
+
+tags: #devops #jobs
+
+Bài này dành cho `[dev]ops`... tàng tàng :)
+
+Mình đã làm việc với nhiều công ty. Số long đong lận đận. May trong
+cái rủi, mình gặp nhiều người, làm việc với họ, hiểu họ một chút :)
+Rốt cuộc, đó chẳng phải là điều rất có giá trị sao? Mỗi người
+một vẻ, một kiểu, không thể nói ai hơn ai được.
+
+Thế có vẻ trớt quớt, huề vốn nhỉ? Thì đó là chuyện đã qua mà.
+Còn trước mắt, nếu bạn đang boăn khoăn không biết chọn công ty nào,
+trên tay có hai, ba cái `offer`, thì dưới đây là vài mẹo rất hay
+để bạn loại khỏi vòng chiến những `boss / leader` tào lao hehe :)
+
+Cuối buổi phỏng vấn, hay vòng cuối, thường bạn sẽ được đề nghị có
+câu hỏi gì cho công ty. Có một số câu hỏi có thể khiến người đi hỏi
+bể đầu, ví dụ, `tại sao công ty lại tuyển thêm vị trí này?`,
+hay `hệ thống của anh (chị) bị sập bao nhiêu lần rồi?`. Với câu hỏi cuối,
+hầu hết các trường hợp là trả lời cho qua chuyện, chẳng ai muốn vạch
+áo cho người ta xem lưng, nhỉ  Nhưng câu hỏi này thật sự giúp bạn
+biết được bạn đã `101%` vượt qua tất cả các vòng gửi xe chưa đấy.
+
+Một câu hỏi khác nghe đơn giản nhưng phản ánh gần như toàn bộ cách làm
+việc của đội `ops`. Đó là,
+`anh (chị) có dùng tài khoản **root** để quản lý các máy không`.
+Một nơi toàn `root` không phải để chỗ cho lính lơ tơ mơ nghịch,
+hoặc có thể là một hệ thống hoàn toàn mất kiểm soát.
+
+Bạn thử hỏi một câu nhẹ nhàng hơn, liên quan tới luật `Murphy`.
+Ví dụ, `anh (chị) có cho rằng bộ sao lưu dữ liệu của anh (chị)
+đã bị hỏng hết không`? Câu này sẽ cho bạn biết mức độ quan tâm tới chi
+tiết trong hệ thống, và một người kỹ tính như bạn sẽ rất phù hợp.
+
+Vài câu hỏi vậy, nhưng đó là chuyện kỹ thuật. Quan trọng là bạn
+chọn được `job` để bạn thỏa sức bay cao, bay xa.
+
+_(Viết tự an ủi, tự nhiên nhớ Toàn Miami ^.^)_
+
+### `Telegram`
+
+tags: #telegram
+
+`Telegram` vừa ra phiên bản với các tính năng rất đáng chú ý,
+chưa từng có trong các dịch vụ nhắn tin phổ biến hiện nay.
+Bài viết này tóm tắt vài ý có thể bạn chưa biết khi xài `Telegram`.
+Các tính năng mới yêu cầu bạn phải cài phiên bản `Telegram` mới nhất.
+
+1. Khi người khác chọn `Forward` (chuyển hướng) tin nhắn của bạn
+  vào nhóm / người khác, Tên của bạn xuất hiện như là tác
+  giả của nội dung đó. Để bên thứ ba không truy ra được _thủ phạm_,
+  bạn vào phần `Privacy + Security`, chọn `Forwarded Messages`,
+  rồi chọn lại `Nobody` hoặc `My contacts`,...
+  thêm các ngoại lệ nếu cần.
+
+2. Các dịch vụ như `Facebook`, `Viber`, `Whatsapp`,... đều yêu cầu
+  truy cập vào danh bạ của bạn. Như `whatsapp` sẽ không chạy nếu quyền
+  đó bị từ chối (sic). Còn `Viber`, `Skype`, ... ngay cả khi bạn chặn,
+  thì hóa ra trên `server` của các dịch vụ này đã có một phần Danh bạ
+  của bạn (đố bạn tại sao đấy!) Và bạn không có cách nào xóa được nội
+  dung đó, trừ khi bạn xóa hẳn tài khoản của bạn (?!)
+
+  Với `Telegram`, bạn chỉ việc vào `Privacy + Security`, chọn phần
+  `Contacts` và chọn `Delete Synced Contacts` để xóa đi phần danh bạ
+  bạn đã lỡ tay đồng bộ lên máy của `Telegram` vì bất kỳ lý do gì.
+
+3. Bạn có thể xóa bài bạn đã gửi, bất kể bài đó đã được gửi bao lâu.
+  Trước đây, bạn không thể xóa các bài đã viết quá 48 giờ.
+  Tính năng mới giúp bạn an toàn hơn, nhưng với các nhóm, có lẽ là một
+  điều bất tiện, nhỉ?
+
+Câu hỏi to nhất khi dùng `Telegram`, là mô hình kinh doanh của `Telegram`
+là gì, sao lại có một tỉ phú bỏ nhiều tiền ra làm dịch vụ khơi khơi vậy :)
+Chịu, bạn có thể tin tưởng, hay không, vào `Telegram`. Dù sao thì các
+tính năng mới nhất của `Telegram` khiến cho nhiều ứng dụng luôn hô hào
+đảm bảo an ninh người dùng phải chạy theo bốc khói.
+
 ### [`helm-nightmare-p1`](https://t.me/linuxvn/38063)
 
 tags: #k8s #helm #panic
