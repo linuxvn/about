@@ -19,3 +19,6 @@
 @linuxvn_notes#Notes-2019#helm-nightmare-p1
 @linuxvn_notes#Notes-2019#helm-nightmare-p2
 @linuxvn_notes#Notes-2019#toc
+@linuxvn_notes#Notes-2019#k8s-the-hard-way-p1
+@linuxvn_notes#Notes-2019#boss-interview
+@linuxvn_notes#Notes-2019#telegram
