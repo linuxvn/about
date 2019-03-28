@@ -15,7 +15,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Phần 1: Về Lucene](#lucene-war-part-1)
 * Công cụ linh tinh
   * [Rsync với Sparse](#rsync-with-sparse-file)
-  * [jsonmet](#jsonmet)
+  * [jsonnet](#jsonnet)
   * [gitlabform](#gitlabform)
   * [tsocks](#tsocks)
 * Dịch vụ có ích
