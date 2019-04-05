@@ -50,7 +50,8 @@ vụ quảng cáo, trên đó `ecosia` thu tiền, và dùng phần lớn số t
 Đừng lo, `ecosia` tuyên bố rất rõ ràng về sử dụng thông tin riêng tư của
 bạn, xem ở https://info.ecosia.org/privacy . Cách dịch vụ này kiếm tiền
 có ở https://info.ecosia.org/what. Công ty phát triển `ecosia` có trụ
-sở tại `Berlin` nhé.
+sở tại `Berlin` nhé. Đọc kỹ phần `privacy` bạn sẽ thấy `ecosia` là
+partner của `Bing`.
 
 Theo con số từ trang chính của dịch vụ lúc mình viết bài này, số cây
 đã được trồng là hơn 54 triệu. Không rõ mình đóng góp được bao nhiêu:
