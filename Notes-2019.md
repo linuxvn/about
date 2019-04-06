@@ -34,7 +34,7 @@ Bữa giờ mình không khỏe, nên không viết gì dù có khá nhiều th�
 và ghi chú lại. Mình định viết về giấy phép `Apache`, về ý tưởng phân tán
 trong `(dev)ops`, vài công cụ khác. Ngoài ra, tìm cách dọn dẹp lại cách
 gửi bài lên Telegram: Như bạn thấy hiện giờ bài khá dài và khó tìm kiếm.
-Bạn luôn có thể  đọc lại dễ dàng trên Github, trước khi có bản `Web` hy
+Bạn luôn có thể đọc lại dễ dàng trên Github, trước khi có bản `Web` hy
 vọng khá hơn.
 
 Bài này giới thiệu về dịch vụ tìm kiếm [`ecosia`](https://www.ecosia.org/).
