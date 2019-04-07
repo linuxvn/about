@@ -21,9 +21,44 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 * Dịch vụ có ích
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
+  * [Ecosia searching service](#wwwecosiaorg)
 * Linh tinh
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
+
+### [`www.ecosia.org`](https://www.ecosia.org/)
+
+tags: #search #browser #gogreen
+
+Bữa giờ mình không khỏe, nên không viết gì dù có khá nhiều thứ cần coi
+và ghi chú lại. Mình định viết về giấy phép `Apache`, về ý tưởng phân tán
+trong `(dev)ops`, vài công cụ khác. Ngoài ra, tìm cách dọn dẹp lại cách
+gửi bài lên Telegram: Như bạn thấy hiện giờ bài khá dài và khó tìm kiếm.
+Bạn luôn có thể đọc lại dễ dàng trên Github, trước khi có bản `Web` hy
+vọng khá hơn.
+
+Bài này giới thiệu về dịch vụ tìm kiếm [`ecosia`](https://www.ecosia.org/).
+Khá chắc là mình biết nó khi đọc HackerNews. Nó như Google, Yahoo, Bing,
+Cốc Cốc / Lauxanh thôi. Bạn cần tìm gì, gõ vào, nhấn Enter thì ra kết
+quả.
+
+Khác biệt lớn nhất ở chỗ, `ecosia` là dự án có mục tiêu rất `xanh`:
+Mỗi khi bạn tìm kiếm, `ecosia` sẽ phát sinh thông tin để điều hướng dịch
+vụ quảng cáo, trên đó `ecosia` thu tiền, và dùng phần lớn số tiền thu
+được để trồng cây xanh ở khắp nơi trên thế giới.
+
+Đừng lo, `ecosia` tuyên bố rất rõ ràng về sử dụng thông tin riêng tư của
+bạn, xem ở https://info.ecosia.org/privacy . Cách dịch vụ này kiếm tiền
+có ở https://info.ecosia.org/what. Công ty phát triển `ecosia` có trụ
+sở tại `Berlin` nhé. Đọc kỹ phần `privacy` bạn sẽ thấy `ecosia` là
+partner của `Bing`.
+
+Theo con số từ trang chính của dịch vụ lúc mình viết bài này, số cây
+đã được trồng là hơn 54 triệu. Không rõ mình đóng góp được bao nhiêu:
+Mình dùng dịch vụ này khi làm việc trên công ty mà;)
+
+Sau khi gây lộn với Google, Duckduckgo, mình đã chuyển qua dùng Bing.
+Và khi nào tiện mình sẽ chuyển thiết bị cá nhân qua dùng `ecosia`.
 
 ### `k8s-the-hard-way-p1`
 
