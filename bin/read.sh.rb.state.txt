@@ -22,3 +22,4 @@
 @linuxvn_notes#Notes-2019#k8s-the-hard-way-p1
 @linuxvn_notes#Notes-2019#boss-interview
 @linuxvn_notes#Notes-2019#telegram
+@linuxvn_notes#Notes-2019#wwwecosiaorg
