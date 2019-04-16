@@ -37,7 +37,7 @@ Bạn có thể xem vài lời của tác giả của thay đổi này ở đị
 
 Phần tiếp theo giới thiệu với bạn kỹ thuật đơn giản rất có ích
 cho nghề ốp (ops), tất nhiên là dùng `(g)awk` để xử lý. Bài toán thế này,
-bạn có chương trình `xyz` nào đó, chạy bằng docker cho nó có vẻ sang trọng,
+bạn có chương trình `xyz` nào đó, chạy bằng docker cho có vẻ sang trọng,
 ghi liên tục các thông báo ra thiết bị `STDOUT`, `STDERR`. Và bạn
 muốn biết khi nào xuất hiện dòng lỗi, ví dụ có chữ `ERROR`. Dễ thôi nhỉ,
 
@@ -58,7 +58,7 @@ $ /lauxanh/bin/xyz 2>&1 \
     {
       printf("%s\n", $0);
       if ($0 ~ /ERROR/) {
-        printf(":: Cá mập căn cáp rồi. Lỗi lỗi lỗi.\n");
+        printf(":: Cá mập cắn cáp rồi. Lỗi lỗi lỗi.\n");
         found_error = 1;
       }
     }
