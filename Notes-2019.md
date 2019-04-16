@@ -26,6 +26,65 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
 
+### [`gawk`](https://lists.gnu.org/archive/html/info-gnu/2019-04/msg00002.html)
+
+tags: #awk #text #manipulation #shell
+
+`gawk` ra phiên bản 5 với thay đổi đáng chú ý là, hỗ trợ `namespace` nhờ
+đó viết và nạp thêm các module vào chương trình `awk` chính dễ dàng hơn.
+Bạn có thể xem vài lời của tác giả của thay đổi này ở địa chỉ
+  http://www.skeeve.com/awk-sys-prog.html.
+
+Phần tiếp theo giới thiệu với bạn kỹ thuật đơn giản rất có ích
+cho nghề ốp (ops), tất nhiên là dùng `(g)awk` để xử lý. Bài toán thế này,
+bạn có chương trình `xyz` nào đó, chạy bằng docker cho nó có vẻ sang trọng,
+ghi liên tục các thông báo ra thiết bị `STDOUT`, `STDERR`. Và bạn
+muốn biết khi nào xuất hiện dòng lỗi, ví dụ có chữ `ERROR`. Dễ thôi nhỉ,
+
+```
+$ /lauxanh/bin/xyz 2>&1 | grep ERROR
+```
+
+Cách này có cái dở là, tất cả các dòng không có `ERROR` đều biến mất tiêu.
+`grep` không giúp được gì rồi _(thực ra cũng có thể, khi bạn dùng `coproc`
+với `Bash` -- nhưng như thế thì quá cao siêu rồi)_. Đơn giản là dùng `awk`
+
+```
+$ /lauxanh/bin/xyz 2>&1 \
+  | awk '
+    BEGIN {
+      found_error = 0
+    }
+    {
+      printf("%s\n", $0);
+      if ($0 ~ /ERROR/) {
+        printf(":: Cá mập căn cáp rồi. Lỗi lỗi lỗi.\n");
+        found_error = 1;
+      }
+    }
+    END {
+      exit(found_error);
+    }
+    '
+$ ret="$?"
+$ if [[ $ret -ge 1 ]]; then
+    echo >&2 ":: Đụng cá mập thì thôi, bó tay."
+  fi
+```
+
+Chương trình `gawk` này đơn giản là đọc tất cả tin gửi đi từ chương
+trình `xyz`, in ra `STDOUT`, và khi `xyz` ghi ra dòng nào có `ERROR`,
+sẽ có thêm thông báo về cá mập, và đồng thời gán kết quả trả về của
+dòng lệnh là `found_error`, hay là `1`, để bạn xử lý tiếp.
+
+Đơn giản nhỉ. Bạn có thể làm phức tạp hơn bằng `Ruby` hay `Python` đấy :D
+
+Vài ứng dụng khác từ ý tưởng của đoạn mã `awk` ở trên
+
+* Poll để biết khi nào container sẵn sàng, ví dụ https://t.me/linuxvn/39876
+* Trả về các kết quả (exit code) khác nhau tùy vào các mẫu khác nhau
+* Đếm lỗi, ví dụ xử lý tập tin `acces.log` theo cách thô sơ ;)
+
 ### [`www.ecosia.org`](https://www.ecosia.org/)
 
 tags: #search #browser #gogreen
