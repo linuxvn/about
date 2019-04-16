@@ -47,7 +47,7 @@ $ /lauxanh/bin/xyz 2>&1 | grep ERROR
 
 Cách này có cái dở là, tất cả các dòng không có `ERROR` đều biến mất tiêu.
 `grep` không giúp được gì rồi _(thực ra cũng có thể, khi bạn dùng `coproc`
-với `Bash` -- nhưng như thế thì quá cao siêu rồi)_. Đơn giản là dùng `awk`
+với `Bash`; nhưng như thế thì quá cao siêu rồi)_. Đơn giản là dùng `awk`
 
 ```
 $ /lauxanh/bin/xyz 2>&1 \
