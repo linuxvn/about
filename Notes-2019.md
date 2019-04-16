@@ -84,11 +84,11 @@ dòng lệnh là `found_error`, hay là `1`, để bạn xử lý tiếp.
 
 Vài ứng dụng khác từ ý tưởng của đoạn mã `awk` ở trên
 
-* Poll để biết khi nào container sẵn sàng, ví dụ https://t.me/linuxvn/39876
+1. Poll để biết khi nào container sẵn sàng, ví dụ https://t.me/linuxvn/39876
 
-* Trả về các kết quả (exit code) khác nhau tùy vào các mẫu khác nhau
+2. Trả về các kết quả (exit code) khác nhau tùy vào các mẫu khác nhau
 
-* Đếm lỗi, ví dụ xử lý tập tin `acces.log` theo cách thô sơ ;)
+3. Đếm lỗi, ví dụ xử lý tập tin `acces.log` theo cách thô sơ.
 
 ### [`www.ecosia.org`](https://www.ecosia.org/)
 
