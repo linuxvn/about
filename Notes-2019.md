@@ -90,6 +90,9 @@ Vài ứng dụng khác từ ý tưởng của đoạn mã `awk` ở trên
 
 3. Đếm lỗi, ví dụ xử lý tập tin `acces.log` theo cách thô sơ.
 
+4. Xử lý kết quả trả về của `curl`, `wget` và trả về mã lỗi tương ứng
+   với nội dung thu được.
+
 ### [`www.ecosia.org`](https://www.ecosia.org/)
 
 tags: #search #browser #gogreen
