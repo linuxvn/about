@@ -1,4 +1,4 @@
-## 2019-03
+## 2019
 
 Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News` hay từ
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
