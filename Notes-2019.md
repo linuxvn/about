@@ -47,7 +47,7 @@ Phần dưới nêu vài chuyện vui khi nghịch với _lửa_ đây.
   chỗ khác không phải lúc nào cũng đúng ý đâu nhe :) Cẩn thận nhất, trước
   khi dán vào `terminal/shell`, bạn thử dán ra chỗ nào đó trước. Không thì
   lâu lâu gà gà gật gật là y như rằng một mớ thứ nhảy múa trong `terminal`.
-  Bạn thử chép nội dung log sau vào dán vào `terminal` thử xem:
+  Bạn thử chép nội dung log sau vào dán vào `terminal` xem:
   https://gist.github.com/icy/d8d2598acc31523317b93547d35bb304 :)
 
 3. `shutdown` nhầm: thôi khỏi cần nói gì thêm nhe, mất công haha
