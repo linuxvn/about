@@ -28,7 +28,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
 
-### `root is rut`
+### `root-is-rut`
 
 tags: #root #shell #linux #rut
 
