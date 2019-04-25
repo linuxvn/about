@@ -1,4 +1,4 @@
-## 2019-03
+## 2019
 
 Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News` hay từ
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
@@ -24,8 +24,57 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
 * Linh tinh
+  * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
+
+### `root-is-rut`
+
+tags: #root #shell #linux #rut
+
+Nhiều chỗ phải xài `root` shell, không né được. Không phải do công ty
+to nhỏ gì, không phải sản phẩm tốt xấu gì. Chẳng qua... xài `root` thì
+quá tiện, giống đi xe máy ở Sài Gòn vậy, chỗ nào cũng tới được.
+Ông `ops/admin` trước lười thì ông sau lãnh đủ, vậy thôi.
+
+Phần dưới nêu vài chuyện vui khi nghịch với _lửa_ đây.
+
+1. `hostname -f` nhầm thành `hostname f`: Một số bàn phím trời đánh, nhả
+  phím không được, nên sau lệnh `hostname f` thì toi, bạn phải đi lục
+  tung `history` lên coi hostname cũ thế nào mà phục hồi lại.
+
+2. `copy-&-paste`: thế kỷ `21` rồi nhỉ, nhưng copy một chỗ rồi paste ra
+  chỗ khác không phải lúc nào cũng đúng ý đâu nhe :) Cẩn thận nhất, trước
+  khi dán vào `terminal/shell`, bạn thử dán ra chỗ nào đó trước. Không thì
+  lâu lâu gà gà gật gật là y như rằng một mớ thứ nhảy múa trong `terminal`.
+  Bạn thử chép nội dung log sau vào dán vào `terminal` xem:
+  https://gist.github.com/icy/d8d2598acc31523317b93547d35bb304 :)
+
+3. `shutdown` nhầm: thôi khỏi cần nói gì thêm nhe, mất công haha
+
+4. Mất `/dev/zero` hay `/dev/null` hay `/dev/log`:
+  Nghe buồn cười nhưng chuyện kỳ dị này cũng có thể xảy ra:
+  Ví dụ nè
+    https://icy.theslinux.org/m/kyanh.net/2015/06/06/the-slig-returns/index.html#slig29.
+  Vấn đề là nhiều khi khó nhận biết cho tới khi .. khá trễ.
+  Khi mất `/dev/null` thì bạn vẫn xài nó khá bình thường, ví dụ `cat foo > /dev/null`,
+  cho tới khi... đĩa đầy chẳng hạn.
+
+5. `Lock down`: hihi, `sudo` có cú pháp trời đánh để nạp cấu hình
+  bên ngoài, ví dụ `#includedir /etc/sudoers.d`. Nhiều bạn gà gà gật gật
+  cho mình là siêu nhân, chỉnh lại cho đúng `includedir /etc/sudoers.d`,
+  xong đi uống cà phê, ăn trưa rồi tắt server mount lên chỗ khác fix lại.
+
+6. `/etc/nginx/sites-enabled/:wq`: Ơ, bạn đoán ra cái gì đây không?
+  Là do một chuyên gia `vi/vim` xài `nano`. Thiệt tình là sau khi lưu
+  file đó xuống đĩa rồi thì anh em đi fix cả ngày không biết tại sao cấu
+  hình mới không ăn =))
+
+Lưu ý nhỏ nhẹ cuối cùng, `nohup` luôn là biên giới trong cuộc chiến
+giữa `dev` và `admin`. Lần nào đĩa đầy là `admin` phải lọ mọ vào xài `lsof`
+soi lên `nohup` nằm ở đâu (file đó cũng hay bị xóa cho gọn đĩa ấy mà.)
+
+Tạm dừng ở đây, khi nào nhớ ra viết tiếp.
 
 ### [`gawk`](https://lists.gnu.org/archive/html/info-gnu/2019-04/msg00002.html)
 
