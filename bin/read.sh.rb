@@ -19,7 +19,7 @@ NOTES_ID = "Notes-#{Time.now.utc.year}"
 F_INPUT = File.join(__dir__, "../#{NOTES_ID}.md")
 
 $blames = %x[git blame #{F_INPUT}].split(%r{[\r\n]})
-$branch = %x[git rev-parse --abbrev-ref .].strip
+$branch = %x[git rev-parse --abbrev-ref HEAD].strip
 if $branch == "HEAD"
   $branch = ENV["TRAVIS_BRANCH"].to_s
 end
