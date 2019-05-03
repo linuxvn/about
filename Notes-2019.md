@@ -82,8 +82,8 @@ PORT     STATE SERVICE
 Việc còn lại là làm sao đọc ra danh sách cách target từ  `_discovery.tmp`?
 Việc này không hề đơn giản, chưa kể kết quả của `nmap` chỉ cho biết
 cổng mở mà không biết thực sự `exporter` có trả về 200 hay không.
-Làm sao đây? Điều chỉnh trực tiếp kịch bản `http-headers.nse`,
-ví dụ
+Làm sao đây? Điều chỉnh trực tiếp kịch bản `http-headers.nse`
+(/usr/share/nmap/scripts/http-headers.nse), ví dụ
   https://gist.github.com/icy/191de6e6a30e7ac8f8068d288264d51a/revisions#diff-8a0ced239ddcc2ee44a526a3e5fd8163
 sau đó chạy
 
