@@ -6,6 +6,7 @@ before_install:
   -in read.sh.enc -out bin/read.sh -d
 - gem update --system
 - gem install bundler
+- env
 script:
 - bundle install
 - "./bin/read.sh.rb --test"
