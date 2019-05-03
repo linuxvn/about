@@ -19,6 +19,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [gitlabform](#gitlabform)
   * [tsocks](#tsocks)
   * [gawk](#gawk)
+  * [Use Nmap to scan Prometheus targets](#nmap-for-prometheus)
 * Dịch vụ có ích
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
@@ -27,6 +28,81 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
+
+### `nmap-for-prometheus`
+
+tags: #prometheus #nmap #network #scanning #lua
+
+Mình có vài trăm hosts cần quét nhanh để  lấy danh sách `target` cho
+Prometheus. Script hiện có chạy tuần tự, dùng `curl` để kiểm tra, ví dụ
+http://foo:9100/metrics, có trả về mã 200 hay không; toàn bộ script chạy
+gần 2h mới xong.
+
+Dùng nmap chắc chắn nhanh hơn:
+
+```
+$ _ports="9100,9168,9200,9400,"
+$ nmap \
+  >/dev/null \
+  -iL "hosts" \
+  -p "$_ports" \
+  -oN "_discovery.tmp" \
+  --script +"http-headers.nse" \
+  --script-args \
+    "http-headers.path='/metrics', http-headers.useget='true'"
+```
+
+trong đó, `hosts` là file liệt kê tất cả các hosts cần quét,
+và `_ports` lưu danh sách tất cả các port (dư ra dấu phảy ở cuối không
+quan trọng lắm; khi bạn tạo danh sách các port bằng `bash` thì dễ dư ra
+như vậy đó.)
+
+Chỗ `+http-headers.nse` có dấu cộng đằng trước. Cái này mình mất chút
+thời gian để hiểu tại sao. Kịch bản `http-headers` đi kèm với bộ cài
+đặt của `nmap`, không phải lo lắng tải ở chỗ khác. Kết quả dò lưu vào
+tập tin `_discovery.tmp` như sau
+
+```
+# Nmap 7.70 scan initiated ...
+Nmap scan report for k8s-001.lauxanh.net (10.0.0.2)
+Host is up (0.0069s latency).
+Not shown: 31 closed ports
+PORT     STATE SERVICE
+9100/tcp open  jetdirect
+| http-headers:
+|   Content-Length: 143114
+|   Content-Type: text/plain; version=0.0.4
+|   Date: Tue, 30 Apr 2019 14:44:54 GMT
+|   Connection: close
+|
+|_  (Request type: GET)
+
+```
+
+Việc còn lại là làm sao đọc ra danh sách cách target từ  `_discovery.tmp`?
+Việc này không hề đơn giản, chưa kể kết quả của `nmap` chỉ cho biết
+cổng mở mà không biết thực sự `exporter` có trả về 200 hay không.
+Làm sao đây? Điều chỉnh trực tiếp kịch bản `http-headers.nse`
+(/usr/share/nmap/scripts/http-headers.nse), ví dụ
+  https://gist.github.com/icy/191de6e6a30e7ac8f8068d288264d51a/revisions#diff-8a0ced239ddcc2ee44a526a3e5fd8163
+sau đó chạy
+
+```
+$ sudo nmap --script-updatedb
+$ nmap ...
+$ grep service/200 _discovery.tmp
+|_  service/200: k8s-001.lauxanh.net:9100/metrics
+|_  service/200: k8s-002.lauxanh.net:9100/metrics
+# ...
+```
+
+Tuyệt vời ông mặt trời. Điều đáng buồn là mình viết vầy cho bạn xài,
+còn mình vì một lý do thiên địa trời đánh, không xài được những gì
+viết trên đây cho hệ thống thật sự. Khi nào uống cà phê kể sau ha.
+
+Cuối cùng, `curl` đọc là `si du a eo` (`see-url`) nhe các bạn. Nếu bạn
+biết tác giả của `curl` nói điều này ở đâu thì cho mình xin cái link.
+Cảm ơn bạn nhiều.
 
 ### `root-is-rut`
 

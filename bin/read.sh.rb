@@ -19,6 +19,11 @@ NOTES_ID = "Notes-#{Time.now.utc.year}"
 F_INPUT = File.join(__dir__, "../#{NOTES_ID}.md")
 
 $blames = %x[git blame #{F_INPUT}].split(%r{[\r\n]})
+$branch = %x[git rev-parse --abbrev-ref HEAD].strip
+if $branch == "HEAD"
+  $branch = ENV["TRAVIS_BRANCH"].to_s
+end
+$branch = "master" if $branch.empty?
 
 # FIXME: This is expensive.
 if $blames.join.strip.empty?
@@ -110,7 +115,7 @@ def write_notes(notes, bot = nil)
       next
     end
 
-    github_link = "https://github.com/linuxvn/about/blob/master/#{NOTES_ID}.md##{key}"
+    github_link = "https://github.com/linuxvn/about/blob/#{$branch}/#{NOTES_ID}.md##{key}"
     contents = "`#{key}` #{link ? "#{link}\n": ""}\n\n#{github_link}\n#{v.join()}\n\n-- #{author(k)} at #{github_link}"
     contents.gsub!(%r{```[\n]{2,}}, "```\n\n")
     travis_url = ENV["TRAVIS_BUILD_WEB_URL"].to_s
