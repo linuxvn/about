@@ -108,7 +108,7 @@ $ cp /backup/VERSION   ./
 $ for _file in fsimage_*; do md5sum $_file > $_file.md5; done
 ```
 
-Rốt cuộc, mình chả hiểu lệnh đó `-fetchImage` để làm gì nữa luôn:
+Rốt cuộc, mình chả hiểu lệnh với `-fetchImage` để làm gì nữa luôn:
 nó tạo ra ảo tưởng rằng mọi thứ đã sẵn sàng cho trường hợp tệ nhất,
 nhưng thực ra, cách đơn giản phải làm chính là cách thứ hai
 `tar cfvz my_nn_backup.tgz /home/hdfs/data/nn/current/`.
