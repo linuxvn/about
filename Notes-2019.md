@@ -13,6 +13,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Bắt đầu với k8s như thế nào](#k8s-the-hard-way-p1)
 * Lucense, ElasticSearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
+  * Phần 2: Về giấy phép Apache: TODO
 * Công cụ linh tinh
   * [Rsync với Sparse](#rsync-with-sparse-file)
   * [jsonnet](#jsonnet)
@@ -25,9 +26,99 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
 * Linh tinh
+  * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
   * [Phỏng vấn Boss](#boss-interview)
+
+### `hdfs-metadata-backup`
+
+tags: #hadoop #metadata #backup
+
+Hệ thống `tập tin` của `Hadoop`, gồm hai phần cơ bản là `datanode`
+và `namenode`. Như con trỏ trong lập trình C, `namenode` là về địa chỉ (metadata),
+còn `datanode` là về nội dung con trỏ lưu trữ.
+
+Hệ thống có hai `namenode` chẳng hạn, thì chỉ có một `active` thôi,
+còn lại ở chế độ chờ `standby`; chuyện gì xảy ra nếu cả hai cùng sập?
+Không địa chỉ đồng nghĩa với lạc đường, bạn chỉ còn nước format và nạp lại
+hệ thống `hdfs` hoàn toàn mới.
+
+Sao lưu sao lưu sao lưu. Các hướng dẫn trên mạng đầy ra, bạn cứ thử gõ
+`hdfs metadata backup` rồi làm theo, đại ý:
+
+```
+$ hdfs dfsadmin -fetchImage backup_dir
+```
+
+Đọc theo làm theo, y chang vậy, thì rắc rối bắt đầu. Thật sự chỗ `backup_dir`,
+phải thỏa mãn điều kiện tiên quyết: Đó là một thư mục đã tồn tại. Nghĩa
+là, lệnh chính xác phải như sau
+
+```
+$ mkdir -pv backup_dir/
+$ hdfs dfsadmin -fetchImage backup_dir/
+```
+
+Kết quả là các tập tin `fsimage_*` được tạo ra trong `backup_dir/`.
+Nội dung giống như trong thư mục, ví dụ, `/home/hdfs/data/nn/current/*`,
+tùy vào cấu hình của bạn, là nơi lưu trữ metadata của `hdfs` đang chạy.
+Một số tài liệu chỉ nói đơn giản là bạn chép nguyên cục đó ra
+
+```
+$ tar cfvz my_nn_backup.tgz /home/hdfs/data/nn/current/
+```
+
+Tại sao có hai cách, kết quả khác nhau thế nào? Có vẻ như việc dùng lệnh
+`hdfs dfsadmin` trông sang chảnh và hợp lý hơn. Đúng thế, cho tới khi
+bạn phải phục hồi hệ thống thật sự. Trời đất, các tài liệu mình tìm được
+đều nói tới việc chép lại các tập tin ảnh đó ra thôi. Thế nên mình thử
+
+```
+# giả sử không có namenode nào đang chạy
+# giả lập nhờ systemctl stop hadoop-* trên tất cả các namenode
+# nn chính là viết tắt của namenode
+
+$ rm -rf /home/hdfs/data/{nn,snn}/current/
+$ mkdir -pv /home/hdfs/data/{nn,snn}/current/
+$ cp /backup/fsimage_* /home/hdfs/data/nn/current/
+$ systemctl start hadoop-namdenode
+
+# tạch toàn tập, không lên nổi. Viagra bó tay.
+```
+
+Tới đây bạn sẽ gần như tuyệt vọng. Hệ thống báo là `namenode` chưa
+được format. Nếu chọn format mới `hdfs namenode -format` đồng nghĩa
+với việc xóa sạch cài lại cluster mới (FIXME), đó không phải là phục hồi
+từ bộ sao lưu.
+
+Nào google tìm, thật may bạn thấy bài viết này, bởi vì có thể tất
+cả các bài trước đây đều thiếu hai điều rất quan trọng như sau:
+
+1. Bạn phải backup `/home/hdfs/data/nn/current/VERSION`
+
+2. Bạn phải tạo checksum cho từng tập tin `fsimage_*`
+
+Hai việc này không hề có khi dùng `hdfs dfsadmin -fetchImage ...`
+
+```
+$ cd /home/hdfs/data/nn/current/
+$ cp /backup/fsimage_* ./
+$ cp /backup/VERSION   ./
+$ for _file in fsimage_*; do md5sum $_file > $_file.md5; done
+```
+
+Rốt cuộc, mình chả hiểu lệnh đó `-fetchImage` để làm gì nữa luôn:
+nó tạo ra ảo tưởng rằng mọi thứ đã sẵn sàng cho trường hợp tệ nhất,
+nhưng thực ra, cách đơn giản phải làm chính là cách thứ hai
+`tar cfvz my_nn_backup.tgz /home/hdfs/data/nn/current/`.
+
+Tập tin `VERSION` là gì, tại sao nó quan trọng? Từ từ, việc cần làm
+trước là thử phục hồi từ bộ backup bạn đang có. You will never know
+if you don't go -- một câu trong bài hát phim hoạt hình Shrek.
+
+Sau đó, đọc thêm:
+https://hortonworks.com/blog/hdfs-metadata-directories-explained/
 
 ### `nmap-for-prometheus`
 
