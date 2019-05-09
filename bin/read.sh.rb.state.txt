@@ -26,3 +26,4 @@
 @linuxvn_notes#Notes-2019#gawk
 @linuxvn_notes#Notes-2019#root-is-rut
 @linuxvn_notes#Notes-2019#nmap-for-prometheus
+@linuxvn_notes#Notes-2019#hdfs-metadata-backup
