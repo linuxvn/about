@@ -76,7 +76,7 @@ thế nên, mình đã thiết kế kịch bản rất kỹ như sau:
 
 4. Sau đó, kết nối đĩa mới tạo ra vào một máy tạm thời trên GCE,
    dùng một docker image được chỉnh riêng để kiểm tra đĩa này.
-   Docker container được tạo ra sẽ có gồm một tiến trình cho để chạy
+   Docker container được tạo ra gồm một tiến trình cho để chạy
    `postgres`, một tiến trình khác theo dõi log sinh ra từ `postgres`.
 
 5. Sau khi xác định điểm lỗi hay điểm dừng, toàn bộ đĩa và máy tạm thời
@@ -90,7 +90,7 @@ Kết quả rất bất ngờ như sau:
    được `nén`, nên kích thước nhỏ đáng kinh ngạc (mặc dù cũng xem xem
    kết quả nén khi dùng `pg_basebackup`)
 
-2. Khi chạy `postgres` kiểm tra, dữ liệu gốc ở pod `slave`, nên xuất hiện
+2. Khi chạy `postgres` kiểm tra, do dữ liệu gốc ở pod `slave`, nên xuất hiện
    tập tin `recover.conf` trong thư mục `/var/lib/pgsql/data/`, cần phải
    xóa đi. Sau đó, `postgres` tự phục hồi lại dựa theo thông tin binary
    cuối cùng đang có, có thể bỏ qua WAL log cuối cùng. (Thực ra, bộ snapshot
@@ -104,8 +104,8 @@ So với việc tốn hơn 6 tiếng đồng hồ khi dùng `pg_basebackup`, th�
 dùng snapshot của google cloud quá đơn giản, ổn định, nhanh nữa, và
 muốn `PITR` thì chỉ việc tạo snapshot thường xuyên hơn.
 
-Tất nhiên, điều mình trông đợi nhất, là phương án này bị lỗi, bị sai.
-Bởi khi đó mới có chuyện để viết tiếp à.
+Tất nhiên, điều mình trông đợi nhất, là phương án này bị lỗi, bị sai
+một lúc nào đó. Bởi khi đó mới có chuyện để viết tiếp à.
 
 ### `hdfs-metadata-backup`
 
