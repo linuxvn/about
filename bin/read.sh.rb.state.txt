@@ -27,3 +27,4 @@
 @linuxvn_notes#Notes-2019#root-is-rut
 @linuxvn_notes#Notes-2019#nmap-for-prometheus
 @linuxvn_notes#Notes-2019#hdfs-metadata-backup
+@linuxvn_notes#Notes-2019#postgresql-file-system-level-backup
