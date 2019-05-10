@@ -25,11 +25,18 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
-* Linh tinh
+* Nghề nghiệp
+  * [Phỏng vấn Boss](#boss-interview)
+* Backup
+  * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
+* Linh tinh
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
-  * [Phỏng vấn Boss](#boss-interview)
+
+### `postgresql-file-system-level-backup`
+
+TODO
 
 ### `hdfs-metadata-backup`
 
