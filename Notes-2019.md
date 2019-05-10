@@ -25,11 +25,87 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
-* Linh tinh
+* Nghề nghiệp
+  * [Phỏng vấn Boss](#boss-interview)
+* Backup
+  * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
+* Linh tinh
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
-  * [Phỏng vấn Boss](#boss-interview)
+
+### `postgresql-file-system-level-backup`
+
+tags: #database #pgsql #backup #snapshot #googlecloud
+
+Hệ thống mình phục vụ khá nhiều khách hàng; mỗi triển khai (deployment)
+gồm nhiều loại database khác nhau, chạy trên `k8s`. Các kịch bản sao lưu
+chạy tốt cho tất cả triển khai, ngoại trừ một khách hàng A có dữ liệu khá
+lớn và tăng liên tục, trên `postgresql`. Do một quyết định thiết kế cũ
+mà triển khai dựa trên Stolon (https://github.com/sorintlab/stolon),
+nhưng hỡi ôi, nhiều thứ Stolon còn chưa sẵn sàng, ví dụ không hỗ trợ
+`rsync` https://github.com/sorintlab/stolon/issues/389.
+
+Trong hệ thống của A, khi kịch bản sao lưu chạy thì ứng dụng ngất ngư.
+Về bản chất, kịch bản sao lưu dùng `pg_basebackup`, dựa trên streaming
+protocol của `pgsql`; không có nhiều tùy chọn khi dùng công cụ đó,
+kể cả việc nén khi gửi dữ liệu giữa các máy. Các kiểu sao lưu khác,
+xem thêm tại https://www.postgresql.org/docs/9.1/backup-file.html:
+
+1. Dump dump dumb...
+
+2. Dùng `rsync` để gửi bin/WAL log ra chỗ khác (đây là một trong hai
+   cách mà công cụ như `barman` hỗ trợ)
+
+3. Dùng `file-system` backup (sao lưu nguyên cục `/var/lib/psql/data/`)
+
+Dùng `pgsql` trong k8s nghe phát mệt; quá tuyệt vọng với sự phức tạp của
+các phương án khác, mình đã thử phương án đơn giản nhất, là lấy `snapshot`
+của đĩa `slave` trong Stolon cluster. Trong lòng đầy nghi hoặc, bởi đảm bảo
+cho snapshot này tốt, dữ liệu có thể phục hồi được nghe nó xa vời quá.
+Xưa giờ, chưa bao giờ mình tin vào việc lấy snapshot của đĩa chạy database;
+thế nên, mình đã thiết kế kịch bản rất kỹ như sau:
+
+1. Xác định chính xác pod `slave` trong Stolon cluster. (Tóm tắt cho bạn
+  chưa biết, Stolon nó bật một node `master`, vài node `slave`, và
+  nó có cơ chế hoán đổi tự động;)
+
+2. Lấy đúng đĩa ứng với `pvc (persistent volume claim)` đang dùng bởi pod đó.
+
+3. Tạo snapshot từ đĩa trên, tạo một đĩa mới cùng kích thước,
+
+4. Sau đó, kết nối đĩa mới tạo ra vào một máy tạm thời trên GCE,
+   dùng một docker image được chỉnh riêng để kiểm tra đĩa này.
+   Docker container được tạo ra gồm một tiến trình cho để chạy
+   `postgres`, một tiến trình khác theo dõi log sinh ra từ `postgres`.
+
+5. Sau khi xác định điểm lỗi hay điểm dừng, toàn bộ đĩa và máy tạm thời
+   được xóa đi, và gửi thông báo tới các kênh theo dõi.
+
+Kết quả rất bất ngờ như sau:
+
+1. Việc tạo snapshot rất nhanh. Nếu tạo mới hoàn toàn (base), mất khoảng
+   10 phút. Các snapshot sau đó còn nhanh hơn nữa, do nó chỉ phải gồm
+   các thay đổi so với bản snapshot trước đó. Tất cả các snapshot đều
+   được `nén`, nên kích thước nhỏ đáng kinh ngạc (mặc dù cũng xem xem
+   kết quả nén khi dùng `pg_basebackup`)
+
+2. Khi chạy `postgres` kiểm tra, do dữ liệu gốc ở pod `slave`, nên xuất hiện
+   tập tin `recover.conf` trong thư mục `/var/lib/pgsql/data/`, cần phải
+   xóa đi. Sau đó, `postgres` tự phục hồi lại dựa theo thông tin binary
+   cuối cùng đang có, có thể bỏ qua WAL log cuối cùng. (Thực ra, bộ snapshot
+   hầu như không có thêm WAL log nào ghi kèm, do mình chưa bật.)
+
+3. Việc chạy phục hồi (restore) thử chưa gặp trường hợp nào lỗi;
+   và cũng khá nhanh, mất khoảng dưới 20 phút, trong đó, thời gian chủ
+   yếu ở chỗ tạo snapshot mới, và tạo đĩa mới từ snapshot đang có.
+
+So với việc tốn hơn 6 tiếng đồng hồ khi dùng `pg_basebackup`, thì việc
+dùng snapshot của google cloud quá đơn giản, ổn định, nhanh nữa, và
+muốn `PITR` thì chỉ việc tạo snapshot thường xuyên hơn.
+
+Tất nhiên, điều mình trông đợi nhất, là phương án này bị lỗi, bị sai
+một lúc nào đó. Bởi khi đó mới có chuyện để viết tiếp à.
 
 ### `hdfs-metadata-backup`
 
