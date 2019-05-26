@@ -31,9 +31,78 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
 * Linh tinh
+  * [Berlin chào mừng bạn](#welcome-to-berlin)
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `welcome-to-berlin`
+
+tags: #berlin #relocation #devops #random
+
+Mình viết bài này lâu rồi, nhưng để xó vì dự tính khác; hôm qua thôi, biết
+có bạn đang chuẩn bị hành lý qua Berlin, nên mình thấy nên viết lại, nhưng
+theo kiểu khác.
+
+Bạn biết là, mình đi công tác ở đây vài tháng rồi. Xa bạn bè gia đình,
+xa những ngày nắng nóng hay những lúc mưa buồn của sài gòn. Hay nhớ
+những quán nhậu, cà phê vỉa hè. Ôi, nhớ nhất là những quán cà phê, chắc
+không nơi đâu trên thế giới có kiểu như sài gòn vậy =^^
+
+Berlin không đẹp như Paris. Sau thế chiến hai, thành phố bị san phẳng,
+các tòa nhà ở đây tuổi đời đâu 70 trở lại thôi. Nhưng berlin nhiều cây cối
+công viên tàu điện và xe đạp (số xe vẫn thua Hà Lan?) Một bạn chỗ
+mình làm mỗi ngày hai cuốc xe đạp đi về, mỗi chiều 32 km. Tốc độ xoàng
+xoàng 41km/h. Quá khiếp. Mình từng đi làm với xe đạp ở Sài gòn, 7km hết
+chừng 1 tiếng, tốc độ rùa khỏi chê.
+
+Ôi lan man thế, cho biết bạn mình cũng có khiếu văng nghệ không thua
+ai. Còn về kỹ thuật: Berlin khá cởi mở trong việc tuyển người các ngành
+công nghệ. Nếu có công ty ở đây nhận làm, hầu như bạn sẽ có thể bay qua
+đây trong hai tháng. Tìm việc khá dễ, bạn vào LinkedIn tìm thôi, nếu bạn
+chịu bỏ ra 30 đồng ông tơn (usd) thì bạn có nhiều job ngon nữa cơ;
+mà cũng chả cần mất số đó, tháng đầu LinkedIn cho miễn phí. Bạn cũng sẽ
+biết mức lương của `senior devops engineer` ở đây vào khoảng chính (phân
+phối chuẩn) từ 65k đến 70k euro mỗi năm trước thuế. Chế độ lao động thì
+tuyệt vời. Mỗi năm có ít nhất 24 ngày phép, chưa kể ngày nghỉ lễ công cộng,
+chỗ mình làm cho hẳn 29 ngày luôn, tha hồ  đi chơi. Sau giờ làm việc
+thì khỏi ai dám gọi bạn nếu không muốn phạm luật hay trả tiền. Bia Đức
+tuyệt ngon. Ở Berlin, mại dâm cũng được luật cho phép. Thiên đường thế
+còn gì =))
+
+Nếu nhận lương chừng 65k/năm, thì bạn còn lại nhiêu? Tiền thuế độc thân
+đâu khoảng 38 - 40%. Mỗi tháng bạn tiêu cơ bản đâu 300e (mỗi ngày 10e),
+nếu bạn chịu khó nấu ăn uống. Đắt nhất tiền nhà, tùy bạn muốn ở bao nhiêu,
+mình phải trả 760e mỗi tháng chưa kể điện nước internet. Nhưng nói chung,
+con số dư ra chả nhiêu, không thể giàu như mấy ku ở Việt Nam được.
+
+Ở 21 tháng bạn thi bằng B1 tiếng Đức (giống ielts 6), thì được quyền định
+cư vĩnh viễn. Nếu lười, bạn cứ việc chờ 3 năm, quyền đó tự động có cho bạn.
+Sau 8 năm, bạn có quyền đổi màu quốc tịch (ôi, chắc mình không ham, nhỉ)
+Nhưng chưa vội xa vời; chỉ cần có quyền làm việc với Bluecard bạn đã có thể
+đi khắp châu Âu không bị xách mé rồi. Nhưng nếu bạn ăn thịt heo, thịt chó,
+thì nhớ nói nhỏ tí, vì niềm tin của người khác sẽ khác bạn nhiều lắm lắm.
+
+Gần đây Úc mới mở ra visa 482 thay cho visa 587 xưa kia dường như chỉ
+ưu tiên cho du học sinh. Với 482 bạn có thể xin việc dễ dàng hơn
+ở Úc, chỉ với trình độ ietls tối thiểu 5.5. Mình ghét Úc là vậy, tao đây
+qua châu Âu sống khỏe re, việc gì phải bỏ tiền ra thi cái bằng chỉ có
+giá trị hai năm để chỉ chứng minh ta có thể nói tiếng Anh ở Úc?
+
+Còn nhiều thứ lắm; nhưng lời khuyên là trước khi bước chân qua đây,
+nên nghĩ đến các vấn đề chiến lược lâu dài. Berlin và châu Âu dân số già đi.
+Người trẻ nuôi người già, nên hàng năm, mức chi trả cho bảo hiểm xã hội
+giảm dần, hiện nay là 48% và sẽ còn giảm tiếp. Dù luật có cơ chế để hạn chế
+`rủi ro` này, bạn cũng nên tính tới. Con gái nhỏ ở đây học ở trường công
+tiếng Đức, được duy nhất nước Đức nói thôi:) Từ 1/8, con nít được miễn
+vé tàu điện, ngoài khoản trợ cấp 200e mỗi tháng.
+
+Người Sài gòn ít nhất là dân kỹ thuật giỏi, có thể đi khắp thế giới nhỉ.
+Chứ bọn tây, ít người qua Việt Nam làm Devops đó. Deal lương hơi khó.
+Có một số bạn chia sẻ trên kênh https://t.me/g7expat, có khi giúp ích
+cho bạn khỏi thiệt, không phải để bạn đứng núi này trông núi nọ. Chỗ mình,
+có các kỹ sư 50 60 tuổi vẫn lập trình PHP hay Java. Quan trọng là hạnh phúc,
+không phải tiền lương bạn nhé.
 
 ### `random-notes-1`
 
