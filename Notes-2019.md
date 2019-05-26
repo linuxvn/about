@@ -26,15 +26,65 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
 * Nghề nghiệp
+  * [Luật Murphy](#murphy-s-law)
   * [Phỏng vấn Boss](#boss-interview)
+  * [Berlin chào mừng bạn](#welcome-to-berlin)
 * Backup
   * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
 * Linh tinh
-  * [Berlin chào mừng bạn](#welcome-to-berlin)
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `murphy-s-law`
+
+tags: #devops #strategy #murphy #essential
+
+Trang wiki tóm tắt luật Murphy: _"Anything that can go wrong will go wrong"_.
+Câu tiếng Anh này ngắn gọn đến nỗi không cần phải dịch, ai cũng hiểu.
+
+Mình không nhớ biết đến luật này tự bao giờ. Nhưng rõ ràng nhiều bạn vẫn
+chưa biết luật này. Mình không rõ có tài liệu tiếng Việt nào viết về nó.
+Điều đáng ngạc nhiên là, rất khó để chứng minh cho bạn thông luật này.
+Dù nó được xác nhận nhiều bởi thực nghiệm, nó là một luật thống kê.
+99 phảy với một trăm số chín xếp hàng ngay ngắn theo sau, vẫn không phải
+100 phần trăm.
+
+Mình muốn viết bài về luật này rất lâu. Trong bài trước đây chẳng hạn
+`root-is-rut`, đã có nhiều ví dụ. Mình có thể hù bạn,
+mức độ kinh nghiệm của bạn trong nghề `devops` đo được bằng mức độ bạn
+hiểu và áp dụng luật Murphy tới đâu trong hệ thống của bạn =))
+
+Mình kể lại ví dụ mà bạn đã biết trong bài về sao lưu `postgresql`:
+Tất cả các khách hàng không sao, chỉ trừ một chú bị trục trặc với kịch bản
+sao lưu mà đội ops giải gần hai tháng chưa xong triệt để (k8s/stolon.)
+Từ khi ngay lúc định hướng viết hỗ trợ sao lưu, vấn đề này đã được nêu ra.
+Nhưng với tất cả các lý do, thiết kế hướng tập trung để né tránh xung đột
+với ứng dụng bị né tránh bị bỏ qua. Một cách vi phạm luật Murphy rõ ràng :P
+
+Một chuyện hài khác. Ai đi vé tàu không có vé, coi như đi lậu, sẽ bị phạt
+60e một lần. Anh bạn cùng chỗ làm kể, anh ta đi 4 năm trời không sao hết.
+Đúng bữa anh ấy hết vé, lại quên đi nạp, thì bị ngay đội tuần bắt quả tang.
+Mất ngay 60e chứ sao =)) Luật Murphy đây áp dụng chính xác quá luôn haha.
+
+Luật Murphy áp dụng cho hệ thống nfs là nản lòng nhất. Các hệ thống nfs
+phụ thuộc vào hạ tầng mạng, thường nằm tách biệt với các tầng ứng dụng
+phía trên. Năm 2013, mình nhớ cty cũ bị lỗi liên quan nfs, cả đội ngoác mõm
+ra chờ mấy tiếng đồng hồ. Còn mới đây thôi, hôm sáng thứ hai đầu tuần, đội
+Noc ngồi nâng cấp core switch, dù có đầy đủ backup, failover, nhưng một chú
+switch nào đó hỏng đơ phải reboot lại, thế là tạch luôn cả bọn, tạch luôn
+hệ thống nfs. Cả một hệ thống đâu mấy chục máy và dịch vụ phải khởi động lại,
+mất hai ngày mới xong hết các lỗi, nhưng các hệ quả vẫn còn lại
+-- xem `random-notes-1`.
+
+Luật này cũng liên quan tới phép quy nạp không hoàn toàn, xem đây:
+https://icy.theslinux.org/m/kyanh.net/2016/03/22/sau-1-2-3-4-5-6-se-la-gi/index.html
+Trong ngành ngân hàng hay ở mức quản lý cao cấp, có chuyện `risk management`.
+Trong cuộc sống có ngành bảo hiểm. Áp dụng cực đoan luật Murphy, bạn sẽ
+thấy chỉ còn một thứ có thể cứu vãn, niềm tin và sự may mắn của bạn :)
+
+Nếu để ý tới luật Murphy, rất nhiều bài toán Ops sẽ được sáng tỏ :)
 
 ### `welcome-to-berlin`
 
