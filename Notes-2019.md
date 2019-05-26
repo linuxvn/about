@@ -31,8 +31,44 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
 * Linh tinh
+  * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `random-notes-1`
+
+tags: #notes #random #retrospective #puppet #salt #ansible
+
+Bữa có mẹo dùng `nmap`, giờ mình ghi lại kết quả để so sánh. Kịch bản cũ dò
+hơn 450 host, mỗi máy dò 33 cổng, thời gian mất từ 1h đến 2h mới xong.
+Kịch bản `nmap` mất dưới 1 phút, tìm ra khoảng 730 target cho Prometheus.
+
+Trong ghi chú trước về sao lưu `postgresql`, cách dùng disk snapshot
+vẫn ổn chưa gặp sai sót gì; việc sao lưu vào lúc khoảng 5h chiều (gmt+2).
+Có thể giải thích là do database hoạt động ít quá, mỗi ngày tăng
+trung bình 1gb - 5gb theo mình nhớ. Còn team vẫn loay hoay đủ cách để
+chạy `pg_basebackup`; dùng `stolon` lại thêm `k8s` thiệt khổ đời.
+
+Cách hai của việc sao lưu `postgresql`, là dùng `rsync`. Cách này yêu cầu
+phải tắt dịch vụ `postgresql` như đề cập trong tài liệu của chính thức,
+với các ghi chú về hạn chế, điều kiện và biến thể. Tuy nhiên, nếu từng
+triển khai `barman`, sẽ thấy `barman` dùng `rsync` thôi, không cần tắt
+dịch vụ gì trước đó. Như thế tốt quá. Nhưng phải đọc mã nguồn của `barman`
+(viết bằng Python) mới hiểu được cặn kỹ. Ai rảnh không?
+
+Hôm qua mình chạy `dry-run` cho một thay đổi nhờ `salt` xong, rồi chạy
+thiệt. Hệ thống `production` tạch luôn, báo động ầm ầm: Lúc thử thì bình
+thường, lúc `apply` thiệt thì có thêm thay đổi do một bạn khác, làm việc
+khác, broadcast các thay đổi về `nfs`. Bị cho lên trụ điện nhưng may mình
+có log làm bằng chứng, nên leo xuống được ngay. Hú hồn. Chuyện gì cũng
+có thể xảy ra, anh em cứ thi nhau đẩy hàng vào `master`, test một chỗ apply
+chỗ khác, im im làm không thông báo ai, thì có ngày bắn vào chân mình thôi.
+
+`puppet`, `salt`, `ansible`... bạn chọn cái nào? Ví dụ vừa rồi giúp bạn
+hiểu, hãy chọn cách mà bạn có thể làm đúng đắn nhất. Một số tình huống
+có tính chiến lược thì mình không bàn tới. Trong hệ thống của mình có
+hơn 450 host, một nửa quản lý bằng `salt`, nửa còn lại bằng `puppet`:)
+Nên để cho tiện, mình bí mật dùng `ansible` trị cả hai :))
 
 ### `postgresql-file-system-level-backup`
 
