@@ -29,3 +29,4 @@
 @linuxvn_notes#Notes-2019#hdfs-metadata-backup
 @linuxvn_notes#Notes-2019#postgresql-file-system-level-backup
 @linuxvn_notes#Notes-2019#random-notes-1
+@linuxvn_notes#Notes-2019#welcome-to-berlin
