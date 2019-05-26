@@ -77,7 +77,8 @@ mình phải trả 760e mỗi tháng chưa kể điện nước internet. Nhưng
 con số dư ra chả nhiêu, không thể giàu như mấy ku ở Việt Nam được.
 
 Ở 21 tháng bạn thi bằng B1 tiếng Đức (giống ielts 6), thì được quyền định
-cư vĩnh viễn. Nếu lười, bạn cứ việc chờ 3 năm, quyền đó tự động có cho bạn.
+cư vĩnh viễn (nhưng bạn không được liên tục rời khỏi Đức quá 6 tháng).
+Nếu lười, bạn cứ việc chờ 3 năm, quyền đó tự động có cho bạn.
 Sau 8 năm, bạn có quyền đổi màu quốc tịch (ôi, chắc mình không ham, nhỉ)
 Nhưng chưa vội xa vời; chỉ cần có quyền làm việc với Bluecard bạn đã có thể
 đi khắp châu Âu không bị xách mé rồi. Nhưng nếu bạn ăn thịt heo, thịt chó,
