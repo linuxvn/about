@@ -61,7 +61,7 @@ Tất cả các khách hàng không sao, chỉ trừ một chú bị trục tr�
 sao lưu mà đội ops giải gần hai tháng chưa xong triệt để (k8s/stolon.)
 Từ khi ngay lúc định hướng viết hỗ trợ sao lưu, vấn đề này đã được nêu ra.
 Nhưng với tất cả các lý do, thiết kế hướng tập trung để né tránh xung đột
-với ứng dụng bị né tránh bị bỏ qua. Một cách vi phạm luật Murphy rõ ràng :P
+với ứng dụng bị bỏ qua. Một cách vi phạm luật Murphy rõ ràng :P
 
 Một chuyện hài khác. Ai đi vé tàu không có vé, coi như đi lậu, sẽ bị phạt
 60e một lần. Anh bạn cùng chỗ làm kể, anh ta đi 4 năm trời không sao hết.
