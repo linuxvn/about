@@ -65,8 +65,8 @@ với ứng dụng bị bỏ qua. Một cách vi phạm luật Murphy rõ ràng 
 
 Một chuyện hài khác. Ai đi vé tàu không có vé, coi như đi lậu, sẽ bị phạt
 60e một lần. Anh bạn cùng chỗ làm kể, anh ta đi 4 năm trời không sao hết.
-Đúng bữa anh ấy hết vé, lại quên đi nạp, thì bị ngay đội tuần bắt quả tang.
-Mất ngay 60e chứ sao =)) Luật Murphy đây áp dụng chính xác quá luôn haha.
+Đúng bữa anh ấy hết vé, lại quên đi nạp tiền, thì bị ngay đội tuần bắt.
+Mất ngay 60e tiền ngu chứ sao =)) Luật Murphy đây áp dụng chính xác quá luôn haha.
 
 Luật Murphy áp dụng cho hệ thống nfs là nản lòng nhất. Các hệ thống nfs
 phụ thuộc vào hạ tầng mạng, thường nằm tách biệt với các tầng ứng dụng
