@@ -49,7 +49,7 @@ chưa biết luật này. Mình không rõ có tài liệu tiếng Việt nào v
 Điều đáng ngạc nhiên là, rất khó để chứng minh cho bạn thông luật này.
 Dù nó được xác nhận nhiều bởi thực nghiệm, nó là một luật thống kê.
 99 phảy với một trăm số chín xếp hàng ngay ngắn theo sau, vẫn không phải
-100 phần trăm.
+100 (phần trăm).
 
 Mình muốn viết bài về luật này rất lâu. Trong bài trước đây chẳng hạn
 `root-is-rut`, đã có nhiều ví dụ. Mình có thể hù bạn,
