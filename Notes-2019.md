@@ -82,7 +82,7 @@ Luật này cũng liên quan tới phép quy nạp không hoàn toàn, xem đây
 https://icy.theslinux.org/m/kyanh.net/2016/03/22/sau-1-2-3-4-5-6-se-la-gi/index.html
 Trong ngành ngân hàng hay ở mức quản lý cao cấp, có chuyện `risk management`.
 Trong cuộc sống có ngành bảo hiểm. Áp dụng cực đoan luật Murphy, bạn sẽ
-thấy chỉ còn một thứ có thể cứu vãn, niềm tin và sự may mắn của bạn :)
+thấy chỉ còn hai thứ có thể cứu vãn, niềm tin và sự may mắn của bạn :)
 
 Nếu để ý tới luật Murphy, rất nhiều bài toán Ops sẽ được sáng tỏ :)
 
