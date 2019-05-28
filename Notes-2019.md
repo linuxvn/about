@@ -52,18 +52,18 @@ Dù nó được xác nhận nhiều bởi thực nghiệm, nó là một luật
 100 (phần trăm).
 
 Mình muốn viết bài về luật này rất lâu. Trong bài trước đây chẳng hạn
-`root-is-rut`, đã có nhiều ví dụ. Mình có thể hù bạn,
+`root-is-rut`, đã có nhiều ví dụ. Có thể hù bạn,
 mức độ kinh nghiệm của bạn trong nghề `devops` đo được bằng mức độ bạn
 hiểu và áp dụng luật Murphy tới đâu trong hệ thống của bạn =))
 
-Mình kể lại ví dụ mà bạn đã biết trong bài về sao lưu `postgresql`:
+Trong ví dụ mà bạn đã biết về sao lưu `postgresql`:
 Tất cả các khách hàng không sao, chỉ trừ một chú bị trục trặc với kịch bản
-sao lưu mà đội ops giải gần hai tháng chưa xong triệt để (k8s/stolon.)
+mà đội ops giải gần hai tháng chưa xong triệt để triệt để (k8s/stolon.)
 Từ khi ngay lúc định hướng viết hỗ trợ sao lưu, vấn đề này đã được nêu ra.
 Nhưng với tất cả các lý do, thiết kế hướng tập trung để né tránh xung đột
 với ứng dụng bị bỏ qua. Một cách vi phạm luật Murphy rõ ràng :P
 
-Một chuyện hài khác. Ai đi vé tàu không có vé, coi như đi lậu, sẽ bị phạt
+Một chuyện hài khác. Ai đi tàu không có vé, coi như đi lậu, sẽ bị phạt
 60e một lần. Anh bạn cùng chỗ làm kể, anh ta đi 4 năm trời không sao hết.
 Đúng bữa anh ấy hết vé, lại quên đi nạp tiền, thì bị ngay đội tuần bắt.
 Mất ngay 60e tiền ngu chứ sao =)) Luật Murphy đây áp dụng chính xác quá luôn haha.
