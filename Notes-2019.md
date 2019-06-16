@@ -75,22 +75,21 @@ cần luyện kỹ năng đó. Việc gì tới sẽ phải tới, vậy thôi.
   quán Đức ở Sài gòn cấp visa ngắn hạn 3 tháng để bạn qua Đức xin tiếp visa
   dài hạn. Việc khó đầu tiên là đặt lịch hẹn làm thủ tục visa, thường
   việc này phải tiến hành trước vài tháng, trước cả khi bạn có offer từ
-  các công ty đấy. Bạn sẽ phải gửi email để hỏi (xem trên trang web
+  các công ty đấy. Bạn sẽ phải gửi email để hỏi (xem trên
   https://vietnam.diplo.de/), còn trước đây mình canh mãi mới được,
   và lịch hẹn của mình có sau thời gian bắt đầu hợp đồng đến mấy tháng.
-  Công ty có thể có visa agent hỗ trợ, nhưng bạn phải tự tìm hiểu hoàn
-  chỉnh giấy tờ, thủ tục, đặt lịch hẹn,... nhé. Chủ động vẫn hơn, và quan
-  trọng là thông báo đầy đủ tình trạng cho công ty để họ biết mà hỗ trợ
-  hoặc ... chờ bạn onboard.
+  Công ty có thể có visa agent hỗ trợ, nhưng bạn nên chủ động tìm hiểu hoàn
+  chỉnh giấy tờ, thủ tục, đặt lịch hẹn,... nhé.
+  Và quan trọng là thông báo đầy đủ tình trạng cho công ty để họ biết
+  mà hỗ trợ hoặc ... chờ bạn onboard.
 
 5. `Qua tới Đức`: Do bạn ở lâu hơn 2 tuần, bạn sẽ phải làm thủ tục đăng ký
     chỗ ở (Anmeldung).
     Việc này `dễ`, làm trong 10 phút là xong, nhưng oái ăm là bạn phải
-    có một địa chỉ ổn định để bạn có thể nhận giấy tờ (ở Saigon
-    chục năm số thư mình nhận chỉ đâu 10 cái, ít hơn số thư  nhận ở Berlin trong
-    vài tuần đầu tiên) và làm các thủ tục tiếp theo
-    (mở tài khoản ngân hàng, bảo hiểm, thuê nhà, ...) Bạn có thể ở
-    tạm Airbnb và nhờ ai quen cho/thuê mượn địa chỉ đăng ký.
+    có một địa chỉ ổn định để bạn có thể nhận giấy tờ (rất nhiều)
+    và làm các thủ tục tiếp theo (mở tài khoản ngân hàng, bảo hiểm,
+    thuê nhà, ...) Bạn có thể ở tạm Airbnb và nhờ ai quen cho/thuê mượn
+    địa chỉ đăng ký.
 
     Không phải chỗ ở Airbnb nào cũng cho bạn giấy Wohnungsgeberbestätigung,
     mà có cho thì cũng phập phù khi bạn chuyển đi nơi khác (nhưng hay cái
@@ -98,10 +97,10 @@ cần luyện kỹ năng đó. Việc gì tới sẽ phải tới, vậy thôi.
     địa chỉ mới; cái này còn xịn hơn routing bằng iptables nhé.)
 
     Thuê nhà ở Berlin khó hơn mua nhà ở quận 7 sài gòn, một phần vì quá đông
-    người thuê, nhưng phần chủ yếu là bạn mới qua đây, chưa ai biết bạn là ai,
-    thu nhập thế nào: Ở đây, một khi đã thuê nhà ở, chủ nhà rất khó có
-    lý do để đuổi bạn đi: Nhiều chủ nhà hỏi bảng lương của bạn trong vòng
-    mấy tháng cuối thì mới cho thuê nhà đấy (nên nhớ, chính công ty bạn
+    người thuê, và phần chủ yếu là bạn mới qua đây, chưa ai biết bạn là ai,
+    thu nhập thế nào: Một khi đã thuê nhà ở, chủ nhà rất khó có
+    lý do để đuổi bạn đi, nên nhiều chủ nhà hỏi bảng lương của bạn trong
+    vòng mấy tháng cuối thì mới cho thuê nhà đấy (nên nhớ, chính công ty bạn
     sắp xin vào cũng không dám hỏi bảng lương của bạn nhé.)
     Nhưng có nhà rồi, coi như khỏe re rè re luôn.
     Mình thuê nhà 65 mét vuông, hai phòng, hết khoảng 760e mỗi tháng.
