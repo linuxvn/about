@@ -32,3 +32,4 @@
 @linuxvn_notes#Notes-2019#welcome-to-berlin
 @linuxvn_notes#Notes-2019#murphy-s-law
 @linuxvn_notes#Notes-2019#welcome-back-stk-and-huy
+@linuxvn_notes#Notes-2019#welcome-to-berlin-2
