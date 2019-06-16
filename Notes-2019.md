@@ -29,6 +29,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Luật Murphy](#murphy-s-law)
   * [Phỏng vấn Boss](#boss-interview)
   * [Berlin chào mừng bạn](#welcome-to-berlin)
+  * [Berlin chào mừng bạn (2)](#welcome-to-berlin-2)
 * Backup
   * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
@@ -37,6 +38,75 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `welcome-to-berlin-2`
+
+tags: #berlin #relocation #devops #random
+
+Mình chính thức thông báo, mình đã chuyển qua làm việc lâu dài tại Berlin.
+Mình chuẩn bị khá lâu nhưng lúc đi thì cái vù, chỉ vài người biết. Một phần
+vì các thủ tục giấy tờ ở đây phức tạp, có thể tuyển thẳng mình về Saigon
+bất kỳ lúc nào nên mình không dám hó hé, sợ quê.
+
+Berlin năng động, không như kiểu Sài gòn hay Singapore. Nhiều bạn cũng
+sắp qua đây, hỏi tùm lum thứ. Nên mình viết sơ vài ý quan trọng để
+bạn lên kế hoạch. Người Đức thích và giỏi lập kế hoạch, nên đầu tiên bạn
+cần luyện kỹ năng đó. Việc gì tới sẽ phải tới, vậy thôi.
+
+1. `Xin việc`: Bạn apply qua LinkedIn, nên đăng ký một tài khoản Premium
+  miễn phí tháng đầu, 30 Mỹ kim mỗi tháng kế tiếp (nếu vẫn xài) Trên đó,
+  có khóa học `Get things done` cực hay, bạn nên xem qua nhé. Khi xin việc,
+  cần hết sức chú ý hỏi về môi trường và phong cách làm việc. Càng cởi mở
+  càng tốt; vì người Đức nổi tiếng kỷ luật mà. Ví dụ, bạn nên hỏi tao muốn
+  làm ở nhà được không;)
+
+2. `Mức lương`: Khó mà giàu ở đây. Muốn giàu, bạn đi Singapore hay Mỹ nhé.
+  Còn để cân bằng sống và làm việc chả theo giương ai hết, Berlin là nơi
+  khá tốt cho bạn đấy. Mức lương của mình thì bạn có thể hỏi riêng, nhưng
+  bạn nên biết điểm khởi đầu của mình để khỏi tự bắn vào chân nhé.
+
+3. `Bằng cấp`: Bạn nên có một bằng đại học được Đức công nhận. Mình may
+  mắn có bằng mát-tơ ở Việt nam, trường đại học mình được công nhận, nhưng
+  bằng của mình thuộc dạng dỏm, phải gửi qua Đức cho họ kiểm tra, ký giấy
+  công nhận. Mất ít phí. Nhưng kết quả là tờ giấy còn đẹp hơn cả cái bằng
+  gốc của mình hehe.
+
+4. `Thủ tục visa`: Hơi khó, bạn xin visa làm việc (bluecard), nhưng lãnh sự
+  quán Đức ở Sài gòn cấp visa ngắn hạn 3 tháng để bạn qua Đức xin tiếp visa
+  dài hạn. Việc khó đầu tiên là đặt lịch hẹn làm thủ tục visa, thường
+  việc này phải tiến hành trước vài tháng, trước cả khi bạn có offer từ
+  các công ty đấy. Bạn sẽ phải gửi email để hỏi (xem trên
+  https://vietnam.diplo.de/), còn trước đây mình canh mãi mới được,
+  và lịch hẹn của mình có sau thời gian bắt đầu hợp đồng đến mấy tháng.
+  Công ty có thể có visa agent hỗ trợ, nhưng bạn nên chủ động tìm hiểu hoàn
+  chỉnh giấy tờ, thủ tục, đặt lịch hẹn,... nhé.
+  Và quan trọng là thông báo đầy đủ tình trạng cho công ty để họ biết
+  mà hỗ trợ hoặc ... chờ bạn onboard.
+
+5. `Qua tới Đức`: Do bạn ở lâu hơn 2 tuần, bạn sẽ phải làm thủ tục đăng ký
+    chỗ ở (Anmeldung).
+    Việc này `dễ`, làm trong 10 phút là xong, nhưng oái ăm là bạn phải
+    có một địa chỉ ổn định để bạn có thể nhận giấy tờ (rất nhiều)
+    và làm các thủ tục tiếp theo (mở tài khoản ngân hàng, bảo hiểm,
+    thuê nhà, ...) Bạn có thể ở tạm Airbnb và nhờ ai quen cho/thuê mượn
+    địa chỉ đăng ký.
+
+    Không phải chỗ ở Airbnb nào cũng cho bạn giấy Wohnungsgeberbestätigung,
+    mà có cho thì cũng phập phù khi bạn chuyển đi nơi khác (nhưng hay cái
+    là bạn có thể đăng ký dịch vụ bưu điện tự động chuyển thư của bạn qua
+    địa chỉ mới; cái này còn xịn hơn routing bằng iptables nhé.)
+
+    Thuê nhà ở Berlin khó hơn mua nhà ở quận 7 sài gòn, một phần vì quá đông
+    người thuê, và phần chủ yếu là bạn mới qua đây, chưa ai biết bạn là ai,
+    thu nhập thế nào: Một khi đã thuê nhà ở, chủ nhà rất khó có
+    lý do để đuổi bạn đi, nên nhiều chủ nhà hỏi bảng lương của bạn trong
+    vòng mấy tháng cuối thì mới cho thuê nhà đấy (nên nhớ, chính công ty bạn
+    sắp xin vào cũng không dám hỏi bảng lương của bạn nhé.)
+    Nhưng có nhà rồi, coi như khỏe re rè re luôn.
+    Mình thuê nhà 65 mét vuông, hai phòng, hết khoảng 760e mỗi tháng.
+
+Còn nhiều nữa, mình sẽ không tiếp tục viết bài mới mà sẽ chỉ cập nhật
+trong bài này. Chúc bạn may mắn.
 
 ### `welcome-back-stk-and-huy`
 
