@@ -33,9 +33,33 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
 * Linh tinh
+  * [Welcome back, An Stk and Huy](#welcome-back-stk-and-huy)
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `welcome-back-stk-and-huy`
+
+tags: #linux #vn #saigonlug
+
+`ArchLinuxVn` chào mừng sự trở lại của các bạn An stk và Huy-Ngo trên
+nhóm telegram @linuxvn. Sau thế chiến thứ ba, các bạn đã lưu lạc quá lâu,
+đi làm kinh tế ở đâu không biết nhưng lúc trở lại đã tăng gấp đôi băng
+thông cho hệ thống mirror (f.archlinuxvn.org) là điều thật đáng trân trọng.
+
+`ArchLinuxVn` chỉ còn là cái tên từ hồi xưa. Nhiều bạn giờ nâng cấp lên
+phiên bản MacOS của `ArchLinux`. Giờ ngồi với nhau người ta không hỏi
+Linux là gì, mà hỏi Docker là gì, rồi k8s là gì.... Kể ra, không phải vì
+ai cũng đã hiểu Linux, chẳng qua Linux không còn phải là cách dễ kiếm
+cơn như ngày xưa nữa.
+
+Sự trở lại của An stk và Huy Ngo còn được đánh dấu bởi việc phiên bản kế
+tiếp của MacOS chuyển qua shell mặc định trên hệ thống là `zsh`, thay vì
+`Bash-3`. Mình đã gặp rất nhiều trục trặc khi hỗ trợ cho người dùng Bash
+trên máy MacOS, giờ chắc đau đầu hơn. Nhưng thật sự GPL có vấn đề với
+`bọn` nhà giàu. Biết sao, buồn một phút.
+
+Cảm ơn các bạn An stk và Huy Ngô.
 
 ### `murphy-s-law`
 
