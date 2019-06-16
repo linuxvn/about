@@ -103,8 +103,7 @@ cần luyện kỹ năng đó. Việc gì tới sẽ phải tới, vậy thôi.
     lý do để đuổi bạn đi: Nhiều chủ nhà hỏi bảng lương của bạn trong vòng
     mấy tháng cuối thì mới cho thuê nhà đấy (nên nhớ, chính công ty bạn
     sắp xin vào cũng không dám hỏi bảng lương của bạn nhé.)
-
-    Nhưng có nhà rồi, coi nhưng khỏe re rè re luôn.
+    Nhưng có nhà rồi, coi như khỏe re rè re luôn.
     Mình thuê nhà 65 mét vuông, hai phòng, hết khoảng 760e mỗi tháng.
 
 Còn nhiều nữa, mình sẽ không tiếp tục viết bài mới mà sẽ chỉ cập nhật
