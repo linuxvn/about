@@ -15,6 +15,7 @@ Purupose: Connecting people.
 |                   | [01/2009](http://web.archive.org/web/20090116142939/http://ubuntu-vn.org/)              | [05/2012](http://web.archive.org/web/20181114114854/http://ubuntu-vn.org/) | 6 years |
 | `archlinuxvn.org` | [05/2011](http://web.archive.org/web/20180627163129/http://l.archlinuxvn.org/archlinuxvn/msg02551.html) | [active on Telegram](https://t.me/linuxvn) | aka `linuxvn` |
 | `linuxvietnam`    | [10/2017](https://t.me/linuxvietnam/1) | [active on Telegram](https://t.me/linuxvietnam/) |
+| `webuild.community` | 07/2012 (???) | [active on Slack](https://chat.webuild.community/) | - Previously [vietnam.rb](http://ruby.org.vn/) <br> - Main channels: `#general`, `#devops`, `#frontend`, `#javascript`, `#rustlang`, `#random`, ... <br> - Jobs board: [here](https://github.com/awesome-jobs/vietnam/issues) |
 
 ### Linux Distributions
 
