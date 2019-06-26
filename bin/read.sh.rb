@@ -40,26 +40,35 @@ lines = File.open(F_INPUT, "r").readlines
 notes = {}
 current_section = nil
 code_block = false
+skip_below = false
 
 lines.each do |line|
+  # A level-2 headings, we skip them all
   if gs = line.match(%r{^## .+})
     current_section = nil
     code_block = false
+    skip_below = false
     next
   end
 
+  # Our post should be started from level-3 headings
   if gs = line.match(%r{^### (.+)})
     current_section = gs[1]
+    skip_below = false
     code_block = false
     next
   end
 
+
   # Skip the line if section information is not found.
   next unless current_section
-
   notes[current_section] ||= []
+
+  next if skip_below
+
   if line.match(%r{^```})
     notes[current_section] << line
+    # come in or out a code block
     code_block = (not code_block)
     next
   end
@@ -75,6 +84,12 @@ lines.each do |line|
   if line.strip == ""
     notes[current_section] << line
     notes[current_section] << "\n"
+    next
+  end
+
+  if line.strip == "<!-- skip below -->"
+    skip_below = true
+    notes[current_section] << "\n_(stripped; please read more on Github)_"
     next
   end
 
