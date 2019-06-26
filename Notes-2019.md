@@ -41,7 +41,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### `welcome-to-berlin-2`
 
-tags: #berlin #relocation #devops #random
+tags: #berlin #relocation #devops #bluecard
 
 Mình chính thức thông báo, mình đã chuyển qua làm việc lâu dài tại Berlin.
 Mình chuẩn bị khá lâu nhưng lúc đi thì cái vù, chỉ vài người biết. Một phần
@@ -259,7 +259,7 @@ Nếu để ý tới luật Murphy, rất nhiều bài toán Ops sẽ được s
 
 ### `welcome-to-berlin`
 
-tags: #berlin #relocation #devops #random
+tags: #berlin #relocation #devops #bluecard
 
 Mình viết bài này lâu rồi, nhưng để xó vì dự tính khác; hôm qua thôi, biết
 có bạn đang chuẩn bị hành lý qua Berlin, nên mình thấy nên viết lại, nhưng
