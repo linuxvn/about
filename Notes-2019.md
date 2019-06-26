@@ -105,8 +105,59 @@ cần luyện kỹ năng đó. Việc gì tới sẽ phải tới, vậy thôi.
     Nhưng có nhà rồi, coi như khỏe re rè re luôn.
     Mình thuê nhà 65 mét vuông, hai phòng, hết khoảng 760e mỗi tháng.
 
-Còn nhiều nữa, mình sẽ không tiếp tục viết bài mới mà sẽ chỉ cập nhật
-trong bài này. Chúc bạn may mắn.
+Chúc bạn may mắn.
+
+<!-- skip below -->
+
+Các câu hỏi thường gặp
+
+1. `Có vấn đề gì không, nếu lịch hẹn ở lãnh sự quán sau thời gian bắt đầu hợp đồng?`:
+   Bạn chỉ việc báo lại công ty để làm lại
+   hợp đồng sau này thôi. Công ty sẽ chờ bạn, việc này thường nằm trong
+   kế hoạch dự tính rồi
+
+2. `Không có bằng đại học được không?`: Tiêu chuẩn chung của châu Âu, chứ
+    không chỉ riêng Đức, là bạn có bằng đại học, hoặc một bằng tương đương
+    (được công nhận) ở châu Âu. Bạn cần ghi rõ và trao đổi thẳng thắn với
+    công ty (hoặc visa agent của họ) để họ hỗ trợ, đỡ mất thời gian đôi bên.
+
+3. `Bao lâu thì có visa`: Cái này lãnh sự quán Đức trả lời cho bạn mới phải.
+    Việc cần làm là bạn chuẩn bị kỹ càng giấy tờ thủ tục, khi nào nộp lên
+    đầy đủ thì họ làm lẹ cho bạn thôi. Mình có visa trong khoảng dưới 2 tuần.
+
+4. `Mua bao hiểm gì trước khi qua Đức`: Bạn phải có bảo hiểm y tế khi đặt
+    chân vào Đức. Bạn có thể hỏi mua các gói bảo hiểm Du lịch. Mình thì liên
+    hệ công ty bảo hiểm TK (tk.de) ở Đức để họ làm bảo hiểm cho mình luôn,
+    y chang như là mình đã đi làm tại công ty đóng bảo hiểm xã hội ở Việt Nam ấy.
+
+5. `Chọn hãng bảo hiểm nào`: Mình chọn TK, khá phổ biến ở Đức. Đó là bảo hiểm
+    công. Nếu chọn bảo hiểm tư ngay từ đầu thì bạn không có cơ hội chuyển
+    ngược lại bảo hiểm công, nên bạn cần lưu ý chọn _đúng loại_. Bảo hiểm
+    của bạn có thể mua thêm cho vợ, con mà không tốn quá nhiều.
+
+6. `Mua simcard ở Đức dễ không`: Mua đúng luật thì dễ rồi, mua trái luật
+    cũng không khó lắm. Các tiệm bán sim khá phổ biến, việc kích hoạt sim
+    đôi khi... không cần cả passport của bạn, do đã có người kích hoạt
+    sẵn (giống ở Việt Nam). Mình cũng mua loại sim này, sau đó viết email
+    gửi cho nhà mạng bảo họ đổi lại cho đúng tên mình -- việc này chỉ thực
+    hiện được nếu bạn có Anmeldung ở Đức. Chi phí khá rẻ, khoảng 20 - 25e
+    có đủ xài đỡ rồi. Mình dùng mạng `ortelmobile` họ có trang tiếng Anh
+    và hỗ trợ rất tốt :)
+
+7. `Đăng ký tài khoản ngân hàng thế nào`: Trước đây, mình đăng ký ở N26,
+    nhưng hiện nay họ không hỗ trợ visa ngắn hạn (3-tháng) từ Việt Nam.
+    Mình đi hỏi vài ngân hàng khác (Commerzbank, Postbank) họ đều yêu cầu
+    visa 6 tháng trở lên. Đây đúng là trở ngại: Không có tài khoản ngân
+    hàng thì một số thủ tục sẽ bị tắt nghẽn, và bạn sẽ không thể nhận lương
+    trong vài tháng đầu. Quả thật là, trong vòng 3 tháng đầu mình không
+    nhận được tiền từ công ty, nên toàn phải xài không khí thôi à.
+
+8. `Mang bao nhiêu tiền mặt qua Đức được`: Cái này thì theo quy định của
+    hải quan Việt nam, đâu khoảng 5 ngàn euro. Nhưng xài tiền mặt khá mệt.
+    Đặc biệt, bạn nhớ kiếm cái túi nhỏ đựng tiền xu (coin), mỗi euro đến
+    100 xu nhỏ, nên đi mua đồ, siêu thị rất dễ mất. Nên nhớ tiền bạn mua bao
+    nhiêu gửi đúng bấy nhiêu, nhiều chỗ gửi dư họ tự động ... lấy luôn,
+    coi như tiền tip :D
 
 ### `welcome-back-stk-and-huy`
 
