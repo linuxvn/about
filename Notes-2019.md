@@ -109,7 +109,7 @@ Chúc bạn may mắn.
 
 <!-- skip below -->
 
-Các câu hỏi thường gặp
+Các câu hỏi thường gặp, cho người đến Berlin:
 
 1. `Có vấn đề gì không, nếu lịch hẹn ở lãnh sự quán sau thời gian bắt đầu hợp đồng?`:
    Bạn chỉ việc báo lại công ty để làm lại
@@ -121,13 +121,15 @@ Các câu hỏi thường gặp
     (được công nhận) ở châu Âu. Bạn cần ghi rõ và trao đổi thẳng thắn với
     công ty (hoặc visa agent của họ) để họ hỗ trợ, đỡ mất thời gian đôi bên.
 
-3. `Bao lâu thì có visa`: Cái này lãnh sự quán Đức trả lời cho bạn mới phải.
+3. `Bao lâu thì có visa?`: Cái này lãnh sự quán Đức trả lời cho bạn mới phải.
     Việc cần làm là bạn chuẩn bị kỹ càng giấy tờ thủ tục, khi nào nộp lên
     đầy đủ thì họ làm lẹ cho bạn thôi. Mình có visa trong khoảng dưới 2 tuần.
 
-4. `Mua bao hiểm gì trước khi qua Đức`: Bạn phải có bảo hiểm y tế khi đặt
-    chân vào Đức. Bạn có thể hỏi mua các gói bảo hiểm Du lịch. Mình thì liên
-    hệ công ty bảo hiểm TK (tk.de) ở Đức để họ làm bảo hiểm cho mình luôn,
+4. `Mua bảo hiểm gì trước khi qua Đức?`: Bạn phải có bảo hiểm y tế khi đặt
+    chân vào Đức. Bạn có thể hỏi mua các gói bảo hiểm Du lịch ứng với thời gian
+    của visa (ví dụ 3 tháng).
+    Mình thì liên hệ công ty bảo hiểm TK (tk.de) ở Đức để họ làm bảo hiểm
+    cho mình luôn, nên không phải tốn đồng nào,
     y chang như là mình đã đi làm tại công ty đóng bảo hiểm xã hội ở Việt Nam ấy.
 
 5. `Chọn hãng bảo hiểm nào`: Mình chọn TK, khá phổ biến ở Đức. Đó là bảo hiểm
@@ -135,7 +137,7 @@ Các câu hỏi thường gặp
     ngược lại bảo hiểm công, nên bạn cần lưu ý chọn _đúng loại_. Bảo hiểm
     của bạn có thể mua thêm cho vợ, con mà không tốn quá nhiều.
 
-6. `Mua simcard ở Đức dễ không`: Mua đúng luật thì dễ rồi, mua trái luật
+6. `Mua simcard ở Đức dễ không?`: Mua đúng luật thì dễ rồi, mua trái luật
     cũng không khó lắm. Các tiệm bán sim khá phổ biến, việc kích hoạt sim
     đôi khi... không cần cả passport của bạn, do đã có người kích hoạt
     sẵn (giống ở Việt Nam). Mình cũng mua loại sim này, sau đó viết email
@@ -144,20 +146,44 @@ Các câu hỏi thường gặp
     có đủ xài đỡ rồi. Mình dùng mạng `ortelmobile` họ có trang tiếng Anh
     và hỗ trợ rất tốt :)
 
-7. `Đăng ký tài khoản ngân hàng thế nào`: Trước đây, mình đăng ký ở N26,
+7. `Đăng ký tài khoản ngân hàng thế nào?`: Trước đây, mình đăng ký ở N26,
     nhưng hiện nay họ không hỗ trợ visa ngắn hạn (3-tháng) từ Việt Nam.
     Mình đi hỏi vài ngân hàng khác (Commerzbank, Postbank) họ đều yêu cầu
     visa 6 tháng trở lên. Đây đúng là trở ngại: Không có tài khoản ngân
     hàng thì một số thủ tục sẽ bị tắt nghẽn, và bạn sẽ không thể nhận lương
     trong vài tháng đầu. Quả thật là, trong vòng 3 tháng đầu mình không
-    nhận được tiền từ công ty, nên toàn phải xài không khí thôi à.
+    nhận được tiền từ công ty, nên toàn phải ăn không khí thôi à.
 
-8. `Mang bao nhiêu tiền mặt qua Đức được`: Cái này thì theo quy định của
+8. `Mang bao nhiêu tiền mặt qua Đức được?`: Cái này thì theo quy định của
     hải quan Việt nam, đâu khoảng 5 ngàn euro. Nhưng xài tiền mặt khá mệt.
     Đặc biệt, bạn nhớ kiếm cái túi nhỏ đựng tiền xu (coin), mỗi euro đến
     100 xu nhỏ, nên đi mua đồ, siêu thị rất dễ mất. Nên nhớ tiền bạn mua bao
     nhiêu gửi đúng bấy nhiêu, nhiều chỗ gửi dư họ tự động ... lấy luôn,
     coi như tiền tip :D
+
+9. `Bao lâu thì có PR?`: Đã nói trong phần 1. Nếu có bằng B1 tiếng Đức thì
+    tối thiểu 21 tháng. Không thì chờ 3 năm. Sau 8 năm bạn có quyền xin
+    quốc tịch Đức (nhưng đồng thời bạn phải bỏ quốc tịch Việt Nam.)
+
+10. `Thử việc bao lâu, nếu mất job thì sao?`: Thời gian thử việc có thể
+      đến 6 tháng, như trường hợp của mình. Trong thời gian đó, hai bên có
+      quyền kết thúc hợp đồng sau khi báo trước 2 tuần. Sau thời gian thử
+      việc, thời gian đó (notice period) lâu hơn, đến 3 tháng.
+
+      Nếu mất job, bạn phải báo với cơ quan quản lý, và bạn có thể ở lại
+      Đức 3 tháng sau đó tìm việc mới. Tìm không ra thì ... xin mời về.
+
+11. `Bluecard có thời hạn bao lâu?`: Tối đa 4 năm, và không lâu hơn hợp
+    đồng của bạn (cộng thêm 3 tháng như vừa nói ở trên). Các công ty ổn
+    định về tài chính có thể cấp cho bạn hợp đồng vô thời hạn, khi đó thì
+    bạn có ngay `bluecard` 4 năm.
+
+12. `Mua vé tàu điện thế nào?`: Bạn chưa có tài khoản ngân hàng thì không
+    mua được vé năm (trung bình trả 64 euro mỗi tháng). Mua vé tháng mất
+    khoảng 81 euro. Nếu không phải đi lại thường xuyên, bạn có thể mua
+    từng set 4 vé một chiều (mỗi vé chỉ được đi một chiều, không được
+    quay ngược lại) giá 9 euro. Nếu có con nít đi kèm bạn tìm hiểu thêm
+    vé ngày ;)
 
 ### `welcome-back-stk-and-huy`
 
