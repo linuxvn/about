@@ -154,13 +154,6 @@ Các câu hỏi thường gặp, cho người đến Berlin:
     trong vài tháng đầu. Quả thật là, trong vòng 3 tháng đầu mình không
     nhận được tiền từ công ty, nên toàn phải ăn không khí thôi à.
 
-8. `Mang bao nhiêu tiền mặt qua Đức được?`: Cái này thì theo quy định của
-    hải quan Việt nam, đâu khoảng 5 ngàn euro. Nhưng xài tiền mặt khá mệt.
-    Đặc biệt, bạn nhớ kiếm cái túi nhỏ đựng tiền xu (coin), mỗi euro đến
-    100 xu nhỏ, nên đi mua đồ, siêu thị rất dễ mất. Nên nhớ tiền bạn mua bao
-    nhiêu gửi đúng bấy nhiêu, nhiều chỗ gửi dư họ tự động ... lấy luôn,
-    coi như tiền tip :D
-
 9. `Bao lâu thì có PR?`: Đã nói trong phần 1. Nếu có bằng B1 tiếng Đức thì
     tối thiểu 21 tháng. Không thì chờ 3 năm. Sau 8 năm bạn có quyền xin
     quốc tịch Đức (nhưng đồng thời bạn phải bỏ quốc tịch Việt Nam.)
@@ -213,26 +206,6 @@ Các câu hỏi thường gặp, cho người đến Berlin:
       cao nhất. Thuê nhà rồi chuyển đi càng điên hơn. Tiền cọc trung bình
       ba tháng, và sau khi rời nhà thì có khi đến một năm sau bạn mới có
       thể nhận lại tiền cọc, theo luật mới nhất.
-
-15. `Người Berlin thế nào?`: Ở đây không như Singapore, nhưng bạn cũng
-      có thể gặp người đến từ rất nhiều quốc gia khác nhau. Ở miền Đông có
-      thể gặp nhiều người Việt, đặc biệt là khu chợ Đồng Xuân. Phần lớn là
-      người miền Bắc, bắc Trung bộ  Việt Nam sang. Ở miền Nam Berlin có
-      nhiều người Thổ Nhĩ Kỳ. Bạn có thể nói tiếng Anh với rất nhiều người,
-      nhưng cũng có nhiều người chỉ có thể giao tiếp bằng tiếng Đức (ví dụ
-      khi mua hàng trong siêu thị, tiếng Anh... dẹp bên) Các thủ tục giấy
-      tờ, khám bệnh cũng chỉ bằng tiếng Đức. Giọng tiếng Anh của người Đức
-      cũng khá đặc biệt, cũng một phần nhờ nhiều sự giống nhau và lai của
-      hai ngôn ngữ. Ở mấy tháng rồi nhiều khi mình vẫn không quen nghe :)
-      Tuy nhiên, bạn hoàn toàn có thể sống sót nếu biết tiếng Anh ở đây.
-
-      Cũng như bất kỳ nơi nào khác, bạn gặp người vui vẻ, hòa đồng, và cũng
-      có cả người hắc xì dầu. Người Đức rất thẳng tính, nên có thể bạn
-      dễ bị sốc. Họ nói thẳng, không lòng vòng vặn vẹo như người Việt Nam.
-      Họ thích bia, nhưng không thích nghe tiếng bẻ tay bẻ cổ kêu cớp cớp:)
-      Họ luôn nói `Entschuldigung` và `Danke` và `Bitte`, đó là ba từ
-      bạn rất thường xuyên nghe. Trước lúc rời thang máy, bạn nhớ chào
-      tạm biệt người còn lại dù không quen, `tschüss`;)
 
 ### `welcome-back-stk-and-huy`
 
