@@ -188,7 +188,7 @@ Các câu hỏi thường gặp, cho người đến Berlin:
 14. `Thuê nhà ở Berlin khó thế nào?`: Đã nói sơ sơ ở vài chỗ rồi, luật của
       Đức khiến chủ nhà không dễ đuổi bạn một khi bạn đã dọn vào ở; nên
       việc đầu tiên là ... tiền đâu, bạn phải chứng minh khả năng tài chính
-      bằng bảng lương của các tháng trước. Có rất nhiều có nhu cầu thuê,
+      bằng bảng lương của các tháng trước. Có rất nhiều người có nhu cầu thuê,
       trong khi không có nhiều chỗ, nên giá thuê tăng chóng mặt, các chủ
       nhà càng được cớ làm chảnh.
 
