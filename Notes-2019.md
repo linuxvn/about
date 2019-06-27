@@ -214,6 +214,26 @@ Các câu hỏi thường gặp, cho người đến Berlin:
       ba tháng, và sau khi rời nhà thì có khi đến một năm sau bạn mới có
       thể nhận lại tiền cọc, theo luật mới nhất.
 
+15. `Người Berlin thế nào?`: Ở đây không như Singapore, nhưng bạn cũng
+      có thể gặp người đến từ rất nhiều quốc gia khác nhau. Ở miền Đông có
+      thể gặp nhiều người Việt, đặc biệt là khu chợ Đồng Xuân. Phần lớn là
+      người miền Bắc, bắc Trung bộ  Việt Nam sang. Ở miền Nam Berlin có
+      nhiều người Thổ Nhĩ Kỳ. Bạn có thể nói tiếng Anh với rất nhiều người,
+      nhưng cũng có nhiều người chỉ có thể giao tiếp bằng tiếng Đức (ví dụ
+      khi mua hàng trong siêu thị, tiếng Anh... dẹp bên) Các thủ tục giấy
+      tờ, khám bệnh cũng chỉ bằng tiếng Đức. Giọng tiếng Anh của người Đức
+      cũng khá đặc biệt, cũng một phần nhờ nhiều sự giống nhau và lai của
+      hai ngôn ngữ. Ở mấy tháng rồi nhiều khi mình vẫn không quen nghe :)
+      Tuy nhiên, bạn hoàn toàn có thể sống sót nếu biết tiếng Anh ở đây.
+
+      Cũng như bất kỳ nơi nào khác, bạn gặp người vui vẻ, hòa đồng, và cũng
+      có cả người hắc xì dầu. Người Đức rất thẳng tính, nên có thể bạn bị
+      dễ bị sốc. Họ nói thẳng, không lòng vòng vặn vẹo như người Việt Nam.
+      Họ thích bia, nhưng không thích nghe tiếng bẻ tay bẻ cổ kêu cớp cớp:)
+      Họ luôn nó `Entschuldigung` và `Danke` và `Bitte`, đó là ba từ
+      bạn rất thường xuyên nghe:) Và trước lúc rời thang máy, bạn nhớ chào
+      tạm biệt người còn lại dù không quen, `tschüss`;)
+
 ### `welcome-back-stk-and-huy`
 
 tags: #linux #vn #saigonlug
