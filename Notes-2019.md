@@ -84,7 +84,7 @@ cần luyện kỹ năng đó. Việc gì tới sẽ phải tới, vậy thôi.
   mà hỗ trợ hoặc ... chờ bạn onboard.
 
 5. `Qua tới Đức`: Do bạn ở lâu hơn 2 tuần, bạn sẽ phải làm thủ tục đăng ký
-    chỗ ở (Anmeldung).
+    `hộ khẩu` (Anmeldung).
     Việc này `dễ`, làm trong 10 phút là xong, nhưng oái ăm là bạn phải
     có một địa chỉ ổn định để bạn có thể nhận giấy tờ (rất nhiều)
     và làm các thủ tục tiếp theo (mở tài khoản ngân hàng, bảo hiểm,
@@ -184,6 +184,35 @@ Các câu hỏi thường gặp, cho người đến Berlin:
     từng set 4 vé một chiều (mỗi vé chỉ được đi một chiều, không được
     quay ngược lại) giá 9 euro. Nếu có con nít đi kèm bạn tìm hiểu thêm
     vé ngày ;)
+
+14. `Thuê nhà ở Berlin khó thế nào?`: Đã nói sơ sơ ở vài chỗ rồi, luật của
+      Đức khiến chủ nhà không dễ đuổi bạn một khi bạn đã dọn vào ở; nên
+      việc đầu tiên là ... tiền đâu, bạn phải chứng minh khả năng tài chính
+      bằng bảng lương của các tháng trước. Có rất nhiều có nhu cầu thuê,
+      trong khi không có nhiều chỗ, nên giá thuê tăng chóng mặt, các chủ
+      nhà càng được cớ làm chảnh.
+
+      Việc thuê nhà thành công sẽ giúp bạn có tờ giấy Wohnungsgeberbestätigung,
+      là xác nhận của chủ nhà cho bạn vào ở (và khi bạn rời đi, bạn lại
+      phải xin cái giấy tương tự để rời nhà, phức tạp ghê.) Giấy này làm
+      cơ sở cho rất nhiều thủ tục khác nhau, từ đăng ký tài khoản ngân hàng,
+      sim điện thoại, ... và cũng là điều kiện tiên quyết để có thể đăng ký
+      Anmeldung. Muốn Anmeldung phải có Wohnungsgeberbestätigung, muốn có
+      Wohnungsgeberbestätigung phải có tiền thuê nhà, muốn có tiền thuê nhà
+      phải chứng minh bằng tài khoản ngân hàng, muốn mở tài khoản ngân hàng
+        ở Đức phải có ... Anmeldung. Nó lòng vòng giống Việt Nam vậy.
+
+      Các công ty có thể giúp bạn thuê nhà tạm trong thời gian ban đầu.
+      Vì địa chỉ thuê nhà sẽ nhận rất nhiều thư từ (một cách để xác thực)
+      nên bạn cần cân nhắc thời gian thuê để ổn định trong vài tháng đầu,
+      nếu không sẽ bị lạc thư. Như mình đây trong 6 tháng đầu tiên ở Berlin,
+      rất thường xuyên nhận thư của vài ba người khác, trong đó có cả thư
+      trát bắt người =))
+
+      Việc thuê được nhà ổn định là việc rất khó, bạn nên để thứ tự ưu tiên
+      cao nhất. Thuê nhà rồi chuyển đi càng điên hơn. Tiền cọc trung bình
+      ba tháng, và sau khi rời nhà thì có khi đến một năm sau bạn mới có
+      thể nhận lại tiền cọc, theo luật mới nhất.
 
 ### `welcome-back-stk-and-huy`
 
