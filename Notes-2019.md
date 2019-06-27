@@ -11,7 +11,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
       [Phần 1](#helm-nightmare-p1),
       [Phần 2](#helm-nightmare-p2)
   * [Bắt đầu với k8s như thế nào](#k8s-the-hard-way-p1)
-* Lucense, ElasticSearch
+* Lucense, Elasticsearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
   * Phần 2: Về giấy phép Apache: TODO
 * Công cụ linh tinh
@@ -977,7 +977,7 @@ cũng không rành lắm đâu nhé:)
 
 Nếu bạn thấy bối rối khi có nhiều tên vậy, thì đây là so sánh
 quen thuộc với người dùng Linux: `Lucene` như là phần nhân (`kernel`),
-`Apache Solr` là `Debian linux` còn `ElasticSearch` là `Ubuntu`,
+`Apache Solr` là `Debian linux` còn `Elasticsearch` là `Ubuntu`,
 trong khi `Opendistro` có thể là phiên bản `Linux Mint`.
 Tất nhiên, chẳng có cái nào trong số chúng là `Mac` cả.
 
@@ -1031,20 +1031,20 @@ thư viện cuối là `Lucene`:
 ```
 
 Đại khái `Apache Solr` như anh chàng `Debian Linux` với nhân `Linux`.
-Ngạo nghễ, oai phong cho tới khi trai đẹp `ElasticSearch` xuất hiện
-thì gái làng cả xóm nhao nhao. `ElasticSearch` giới thiệu giao diện
+Ngạo nghễ, oai phong cho tới khi trai đẹp `Elasticsearch` xuất hiện
+thì gái làng cả xóm nhao nhao. `Elasticsearch` giới thiệu giao diện
 `tìm kiếm` (`Search`), `Kibana`, `Logstash`, giống như là anh ta có sẵn nhà,
 sẵn xe hơi, sẵn mọi thứ đều cho đám cưới; cô nào chả mê nhỉ.
-Chính nhờ sự tiện lợi này mà nhiều người tiếp cận với `ElasticSearch`
+Chính nhờ sự tiện lợi này mà nhiều người tiếp cận với `Elasticsearch`
 nhanh chóng, hiệu quả.
 
-Và thế là nhiều người quên luôn `Apache Solr`:) `ElasticSearch`
-gần như đồng nghĩa với `ELK`, nhưng từ sâu thẳm thì `Solr` và `ElasticSearch`
+Và thế là nhiều người quên luôn `Apache Solr`:) `Elasticsearch`
+gần như đồng nghĩa với `ELK`, nhưng từ sâu thẳm thì `Solr` và `Elasticsearch`
 cũng không khác lắm nhau đâu nhỉ ^.^ Không có `Lucene` thì lấy đâu ra
 cả hai chứ.
 
 Điều thú vị là `Elastic` mua lại [`Kibana`](https://github.com/rashidkpc/kibana2)
-và `Logstash` (thiếu nguồn) để phát triển nên bộ `ELK`.
+và [`Logstash`](https://www.elastic.co/blog/welcome-jordan-logstash) để phát triển nên bộ `ELK`.
 
 Tạm dừng ở đây, hẹn kỳ sau. Cảm ơn bạn đã đọc một bài rất dài.
 
