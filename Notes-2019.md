@@ -1072,7 +1072,7 @@ và cũng không thể bắt đầu bằng việc xây dựng một nhà máy lu
 Cứ việc đến cửa hàng xe và mua xe thôi. `Apache Solr` cung cấp giao diện
 đơn giản hơn, dễ dàng hơn cho người viết ứng dụng. Để né tránh chuyện
 `Java`, `Solr` chạy dịch vụ cung cấp `REST~` API cho ứng dụng cuối.
-Như vậy dùng bạn viết bằng `Python`, `Golang` hay gì thì vẫn xài được
+Như vậy dù bạn viết bằng `Python`, `Golang` hay gì thì vẫn xài được
 thư viện cuối là `Lucene`:
 
 ```
