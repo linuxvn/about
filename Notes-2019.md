@@ -206,8 +206,8 @@ Các câu hỏi thường gặp, cho người đến Berlin:
       Vì địa chỉ thuê nhà sẽ nhận rất nhiều thư từ (một cách để xác thực)
       nên bạn cần cân nhắc thời gian thuê để ổn định trong vài tháng đầu,
       nếu không sẽ bị lạc thư. Như mình đây trong 6 tháng đầu tiên ở Berlin,
-      rất thường xuyên nhận thư của vài ba người khác, trong đó có cả thư
-      trát bắt người =))
+      rất thường xuyên nhận thư của vài ba người khác từng ở,
+      trong đó có cả thư trát bắt người =))
 
       Việc thuê được nhà ổn định là việc rất khó, bạn nên để thứ tự ưu tiên
       cao nhất. Thuê nhà rồi chuyển đi càng điên hơn. Tiền cọc trung bình
