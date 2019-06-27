@@ -230,8 +230,8 @@ Các câu hỏi thường gặp, cho người đến Berlin:
       có cả người hắc xì dầu. Người Đức rất thẳng tính, nên có thể bạn
       dễ bị sốc. Họ nói thẳng, không lòng vòng vặn vẹo như người Việt Nam.
       Họ thích bia, nhưng không thích nghe tiếng bẻ tay bẻ cổ kêu cớp cớp:)
-      Họ luôn nó `Entschuldigung` và `Danke` và `Bitte`, đó là ba từ
-      bạn rất thường xuyên nghe:) Và trước lúc rời thang máy, bạn nhớ chào
+      Họ luôn nói `Entschuldigung` và `Danke` và `Bitte`, đó là ba từ
+      bạn rất thường xuyên nghe. Trước lúc rời thang máy, bạn nhớ chào
       tạm biệt người còn lại dù không quen, `tschüss`;)
 
 ### `welcome-back-stk-and-huy`
