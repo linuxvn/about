@@ -85,7 +85,7 @@ https://t.me/linuxvn/50112 (https://t.me/linuxvn/50117). haproxy quả
 thật thú vị và đơn giản hơn nginx ;)
 
 Sau 8 năm mua máy ảnh (và chụp ảnh, tất nhiên :D) mình mới phát hiện ra
-là mình thích chụp cái gì. Sau cũng hơn chừng đó năm làm admin+devops,
+mình thích chụp cái gì. Sau cũng hơn chừng đó năm làm admin+devops,
 tóm lại là mình vẫn không hiểu mình thích được cái gì. Thiệt là điên, nhỉ ;)
 
 ### `welcome-to-berlin-2`
