@@ -35,9 +35,58 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
 * Linh tinh
   * [Welcome back, An Stk and Huy](#welcome-back-stk-and-huy)
+  * [Linh tinh 2](#random-notes-2)
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `random-notes-2`
+
+tags: #notes #random #retrospective #puppet #salt #ansible
+
+Hôm nay là ngày đen tối, buồn quá nên ngồi kể linh tinh chuyện.
+Chuyện như thế này https://t.me/linuxvn/51920, không phải là chuyện buồn,
+đó là chuyện ... cay đắng. Buồn bực là một cách bộ não đang tự cải tiến,
+nên thật ra đó cũng là điều may mắn. Đành tự an ủi, lâu lắm rồi ngày xưa
+là do lỗi mình, nhưng lần này cũng lỗi cho mình nốt.
+
+Nhóm Telegram @linuxvn đâu có 400 nick tụ tập rồi. Admin có Kỳ Anh, Đức,
+Quang, Nhâm, Vũ Nhân, (và DuyDo) cũng không phải làm gì phức tạp,
+trừ Đức dành nhiều thời gian cho mirror.
+Hy vọng sang năm số Admin lên được 300.
+Một số thành viên siêu nhân mới xuất hiện gần đây, là điều rất đáng yêu.
+Còn vài điều hấp dẫn nữa, kể dịp khác. Cảm ơn tất cả các bạn đã tham gia
+vào nhóm.
+
+Có kênh đăng tin công việc https://t.me/devopsjobs nhưng do mình không
+còn liên lạc với thị trường trong nước, mình nghĩ bạn nào đó có thể phụ
+trách giúp. Xin hãy liên lạc trên nhóm @linuxvn.
+
+Thang-Man có hỏi https://t.me/linuxvn/50223
+và các bạn chú ý https://t.me/linuxvn/50228.
+Gần tuần nay đội BI+ops chỗ mình đi cài Sqoop mãi không xong,
+mới thấy giá trị của AWS EMR thế nào :)
+
+Trước đó thì cả tuần mình ướt mồ hôi trán với uwsgi+python nằm sau Apache.
+Các worker sau khi reload sẽ khiến phát sinh lỗi 500 trên Apache.
+Sau khi phát hiện ra phải bật thread lên (https://t.me/linuxvn/51063),
+thì vẫn còn lỗi 500, mà mình đoán là do Apache bị mất kết nối tới socket của
+uwsgi. Thôi mệt, mình đi nuôi con chó giữ nhà (watchdog), đọc apache log
+(dùng `tail -F`, với F viết hoa, không phải thường nhé), phát hiện thấy
+lỗi 500 là lập tức restart apache worker (`apache2ctl -k graceful`);
+thế là ngủ ngon, lỗi 500 vẫn đầy nhưng hầu như không ai phát hiện ra, trừ mình.
+
+Sau khi được chào mừng thì Huy-Ngo và An-stk lặn mất tăm. Điều đáng tiếc
+là Huy-Ngo bận rộn nên không chăm sóc cho mirror được nữa. Có bạn nào
+có thể giúp audit mirror xin giơ một tay.
+
+Bạn nào dùng proxy trước k8s để ý tới haproxy+SNI và chủ đề này
+https://t.me/linuxvn/50112 (https://t.me/linuxvn/50117). haproxy quả
+thật thú vị và đơn giản hơn nginx ;)
+
+Sau 8 năm mua máy ảnh (và chụp ảnh, tất nhiên :D) mình mới phát hiện ra
+là mình thích chụp cái gì. Sau cũng hơn chừng đó năm làm admin+devops,
+tóm lại là mình vẫn không hiểu mình thích được cái gì. Thiệt là điên, nhỉ ;)
 
 ### `welcome-to-berlin-2`
 
