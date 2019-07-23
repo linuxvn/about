@@ -42,7 +42,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### `random-notes-2`
 
-tags: #notes #random #retrospective #puppet #salt #ansible
+tags: #notes #random #retrospective #linuxvn
 
 Hôm nay là ngày đen tối, buồn quá nên ngồi kể linh tinh chuyện.
 Chuyện như thế này https://t.me/linuxvn/51920, không phải là chuyện buồn,
