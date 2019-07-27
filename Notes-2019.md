@@ -22,6 +22,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [gawk](#gawk)
   * [Use Nmap to scan Prometheus targets](#nmap-for-prometheus)
 * Dịch vụ có ích
+  * [theslinux.com dynamic dns](#theslinuxcom-dynamic-dns)
   * [send.firefox.com](#sendfirefoxcom)
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
@@ -39,6 +40,48 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `theslinux.com dynamic dns`
+
+tags: #dns #bot #theslinux
+
+Ngắn gọn: Bạn có thể có tên miền con ở theslinux.com với hỗ trợ dynamic dns.
+Ví dụ, foobar.theslinux.com với địa chỉ IP internet nhà bạn.
+
+Để bắt đầu, bạn trò chuyện với bot [foor3_bot](https://t.me/foor3_bot).
+Tài khoản Telegram của bạn phải có nickname, và bạn là thành viên của @linuxvn.
+Bắt đầu với lệnh sau
+
+1. `/dns help` : luôn có kết quả;
+2. `/dns help full` : chỉ có kết quả chi tiết hơn.
+
+Nếu ở lệnh `/dns help full` bạn thấy ngắn, tức là nick của bạn chưa được
+xác nhận, hãy nhờ bạn Đức hoặc Anh trên @linuxvn.
+
+Sau đó, bạn tạo một gist bí mật (hay công cộng tùy bạn), như ví dụ sau
+https://gist.github.com/icy/b3c600d2bec2994c429f2bbe09a4267d.
+Rồi gõ lệnh push:
+
+```
+/dns push https://gist.github.com/icy/b3c600d2bec2994c429f2bbe09a4267d
+```
+
+và ngồi chờ vài phút. Dùng `/dns get` hay `/dns log` để xem thông tin
+mà hệ thống xử lý thông tin của bạn.
+
+Để dùng `dynamic dns`, bạn chỉ việc dùng `git clone`, cập nhật và
+push liên tục lên Github thôi:
+
+```
+$ git clone https://gist.github.com/icy/b3c600d2bec2994c429f2bbe09a4267d mydns
+$ cd mydns # edit...
+$ git push
+```
+
+Mã nguồn sẽ được tải về tự động. Tất cả các tập tin trong mã nguồn của bạn
+được duyệt qua, nên bạn có thể đặt tên sao cho dễ nhớ.
+
+Nào cùng nghịch thôi.
 
 ### `random-notes-2`
 
