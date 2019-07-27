@@ -41,7 +41,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
 
-### `theslinux.com dynamic dns`
+### `theslinux.com-dynamic-dns`
 
 tags: #dns #bot #theslinux
 
