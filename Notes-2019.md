@@ -21,6 +21,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [tsocks](#tsocks)
   * [gawk](#gawk)
   * [Use Nmap to scan Prometheus targets](#nmap-for-prometheus)
+  * [Git: Quay lại commit cũ sau khi merge nhầm](#git-revert-to-a-good-commit)
 * Dịch vụ có ích
   * [theslinux.com dynamic dns](#theslinuxcom-dynamic-dns)
   * [send.firefox.com](#sendfirefoxcom)
@@ -40,6 +41,77 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `git-revert-to-a-good-commit`
+
+tags: #git #devops #trick #diff
+
+Hôm nay trên `@linuxvn` (https://t.me/linuxvn/55674) có bạn hỏi làm thế nào
+để quay lại một commit cũ/tốt trên master, sau khi lỡ nhầm merge nhánh `dev`
+vào nhánh `master`. Sau câu hỏi này là một màn tranh luận sôi nổi, dài lê
+thê mà mình chưa kịip coi. Người hỏi muốn `reset`, bỏ đi các commit lỗi
+để quay lại cái cũ, một kiểu `Undo` giống khi soạn thảo văn bản.
+
+Vấn đề này hay gặp, bạn có thể xem trao đổi trên `SO`:
+https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+tất nhiên là trên đó cũng miên man đủ thứ giải pháp, mà thật ra mình coi
+nhiều lần vẫn không hiểu thế nào là tốt, hoặc là cũng chả cần hiểu nhắm
+mắt làm theo.
+
+Sau đây, mình giới thiệu cho bạn cách truyền thống, cực kỳ chính xác,
+giúp bạn hiểu rõ hơn về vấn đề cần giải quyết.
+
+Thứ nhất, một khi đã commit, đã merge, thì bạn không nên `Undo`, xóa bỏ
+commit bằng `git reset`, một khi thay đổi đã được `push` lên kho hay chỗ
+nào đó. Một số trường hợp bạn sẽ cần phải làm vậy, nhưng hạn chế tối đa,
+và trong vấn đề nêu ra ở đầu bài, thì cũng không nên làm vậy;) Lời nói gió
+bay, chỉ có thể sửa chữa chứ không rút lại lời nói được. Trong DevOps cũng
+có vài nguyên tắc sống hay vậy.
+
+Tiếp theo, về cơ bản, giữa hai `commit` bất kỳ trong kho git của bạn
+là một _khoảng cách_ khác biệt, mà bạn luôn thấy được bằng lệnh `git diff`.
+Phục hồi `commit` cũ, tức là xóa đi các khác biệt này, hay là áp dụng khác
+biệt đó theo chiều ngược (bạn sẽ rõ hơn ở phần sau).
+
+Giả sử, bạn đang ở `master` và cần quay lại commit `3323e5b` tốt. Hãy chuẩn
+bị bước đầu tiên là `clone/checkout` nhánh `master` ra một thư mục sạch sẽ,
+là thư mục mà khi bạn gõ `git status -u` thì không thấy gì ở đó.
+
+```
+$ git status -u           # đảm bảo không thấy gì
+$ git checkout master     # chắc chắn bạn đang ở master
+$ git diff HEAD..3323e5b  > patch.diff
+```
+
+Trong lệnh cuối cùng, thứ tự rất quan trọng. `Commit` tốt của bạn phải
+nằm sau cùng. Sau đó, bạn áp dụng bản diff này
+
+```
+$ patch -p1 < patch.diff
+$ git status -u
+```
+
+Sau đó, kiểm tra lại xem các file nào mới chưa được commit trong kết quả
+của lệnh `git status -u` ở trên. Nếu có, bạn thêm vào, và xong:
+
+```
+$ git add some/new/files.txt
+$ git commit -a "Revert to 3323e5b, thanks to @linuxvn"
+```
+
+Để chắc chắn, bạn kiểm tra lại kết quả
+
+```
+$ git diff 3323e5b..
+```
+
+lần này cần phải hiện ra ... không gì cả, tức là bạn đã hoàn toàn phục
+hồi lại `commit` cũ của bạn.
+
+Cách này lúc nào cũng thành công, đơn giản, thậm chí bạn có thể tranh thủ
+điều chỉnh vài thứ. Và hơn hết, thay vì phải đi hiểu một đống lệnh như
+là `git revert`, `git reset`, ...bạn chỉ việc tập trung hiểu bản chất
+của vấn đề là, `diff`, `diff`, và `diff` ;)
 
 ### `theslinux.com-dynamic-dns`
 
