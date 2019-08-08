@@ -49,7 +49,7 @@ tags: #git #devops #trick #diff
 Hôm nay trên `@linuxvn` (https://t.me/linuxvn/55674) có bạn hỏi làm thế nào
 để quay lại một commit cũ/tốt trên master, sau khi lỡ nhầm merge nhánh `dev`
 vào nhánh `master`. Sau câu hỏi này là một màn tranh luận sôi nổi, dài lê
-thê mà mình chưa kịip coi. Người hỏi muốn `reset`, bỏ đi các commit lỗi
+thê mà mình chưa kịp coi. Người hỏi muốn `reset`, bỏ đi các commit lỗi
 để quay lại cái cũ, một kiểu `Undo` giống khi soạn thảo văn bản.
 
 Vấn đề này hay gặp, bạn có thể xem trao đổi trên `SO`:
@@ -58,15 +58,12 @@ tất nhiên là trên đó cũng miên man đủ thứ giải pháp, mà thật
 nhiều lần vẫn không hiểu thế nào là tốt, hoặc là cũng chả cần hiểu nhắm
 mắt làm theo.
 
-Sau đây, mình giới thiệu cho bạn cách truyền thống, cực kỳ chính xác,
-giúp bạn hiểu rõ hơn về vấn đề cần giải quyết.
+Sau đây, mình giới thiệu cho bạn cách truyền thống, cực kỳ chính xác.
 
-Thứ nhất, một khi đã commit, đã merge, thì bạn không nên `Undo`, xóa bỏ
+Thứ nhất, sau khi commit, đã merge, thì bạn không nên `Undo`, xóa bỏ
 commit bằng `git reset`, một khi thay đổi đã được `push` lên kho hay chỗ
-nào đó. Một số trường hợp bạn sẽ cần phải làm vậy, nhưng hạn chế tối đa,
-và trong vấn đề nêu ra ở đầu bài, thì cũng không nên làm vậy;) Lời nói gió
-bay, chỉ có thể sửa chữa chứ không rút lại lời nói được. Trong DevOps cũng
-có vài nguyên tắc sống hay vậy.
+nào đó. Lời nói gió bay, chỉ có thể sửa chữa chứ không rút lại được.
+Trong DevOps cũng có vài nguyên tắc sống hay vậy.
 
 Tiếp theo, về cơ bản, giữa hai `commit` bất kỳ trong kho git của bạn
 là một _khoảng cách_ khác biệt, mà bạn luôn thấy được bằng lệnh `git diff`.
@@ -84,15 +81,16 @@ $ git diff HEAD..3323e5b  > patch.diff
 ```
 
 Trong lệnh cuối cùng, thứ tự rất quan trọng. `Commit` tốt của bạn phải
-nằm sau cùng. Sau đó, bạn áp dụng bản diff này
+nằm sau cùng (đi ngược về quá khứ). Sau đó, bạn áp dụng bản diff này
 
 ```
 $ patch -p1 < patch.diff
 $ git status -u
 ```
 
-Sau đó, kiểm tra lại xem các file nào mới chưa được commit trong kết quả
-của lệnh `git status -u` ở trên. Nếu có, bạn thêm vào, và xong:
+Kiểm tra lại xem các file nào mới chưa được commit trong kết quả
+của lệnh `git status -u` ở trên. Nếu có, bạn thêm vào: đó là các tập tin
+có trong commit cũ (`3323e5b`):
 
 ```
 $ git add some/new/files.txt
