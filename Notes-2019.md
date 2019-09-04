@@ -28,6 +28,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Telegram](#telegram)
   * [Ecosia searching service](#wwwecosiaorg)
 * Nghề nghiệp
+  * [Pair debugging](#pair-debugging)
   * [Luật Murphy](#murphy-s-law)
   * [Phỏng vấn Boss](#boss-interview)
   * [Berlin chào mừng bạn](#welcome-to-berlin)
@@ -41,6 +42,66 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `pair-debugging`
+
+tags: #pair #debugging #problem #solving
+
+Chắc các bạn đã nghe về `pair programming`, phương pháp phổ biến từ lâu;
+chậm nhất đâu khoảng 2007, vì lúc đó mình được biết một job yêu cầu
+`PP` với `RoR`.
+
+Hôm nay mình giới thiệu với các bạn về `PD`, hay `pair debugging`. Có thể
+bạn đã đọc đâu đó trong sách vở và/hay từ các blogger lập trình viên nổi
+tiếng. Còn mình kể lại chuyện thực tế thôi ha, có gì cứ coi như mình là
+kẻ thất học vậy.
+
+Hệ thống `big data` chỗ mình bị đầy đĩa. Trong đó nào là kafka, nào là
+hdfs, nào là yarn manager tá lả thứ. Sau khi đĩa mới được thêm vào, đảm
+bảo cấu hình được chỉnh rồi các tiến trình được khởi động lại theo đúng
+bài vở, thì hệ thống vẫn báo là một trong 5 node của cluster rớt ra ngoài.
+
+Thế là mình ngồi mò tìm mãi chẳng hiểu sao. Thực ra mình cũng không phát
+hiện ra lỗi như vậy, công việc của mình đã xong như vùa nói.
+Một bạn data engineer tò mò ngồi xem trên Grafana rồi báo lại.
+Mình cực chẳng đã phải kiểm tra, thấy `hdfs` báo ngon lành hết, xanh lè.
+Mà sao bạn data engineer cứ thắc mắc. Một hồi chát có vẻ không hiểu nhau
+nên thôi cả hai quyết định dọn về gần nhau cho tiện. Hai cái ghế, một
+màn hình, một bàn phím, một console, tình anh em đồng nghiệp nào mình
+cùng thực hiện `PD` hay là `pair debugging`.
+
+Do mình còn lơ tơ mơ về `PD` và cả `big data` platform, nên mình quyết
+định theo phương án là bạn `engineer` có ý tưởng gì là hai bên cùng thử
+hết. Nào là khởi động lại `prometheus` exporter phòng khi có lỗi,
+khởi động lại các tiến trình `hdfs` trên tất cả các node. Rồi khởi động
+lại các ứng dụng, .... với hy vọng rằng sẽ giải quyết được vấn đề.
+Cũng có vẻ hiệu quả. Khi vừa mới restart thì hệ thống xanh, nhưng sau đó
+vài phút thì hệ thống lại báo có một node rớt ra ngoài. Điều này khiến
+cả hai bạn nghĩ rằng do app tịt chỗ nào đó. Nên cứ tha hồ restart.
+Mỗi lần vậy cũng không dễ dàng gì, vì phải restart xong là ngồi đợi
+cho đến khi log sạch sẽ mới chuyển qua restart node khác.
+
+Ừ, về log thì biết rồi, các ứng dụng java nó quăng ra qua nhiều thứ
+nhưng điều quan trọng thì tìm không thấy đâu.
+
+Rồi đi xem trang wiki, xem các tài liệu chỉ dẫn để lại. À, tại vì bạn
+engineer ngồi setup xong bộ big data cluster này phải đi nghỉ phép vài
+tháng rồi, không ai biết thực sự chuyện gì đang xảy ra.
+
+Mò, hai bạn ngồi trên đống lửa production, từ 9h sáng cho tới gần 1h chiều.
+Có ý kiến gì thì cứ thử. Mệt quá, hai bạn cùng nghỉ.
+
+Khi bạn kia đi rồi thì mình ngồi coi lại log, và cấu hình, và trong 3 phút
+đã phát hiện ra vấn đề tại đâu: Còn thiếu một file cấu hình nữa, quên
+update. Chỉ việc thêm đĩa mới vào đó, khởi động lại. Khỏe re.
+
+Bài học là gì? `PD` nó tai hại nếu hai ông thần cứ giả bộ như không biết
+gì cứ ngồi thử / sai. Khi vấn đề xảy ra, chỉ cần hít một hơi thật sâu,
+coi chính xác lỗi gì, đọc log kỹ rồi fix thôi. Khi giải quyết vấn đề
+thì cần tập trung, chứ nhiều ý kiến linh tinh không có cơ sở thử cho
+khỏi mất tình đồng nghiệp chẳng ăn nhằm gì đâu.
+
+Hehe.
 
 ### `git-revert-to-a-good-commit`
 
