@@ -45,7 +45,7 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 ### `pair-debugging`
 
-tags: #pair #debugging #problem #solving
+tags: #pair #debugging #problem #solving #hdfs
 
 Chắc các bạn đã nghe về `pair programming`, phương pháp phổ biến từ lâu;
 chậm nhất đâu khoảng 2007, vì lúc đó mình được biết một job yêu cầu
@@ -62,7 +62,7 @@ bảo cấu hình được chỉnh rồi các tiến trình được khởi đ�
 bài vở, thì hệ thống vẫn báo là một trong 5 node của cluster rớt ra ngoài.
 
 Thế là mình ngồi mò tìm mãi chẳng hiểu sao. Thực ra mình cũng không phát
-hiện ra lỗi như vậy, công việc của mình đã xong như vùa nói.
+hiện ra lỗi như vậy, công việc của mình đã xong như vừa nói.
 Một bạn data engineer tò mò ngồi xem trên Grafana rồi báo lại.
 Mình cực chẳng đã phải kiểm tra, thấy `hdfs` báo ngon lành hết, xanh lè.
 Mà sao bạn data engineer cứ thắc mắc. Một hồi chát có vẻ không hiểu nhau
