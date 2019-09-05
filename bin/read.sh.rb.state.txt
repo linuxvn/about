@@ -36,3 +36,4 @@
 @linuxvn_notes#Notes-2019#random-notes-2
 @linuxvn_notes#Notes-2019#theslinuxcom-dynamic-dns
 @linuxvn_notes#Notes-2019#git-revert-to-a-good-commit
+@linuxvn_notes#Notes-2019#pair-debugging
