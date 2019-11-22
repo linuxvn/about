@@ -37,11 +37,67 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [PostgreSQL file system level backup](#postgresql-file-system-level-backup)
   * [Hadoop Hdfs Metadata backup](#hdfs-metadata-backup)
 * Linh tinh
+  * [Elasticsearch workshop: Observability](#elasticsearch-workshop-observability)
   * [Welcome back, An Stk and Huy](#welcome-back-stk-and-huy)
   * [Linh tinh 2](#random-notes-2)
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `elasticsearch-workshop-observability`
+
+tags: #elasticsearch #observability #berlin
+
+Hôm đầu tháng 10 mình có dịp tham gia workshop do công ty Elasticsearch
+tổ chức. Từ khóa của sự kiện là `observability`. Workshop này hoàn toàn
+miễn phí, tổ chức ở một khách sạn lớn, có đồ ăn uống sáng, trưa ngon lành,
+nhưng có lẽ... xa nên phòng hơi vắng. Mình gặp nói chuyện với một
+anh chàng gốc Bắc Âu ở Berlin, nói rằng đi xem thế nào, tại lên chức lâu
+rồi nên không còn nhanh tay lẹ mắt cài đặt gì nữa :)
+
+Có thể, vì nhiều người lên chức quá, nên mới có Elasticsearch bản cloud,
+cài đặt tích hợp sẵn mọi thứ từ APM, Log, Metrics, rồi Machine Learning,
+nhìn cái menu mà choáng ngợp, nghĩ ngay mình còn phải học thêm 10 năm nữa
+chưa xong cái nghề ops này :) Bản cloud đúng khỏe, cài đặt cấu hình gì
+cũng có sẵn rồi, rẹt rẹt. Làm mình bồi hồi nhớ lại thuở ngồi kỳ cọ mấy cái
+cấu hình sao cho mấy node ES nối nhau. Khổ gì đâu.
+
+`observability` là gì? Nghe thấy lạ, khó đọc (dù sao, cũng dễ đọc hơn
+`high availability`), giải thích thì loằng ngoằng như ở đây
+  https://www.elastic.co/blog/observability-with-the-elastic-stack
+. Tóm tùm lum lại, là một chỗ chung để theo dõi toàn bộ hệ thống, ở góc độ
+lớn hơn của người làm ops, của developer hay quản lý.... Nói chung,
+ý tưởng thì hay, còn thực hiện thì đấy, có ES lo rồi. Mới đây N26 công
+ty start-up về tài chính ngân hàng cũng có workshop về `observability`,
+nhưng hỏng biết có gì ở trong đấy. Từ khóa này cũng khá là hot trong
+sự kiện mà O'Reilly tổ chức
+(tóm tắt của mình: https://gist.github.com/icy/d32c504eb1d41adea11cff4ba0865808.)
+
+Có mấy cái lặt vặt như `filebeat`, `kibana`,... mình nghĩ nhiều bạn biết
+rồi. Trong khi thực hiện bài `lab`, thì có điều hài hước là nhiều người
+gõ ngay `vi/vim` rồi đứng hình, lý do trình duyệt không hỗ trợ, trong khi
+về cơ bản `nano` vẫn chạy ổn.
+Thật chớt quớt, nhưng lượm lặt lớn nhất của buổi workshop này chính là,
+mình tin rằng lựa chọn dùng `nano` là hợp lý, đúng đắn. Mình bồi hồi nhớ
+lại cách đây mấy năm khi mới vào _ai đá tao_, mấy bạn trong team hỏi thế
+chú xài gì, vim hay Emacs, xong có vẻ vô cùng thất vọng vì có một thằng
+trời đánh nó trả lời là ... `nano` :))
+
+À, ngoài ra còn `filebeat`, tuy được quảng bá rầm rộ nhưng trong buổi
+workshop bà con cài lên xuống muốn xỉu lơ luôn. Và mình cũng mất đâu gần
+gần hai buổi cho nó, đơn giản là muốn nó hỗ trợ k8s thì xài bản mới,
+mà xài bản mới thì nó không thèm nói chuyện với logstash hay es cũ.
+Ơ hay, rảnh quá ha. Chưa kể xài mem/cpu gì nhiều. Thôi, goodbye!
+
+Còn mấy cái cao siêu như `observability` thì để dành lại cho các bạn
+tự tìm hiểu thôi; mình có biết gì đâu. Nếu cần thì mình chỉ đơn giản bỏ
+`devops` mà chuyển qua `opssex` thôi, đổi job title, đổi lương, công
+việc vẫn như cũ.^^
+
+PS: Nhờ workshop mà mình còn gặp bạn T. cũng ở Sài gòn qua Bá linh tìm
+ngoại tệ . Rồi từ đó phát hiện nguyên băng Lazada bên này luôn. Điều
+này làm mình có chút cảm hứng để viết tiếp một chút về Bá linh, mà bạn
+sẽ được đọc thêm sau.
 
 ### `pair-debugging`
 
