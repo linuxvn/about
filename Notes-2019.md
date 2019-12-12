@@ -66,7 +66,7 @@ nói về helm2. Hãy nói tại sao có helm, và lý giải một phần tại
 
 Về cơ bản, các tài nguyên trên k8s có các thuộc tính cơ bản: phiên bản api,
 thể loại (`.kind`), tên riêng (`.metadata.name`), đặc tả (`.spec`). Phần
-đặc tả là phức tạp nhất, và người dùng phổ thông thì xài `yaml` để viết.
+đặc tả  phức tạp nhất, và người dùng phổ thông xài `yaml` để viết.
 Khâu cuối cùng ngay trước khi deploy là file `yaml`, nhưng trước đó,
 chín người mười ý, đặc biệt là 9 người từ 10 công ty khác nhau, họ cãi
 nhau và bắt đầu thêm mắm muối vào file `yaml` đó. Để dễ hiểu, hãy tưởng
