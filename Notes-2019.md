@@ -169,7 +169,7 @@ spec:
 ```
 
 Ví dụ không phản ánh thực tế là tập tin gốc có thể có rất nhiều dòng,
-còn tập tin để patch chỉ có vài dòng, đưa ra đúng những thứ cần mô tả.
+còn tập tin để patch chỉ có vài dòng, đưa ra đúng những thứ cần thay đổi.
 Giống như khi xài `git diff | patch -Np1` vậy thôi:
 
 ```
@@ -194,7 +194,7 @@ Về cơ bản thì không khác cách deploy với Helm? Có chứ, xem đây:
   { your patches + base.yaml } --> kustomize --> file yaml file
 ```
 
-Cách đầy bạn phải làm việc với nhiều thứ hơn (biến, cấu trúc, template),
+Cách đầu bạn phải làm việc với nhiều thứ hơn (biến, cấu trúc, template),
 cách sau từ đầu tới cuối chỉ một cấu trúc Yaml. Chính sự rắc rối của Helm
 mà nhiều người nghĩ ra các kiểu template khác nhau, jsonnet, draft rồi
 tá lả thứ khác nhau: Nhưng chúng đều có chung rắc rối như helm thôi.
