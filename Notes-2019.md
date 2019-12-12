@@ -8,8 +8,9 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
 
 * k8s
   * Ác mộng với Helm:
-      [Phần 1](#helm-nightmare-p1),
+      [Phần 1](#helm-nightmare-p1)
       [Phần 2](#helm-nightmare-p2)
+      [Phần 3](#helm-nightmare-p3)
   * [Bắt đầu với k8s như thế nào](#k8s-the-hard-way-p1)
 * Lucense, Elasticsearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
@@ -43,6 +44,138 @@ Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_no
   * [Linh tinh 1](#random-notes-1)
   * [Root is rut](#root-is-rut)
   * [Giới thiệu về trang này](#about)
+
+### `helm-nightmare-p3`
+
+tags: #k8s #helm #panic
+
+Mình bắt đầu gõ những dòng này thì cô gái tóc vàng với khuôn mặt thanh tú
+ngồi đối diện đứng lên xuống ga. Ngồi suốt một buổi mà cả hai không nói với
+nhau điều gì, rồi ra đi không từ biệt. Có lẽ cả hai cùng ngại nói đến helm,
+chăng? Phiên bản mới 3.0 mới ra có gì hay? Thôi, đành viết lại vài dòng
+để nhớ cô gái không quen và sẽ chẳng bao giờ quen.
+
+Cô nhớ cho! Tới tháng 5 này thì các helm `stable` trước đây sẽ không
+còn được liệt kê trên kho Helm, và cuối năm 2020 nhân dịp bảo hiểm xã hội
+thay đổi cách tính theo hướng có hại nhiều hơn lợi cho người lao động,
+dự án quy tụ các bản chart cứng (stable) sẽ dẹp luôn.
+
+Nhưng khoan nói về helm3. Nhiều người vẫn hạnh phúc với helm2. Cũng khoan
+nói về helm2. Hãy nói tại sao có helm, và lý giải một phần tại sao
+`kustomize` ra đời.
+
+Về cơ bản, các tài nguyên trên k8s có các thuộc tính cơ bản: phiên bản api,
+thể loại (`.kind`), tên riêng (`.metadata.name`), đặc tả (`.spec`). Phần
+đặc tả là phức tạp nhất, và người dùng phổ thông thì xài `yaml` để viết.
+Khâu cuối cùng ngay trước khi deploy là file `yaml`, nhưng trước đó,
+chín người mười ý, đặc biệt là 9 người từ 10 công ty khác nhau, họ cãi
+nhau và bắt đầu thêm mắm muối vào file `yaml` đó. Để dễ hiểu, hãy tưởng
+tượng đây là file `yaml` ban đầu:
+
+```
+apiversion: lauxanh/v1stable
+kind: PornVideos
+metadata:
+  name: demo
+  labels:
+    say: "hello, world!"
+spec:
+  filename: demo.mp3
+  vip_account: true
+```
+
+sau đó 9 ông devops vào sửa lại như sau:
+
+```
+apiversion: lauxanh/v1stable
+kind: {{ .Values.PornKind }}
+metadata:
+  name: {{ .Values.PortName }}
+  labels:
+    {{ .Values.Action }}: {{ .Values.Message }}
+spec:
+  filename: {{ .Values.PornFileName }}
+  vip_account: {{ .Vallues.VipIsRequired }}
+
+  {{- if .Values.OhMyLauxanh }}
+  {{ toYaml .Values.OhMyLauxanh | indent 2 }}
+  {{- end }}
+
+  {{- if .Values.Zalando.Users }}
+  zalando_group: {{ .Values.Zalando.group_name }}
+  {{- end }}
+
+  {{- if .Values.HelloFresh.Users }}
+  spec: {{ .Values.HelloFresh.Is.Not.Zalando }}
+  {{- end }}
+
+  # company X
+  # company Y
+  # company Z
+```
+
+Mỗi dạng thông tin trong file yalm mà k8s có thể hỗ trợ
+người ta bỏ luôn, thay bởi một biến của helm. Bao nhiêu kiểu đặc tả,
+bao nhiêu tham số thì cũng xem xem chừng đấy biến số trong tập tin
+giá trị của helm.
+Bạn xem thử tui nói đúng hông:
+https://github.com/helm/charts/blob/master/stable/grafana/templates/deployment.yaml
+Ý tuởng cơ bản là hay, từ file ban đầu, hỗ trợ
+nhiều công ty, nhiều môi trường, nhiều biến thể khác nhau. Mục đích tốt,
+nhưng sau một thời gian thì nhiều thứ quá, nhìn loạn cả óc. Đó là lý do
+ra đời cái gọi làm helm cứng, stable: nó stable bởi muốn thay đổi nó
+là chuyện chẳng dễ dàng gì, ít ai dám đụng vào.
+
+Câu hỏi là, tại sao không xem ngay một đặc tả trong file `yaml` là một
+biến số luôn. Nghĩa là, trong ví dụ ở trên, ta tự động có các biến số sau
+
+```
+$awesome.$metadata.$name = "demo"
+$awesome.$metadata.$labels.$say = "Hello, world!"
+$awesome.$spec.$filename = "demo.mp3"
+$awesome.$spec.$vip_account = "true"
+```
+
+<!-- skip below -->
+
+Oh yeah, quá dễ, nhưng thật ngây thơ vì yaml parser không chịu thế đâu.
+Nên từ đó, nảy sinh ra `kustomize`, với ý tuởng cơ bản như vừa nói, nhưng
+triển khai theo dạng patch: patch kiểu yaml đơn giản, hoặc khó hơn như
+`patchesJson6902`. Thay dùng biến số, ta thêm vào file patch như sau:
+
+```
+apiversion: lauxanh/v1stable
+kind: PornVideos
+metadata:
+  name: demo
+  labels:
+    say: "I love Maria."
+spec:
+  filename: "Maria-Ozawa.mp3"
+```
+
+vào khi trộn vào tập tin gốc sẽ ra kết quả theo ý của ông devops ở Sài gòn:
+
+```
+apiversion: lauxanh/v1stable
+kind: PornVideos
+metadata:
+  name: demo
+  labels:
+    say: "I love Maria."
+spec:
+  filename: "Maria-Ozawa.mp3"
+  vip_account: true
+```
+
+Ví dụ không phản ánh thực tế là tập tin gốc có thể có rất nhiều dòng,
+còn tập tin để patch chỉ có vài dòng, đưa ra đúng những thứ cần mô tả.
+Giống như khi xài `git diff | patch -Np1` vậy thôi.
+
+Xem thêm:
+
+1. https://github.com/helm/charts#deprecation-timeline
+2. https://github.com/kubernetes-sigs/kustomize/blob/master/docs/eschewedFeatures.md
 
 ### `elasticsearch-workshop-observability`
 
@@ -779,16 +912,16 @@ bạn phải phục hồi hệ thống thật sự. Trời đất, các tài li�
 đều nói tới việc chép lại các tập tin ảnh đó ra thôi. Thế nên mình thử
 
 ```
-# giả sử không có namenode nào đang chạy
-# giả lập nhờ systemctl stop hadoop-* trên tất cả các namenode
-# nn chính là viết tắt của namenode
+$# giả sử không có namenode nào đang chạy
+$# giả lập nhờ systemctl stop hadoop-* trên tất cả các namenode
+$# nn chính là viết tắt của namenode
 
 $ rm -rf /home/hdfs/data/{nn,snn}/current/
 $ mkdir -pv /home/hdfs/data/{nn,snn}/current/
 $ cp /backup/fsimage_* /home/hdfs/data/nn/current/
 $ systemctl start hadoop-namdenode
 
-# tạch toàn tập, không lên nổi. Viagra bó tay.
+$# tạch toàn tập, không lên nổi. Viagra bó tay.
 ```
 
 Tới đây bạn sẽ gần như tuyệt vọng. Hệ thống báo là `namenode` chưa
@@ -858,7 +991,7 @@ thời gian để hiểu tại sao. Kịch bản `http-headers` đi kèm với b
 tập tin `_discovery.tmp` như sau
 
 ```
-# Nmap 7.70 scan initiated ...
+$ Nmap 7.70 scan initiated ...
 Nmap scan report for k8s-001.lauxanh.net (10.0.0.2)
 Host is up (0.0069s latency).
 Not shown: 31 closed ports
@@ -888,7 +1021,7 @@ $ nmap ...
 $ grep service/200 _discovery.tmp
 |_  service/200: k8s-001.lauxanh.net:9100/metrics
 |_  service/200: k8s-002.lauxanh.net:9100/metrics
-# ...
+$# ...
 ```
 
 Tuyệt vời ông mặt trời. Điều đáng buồn là mình viết vầy cho bạn xài,
@@ -1374,9 +1507,9 @@ Chạy `rsync` trong phần lớn trường hợp có thể dùng như sau,
 với quyền **root**:
 
 ```
-# mount /dev/new_device /mnt/new_disk_B/
+$ mount /dev/new_device /mnt/new_disk_B/
 
-# rsync -avx                \
+$ rsync -avx                \
   --progress                \
   /                         \
   /mnt/new_disk_B/          \
@@ -1582,8 +1715,8 @@ những thứ cổ xưa, tạo ra cách đây mười mấy năm, vẫn chạy t
 từ ứng dụng của bạn đi qua một `SOCKS` proxy đã có. Ví dụ,
 
 ```
-# echo "server 1.2.3.4"    >  /etc/tsocks.conf
-# echo "server_port 20000" >> /etc/tsocks.conf
+$# echo "server 1.2.3.4"    >  /etc/tsocks.conf
+$# echo "server_port 20000" >> /etc/tsocks.conf
 $ ssh secret_server -D 20000 -fN
 $ tsocks firefox
 ```
