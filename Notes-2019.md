@@ -170,12 +170,40 @@ spec:
 
 Ví dụ không phản ánh thực tế là tập tin gốc có thể có rất nhiều dòng,
 còn tập tin để patch chỉ có vài dòng, đưa ra đúng những thứ cần mô tả.
-Giống như khi xài `git diff | patch -Np1` vậy thôi.
+Giống như khi xài `git diff | patch -Np1` vậy thôi:
 
-Xem thêm:
+```
+k8s-stuff/
+  42-ingres-zalado/
+    - base/
+        file1.yaml
+        file2.yaml
+        file3.yaml
+    - deployment_in_use
+        patch.yaml
+    - deployment_in_euw
+        patch.yaml
+    - deployment_in_saigon
+        patch.yaml
+```
+
+Về cơ bản thì không khác cách deploy với Helm? Có chứ, xem đây:
+
+```
+  your vars --> { helm vars + helm templates } --> helm --> final yaml file
+  { your patches + base.yaml } --> kustomize --> file yaml file
+```
+
+Cách đầy bạn phải làm việc với nhiều thứ hơn (biến, cấu trúc, template),
+cách sau từ đầu tới cuối chỉ một cấu trúc Yaml. Chính sự rắc rối của Helm
+mà nhiều người nghĩ ra các kiểu template khác nhau, jsonnet, draft rồi
+tá lả thứ khác nhau: Nhưng chúng đều có chung rắc rối như helm thôi.
+
+Tạm dừng ở đây, cô gái tóc vàng đã đi xa lắm rồi. Bạn xem thêm:
 
 1. https://github.com/helm/charts#deprecation-timeline
 2. https://github.com/kubernetes-sigs/kustomize/blob/master/docs/eschewedFeatures.md
+3. https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948/
 
 ### `elasticsearch-workshop-observability`
 
