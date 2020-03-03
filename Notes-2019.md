@@ -4,7 +4,7 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
-Các bài viết của năm sau: [2019](Notes-2020.md)
+Các bài viết của năm sau: [2020](Notes-2020.md)
 
 ### TOC
 
