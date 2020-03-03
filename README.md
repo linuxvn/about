@@ -20,7 +20,7 @@ Bạn có thể quan tâm tới một số nhóm liên quan
 1. Thông tin công việc `devops`: https://t.me/devopsjobs
 1. Kênh tin tức https://t.me/linuxvn_notes, ghi chú những lượm lặt có
   ích từ HackerNews hay từ công việc hàng ngày của các bạn;
-1. Lập trình: https://t.me/joinchat/EfluHD6PaUZG_wvGI88GGQ
+1. Lập trình: <s>https://t.me/joinchat/EfluHD6PaUZG_wvGI88GGQ</s>
 1. Kênh các tin công nghệ  https://t.me/archlinuxvn_news một số
   bạn đọc thấy hay lưu lại ở đây. Kênh này chủ yếu dẫn liên kết.
 1. Sách vở, phim ảnh, lauxanh, ... những nhóm này không dám
