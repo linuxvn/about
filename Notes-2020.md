@@ -8,9 +8,9 @@ Các bài viết của năm trước: [2019](Notes-2019.md)
 
 ### TOC
 
-* [Hello-2020](#hello-2020)
+* [Hello 2020](#hello-2020)
 
-### `Hello, 2020`
+### `Hello-2020`
 
 tags: #misc #k8s
 
