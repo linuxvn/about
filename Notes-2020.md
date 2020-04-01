@@ -8,7 +8,24 @@ Các bài viết của năm trước: [2019](Notes-2019.md)
 
 ### TOC
 
+* [Adminless](#adminless)
 * [Hello 2020](#hello-2020)
+
+### `Adminless`
+
+tags: #linuxvn
+
+Thế là giai đoạn độ quá từ Linux lên MacOS đã sắp xong. Từ 1/4/2020,
+tất cả bà con ở `linuxvn` đều bình đẳng như nhau, ai cũng được phần,
+hỏi theo nhu cầu, trả lời theo năng lực, chát theo tinh thần MacOS
+(là gì tính sau!)
+
+Tất nhiên, cũng có một số bạn bình đẳng hơn một số bạn khác. Cụ thể
+là bạn Đức vẫn phải còn giữ quyền Admin đề phòng thế lực thù địch
+chống phá kênh linuxvn. Nick của mình sẽ để chơi vậy thôi, hỏng xài
+thường xuyên; hy vọng mình sẽ tham gia được với nick khác sớm.
+
+Chúc một ngày vui vẻ.
 
 ### `Hello-2020`
 
