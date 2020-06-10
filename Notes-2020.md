@@ -8,8 +8,44 @@ Các bài viết của năm trước: [2019](Notes-2019.md)
 
 ### TOC
 
+* [Senior-Junior engineer vs Junior-Senior Engineer](#senior-junior-vs-junior-senior-engineer)
 * [Adminless](#adminless)
 * [Hello 2020](#hello-2020)
+
+### `senior-junior-vs-junior-senior-engineer`
+
+tags: #misc
+
+Một bạn hỏi junior thì làm gì, rồi senior làm gì. Mình có dịp đi phỏng vấn
+rải rác vài chỗ nên tóm tắt lại đây cho các bạn coi, hy vọng có ích.
+Bạn nào có thực lực sẵn rồi, lương tháng khoảng 3k mỹ kim trở lên
+thì không cần đọc tiếp :))
+
+Trước hết, senior/junior là cái tựa công ty đặt ra, còn nói chung không
+có tiêu chuẩn cụ thể. Mỗi người kha khá một số món, công ty cần một số món,
+nếu khớp nhau nhiều thì bạn trở thành senior của công ty thôi.
+
+Có thể hiểu, sự khác nhau cơ bản giữa senior/junior là ở cách bạn
+quyết định vấn đề và lựa chọn giải pháp kỹ thuật.
+Nó liên quan nhiều hơn tới câu trả lời của bạn.
+
+Ví dụ: Bạn có biết nhiều về devops không? Một bạn tầm tầm thì trả lời,
+có có, biết jenkins, biết github, biết gitlab, bla bla. Một bạn khác
+trả lời: Xưa giờ tôi chỉ làm mỗi cái jenkins, tôi viết plugin
+cho nó, sau rồi thì tôi chán quá phải xài github, thấy cuộc đời khỏe hẳn.
+
+Hay: Bạn có biết gì về Docker không? Dạ có, tôi xài docker chạy app, thiết
+kế tối ưu dung lượng xài Alpine, giờ tôi xài k8s. Tôi không xài Docker Swarm
+hàng dỏm lắm. Một bạn khác trả lời: Tôi có xài Docker. Nhưng docker nhiều
+vấn đề quá, ví dụ nó làm hỏng cái iptables của tôi. Nói còn yêu cầu cả root,
+nên tôi thử chạy Docker ở user thường mấy ngày rồi không được. Tôi vẫn xài
+Docker Swarm, nó có nhiều cái rất khó chịu, nhưng lại đơn giản cho đội
+phát triển, họ làm gì cũng nhanh gọn. Lâu lâu có bug thì fix cũng lẹ.
+
+Có đi phỏng vấn ở đâu thì câu trả lời của bạn cũng quan trọng. Và có những
+thứ bạn không bao giờ bịa ra được nếu bạn không hiểu gì về nó. Muốn trở
+thành senior, hãy có câu trả lời senior. Muốn có câu trả lời senior,
+hãy dành thời gian đào sâu nghiên cứu cái gì đó.
 
 ### `Adminless`
 
