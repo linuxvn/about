@@ -24,7 +24,7 @@ Lâu quá rồi chả viết gì. Nên sau đây là vài thông báo nho nhỏ:
   nên cổng 80 đóng cái sầm. Thôi, ta chia tay nhau từ đây.
 
 2. Nhóm `linuxvn` đông quá rồi, hơn 7 ngàn nick (ấy là sau khi nhân lên
-  với 100). Mong các bạn trao đổi sôi nổi, các chuyện tình cảm nhắng
+  với 100/10). Mong các bạn trao đổi sôi nổi, các chuyện tình cảm nhắng
   nhít thì chắc không phải để trao đổi trên đó rồi. Con bot thích
   thì nó chết, khi nào có điện nó sống lại.
 
