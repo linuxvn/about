@@ -17,7 +17,7 @@ Phần tiếp theo tóm tắt về nhóm Telegram @linuxvn (https://t.me/linuxvn
 
 Bạn có thể quan tâm tới một số nhóm liên quan
 
-1. Mẹo ngắn, linh: https://t.me/dailyops
+1. Mẹo ngắn, linh tinh: https://t.me/dailyops
 1. Thông tin công việc `devops`: https://t.me/devopsjobs
 1. Kênh tin tức https://t.me/linuxvn_notes, ghi chú những lượm lặt có
   ích từ HackerNews hay từ công việc hàng ngày của các bạn;
