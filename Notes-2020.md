@@ -8,9 +8,36 @@ Các bài viết của năm trước: [2019](Notes-2019.md)
 
 ### TOC
 
+* [October-update](#october-update)
 * [Senior-Junior engineer vs Junior-Senior Engineer](#senior-junior-vs-junior-senior-engineer)
 * [Adminless](#adminless)
 * [Hello 2020](#hello-2020)
+
+### `october-update`
+
+tags: #jobless #misc
+
+Lâu quá rồi chả viết gì. Nên sau đây là vài thông báo nho nhỏ:
+
+1. Mirror của ArchLinuxVn (Arch, ArchArm, TheSexLinux, Viettug.org)
+  đã sập mấy tháng nay rồi. Nhà mạng Vịt teo xài nat mấy chục lớp,
+  nên cổng 80 đóng cái sầm. Thôi, ta chia tay nhau từ đây.
+
+2. Nhóm `linuxvn` đông quá rồi, hơn 7 ngàn nick (ấy là sau khi nhân lên
+  với 100/10). Mong các bạn trao đổi sôi nổi, các chuyện tình cảm nhắng
+  nhít thì chắc không phải để trao đổi trên đó rồi. Con bot thích
+  thì nó chết, khi nào có điện nó sống lại.
+
+3. https://t.me/dailyops: Kênh nhỏ đăng các mẹo linh tinh,
+  được cập nhật mỗi ngày, hoặc buồn thì mỗi tháng hoặc mỗi năm.
+  Nếu không bận làm tình thì bạn có thể vào xem nhé.
+  Để đăng tin lên đó bạn chỉ cần gửi nhắn cho bạn nào đó trên linuxvn.
+
+Hết, viết gì nữa? Hỏng lẽ nói xấu Helm, hay codebuild tiếp?
+Cái bọn điên ấy, xấu quá rồi, xấu còn hơn xxx muôn năm của chúng ta.
+
+Thôi dẹp, xin chào. Chắc là bài cuối cùng của năm 2020 đây nhé.
+Cảm ơn bạn đã theo dõi.
 
 ### `senior-junior-vs-junior-senior-engineer`
 
