@@ -44,3 +44,4 @@
 @linuxvn_notes#Notes-2020#hello-2020
 @linuxvn_notes#Notes-2020#adminless
 @linuxvn_notes#Notes-2020#senior-junior-vs-junior-senior-engineer
+@linuxvn_notes#Notes-2020#october-update
