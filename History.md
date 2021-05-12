@@ -13,7 +13,7 @@ Purupose: Connecting people.
 | `saigonlug.org` 2 | [03/2007](http://web.archive.org/web/20070323002625/http://saigonlug.org/)              | [05/2016](http://web.archive.org/web/20190309201845/http://l.archlinuxvn.org/saigonlug/msg02723.html) | 9 years |
 | `ubuntu-vn.org`   | [12/2006](http://web.archive.org/web/20061212035431/http://ubuntu-vn.tuxfamily.org/)    | | |
 |                   | [01/2009](http://web.archive.org/web/20090116142939/http://ubuntu-vn.org/)              | [05/2012](http://web.archive.org/web/20181114114854/http://ubuntu-vn.org/) | 6 years |
-| `archlinuxvn.org` | [05/2011](http://web.archive.org/web/20180627163129/http://l.archlinuxvn.org/archlinuxvn/msg02551.html) | [active on Telegram](https://t.me/linuxvn) | aka `linuxvn`, 9 years and counting |
+| `archlinuxvn.org` | [05/2011](http://web.archive.org/web/20180627163129/http://l.archlinuxvn.org/archlinuxvn/msg02551.html) | [active on Telegram](https://t.me/linuxvn) | aka `linuxvn`, 10 years and counting |
 | `linuxvietnam`    | [10/2017](https://t.me/linuxvietnam/1) | [active on Telegram](https://t.me/linuxvietnam/) | 5 years and counting |
 | `webuild.community` | 07/2012 (???) | [active on Slack](https://chat.webuild.community/) | - Previously [vietnam.rb](http://ruby.org.vn/) <br> - Main channels: `#general`, `#devops`, `#frontend`, `#javascript`, `#rustlang`, `#random`, ... <br> - Jobs board: [here](https://github.com/awesome-jobs/vietnam/issues) |
 
