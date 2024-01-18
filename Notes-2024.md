@@ -5,7 +5,7 @@
 ### The odd thing!
 
 I still speak human but I don't speak Vietnamese anymore. Lmao it's a joke.
-The problem is that when I start this new blog I thought it'd be in English.
+The problem is that when I started this new blog I thought it'd be in English.
 
 What is the odd thing today? That's the only thing we face everyday.
 It's `k8s` in short, aka `kubernetes`.
