@@ -4,7 +4,7 @@
 
 ### The odd thing!
 
-I still speak human but I don't speak Vietnamese anymore. Lmao it's a joke.
+I still speak human but I don't speak Vietnamese anymore. Heh it's a joke.
 The problem is that when I started this new blog I thought it'd be in English.
 
 What is the odd thing today? That's the only thing we face everyday.
@@ -39,3 +39,5 @@ So I hate `k8s`. I cry on my shoulder. `k8s` is the odd thing
 that `Google` invented and made my job terrible ^.^ ahah, another joke okay?
 
 You know there is only thing that still remains. And it would never be `k8s`.
+
+Until next time.
