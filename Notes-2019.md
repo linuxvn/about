@@ -4,7 +4,9 @@ Lượm lặt những công cụ và tin tức đáng chú ý từ `Hacker News`
 công việc hàng ngày. Nếu bạn thấy có gì hay hãy gửi `PR` nhé.
 Nội dung sẽ được tự động đăng trên kênh https://t.me/linuxvn_notes.
 
-Các bài viết của năm sau: [2020](Notes-2020.md)
+Các bài viết của năm sau:
+  [2020](Notes-2020.md)
+  [2021](Notes-2021.md)
 
 ### TOC
 
@@ -16,7 +18,7 @@ Các bài viết của năm sau: [2020](Notes-2020.md)
   * [Bắt đầu với k8s như thế nào](#k8s-the-hard-way-p1)
 * Lucense, Elasticsearch
   * [Phần 1: Về Lucene](#lucene-war-part-1)
-  * Phần 2: Về giấy phép Apache: TODO
+  * Phần 2: Về giấy phép Apache: [Notes-2021](#lucene-war-part-3)
 * Công cụ linh tinh
   * [Rsync với Sparse](#rsync-with-sparse-file)
   * [jsonnet](#jsonnet)
@@ -1433,6 +1435,8 @@ Bài này được soạn bằng editor [`ne`](https://github.com/vigna/ne).
 ### `lucene-war-part-1`
 
 tags: #lucene #apache #elasticsearch #apache #solr
+
+Cập nhật 22/01/2021: [Notes-2021](Notes-2021.md#lucene-war-part-3)
 
 Nhân dịp có tranh cãi về `opendistro` vs `elasticsearch`, thử tìm hiểu
 về `Lucene` là thư viện cốt lõi dựng lên `elasticsearch` và `apache solr`.
